@@ -11,62 +11,92 @@ import { Link } from 'react-router-native'
 export const Home = () => {
   return (
     <>
-      <Stack maw={1200} marginHorizontal="auto" w="100%">
-        <YStack gap="$6">
-          <XStack gap="$6">
+      <Stack maxWidth={1200} marginHorizontal="auto" gap="$6">
+        <XStack gap="$6">
+          <Stack f={1} w="100%">
             <About />
-            <YStack f={1} w="100%" gap="$6">
+          </Stack>
+          <Stack f={1} w="100%">
+            <YStack gap="$6">
               <XStack gap="$6">
                 <Projects />
                 <Featured />
               </XStack>
               <Services />
             </YStack>
-          </XStack>
-          <XStack gap="$6">
+          </Stack>
+        </XStack>
+        <XStack gap="$6">
+          <XStack f={1}>
             <Stats />
-            <YStack f={1} w="100%" gap="$6">
-              <XStack gap="$6">
-                <Resume />
-                <Blog />
-              </XStack>
-            </YStack>
           </XStack>
-        </YStack>
+          <XStack f={1} gap="$6">
+            <Resume />
+            <Blog />
+          </XStack>
+        </XStack>
       </Stack>
+
+      {/*<Stack maw={1200} marginHorizontal="auto" w="100%">*/}
+      {/*  <YStack gap="$6">*/}
+      {/*    <XStack gap="$6">*/}
+      {/*      <About />*/}
+      {/*      <YStack f={1} w="100%" gap="$6">*/}
+      {/*        <XStack gap="$6">*/}
+      {/*          <Projects />*/}
+      {/*          <Featured />*/}
+      {/*        </XStack>*/}
+      {/*        <Services />*/}
+      {/*      </YStack>*/}
+      {/*    </XStack>*/}
+      {/*    <XStack gap="$6">*/}
+      {/*      <Stats />*/}
+      {/*      <YStack f={1} w="100%" gap="$6">*/}
+      {/*        <XStack gap="$6">*/}
+      {/*          <Resume />*/}
+      {/*          <Blog />*/}
+      {/*        </XStack>*/}
+      {/*      </YStack>*/}
+      {/*    </XStack>*/}
+      {/*  </YStack>*/}
+      {/*</Stack>*/}
     </>
   )
 }
 
 const About = () => {
   return (
-    <Link to="/about" underlayColor="$color9">
+    <Link to="/about" underlayColor="$color9" style={{ height: '100%' }}>
       <Card>
-        <XStack gap="$6" ai="center" h="100%">
+        <YStack gap="$6" h="100%">
           <Image
             source={{
               uri: '/assets/photos/ai_profile.jpg',
-              width: 200,
-              height: 200,
+              width: '100%',
+              height: '100%',
             }}
+            f={1}
+            // fg={1}
             btlr="$7"
             bbrr="$7"
           />
-
-          <YStack f={1}>
-            <Eyebrow>Design & Developer</Eyebrow>
-            <Title>Natcha Pradappet</Title>
-            <Paragraph>I'm a designer and developer based in Dallas, Texas.</Paragraph>
-          </YStack>
-        </XStack>
+          <XStack color="$color9" jc="space-between" ai="flex-end">
+            <YStack>
+              <Eyebrow>Design & Developer</Eyebrow>
+              <Title>Natcha Pradappet</Title>
+              <Paragraph>I'm a designer and developer based in Dallas, Texas.</Paragraph>
+            </YStack>
+            <ChevronRight />
+          </XStack>
+        </YStack>
       </Card>
     </Link>
   )
 }
 const Projects = () => {
   return (
-    <Link to="/projects" underlayColor="$color9">
-      <Card>
+    <Link to="/projects" underlayColor="$color9" style={{ flex: 1, flexGrow: 1 }}>
+      <Card link="/projects">
         <YStack f={1} h="$16">
           <YStack w="100%" h="100%" f={1}>
             <Stack h="100%" f={1} ai="center" jc="center">
@@ -90,7 +120,7 @@ const Projects = () => {
 }
 const Featured = () => {
   return (
-    <Link to="/projects/tamagui" underlayColor="$color9">
+    <Link to="/projects/tamagui" underlayColor="$color9" style={{ flex: 1, flexGrow: 1 }}>
       <Card>
         <YStack f={1} h="$16">
           <YStack w="100%" h="100%" f={1}>
@@ -119,31 +149,31 @@ const Featured = () => {
 
 const Services = () => {
   return (
-    <Link to="/services" underlayColor="$color9">
+    <Link to="/services" underlayColor="$color9" style={{ flexGrow: 1 }}>
       <Card>
         <YStack f={1} color="$color9" h="$16" jc="space-between">
           <XStack jc="space-evenly" h="100%" f={1} ai="center">
             <SmallCard>
               <UXUIDesign />
-              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color11">
+              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
                 UX/UI Design
               </Paragraph>
             </SmallCard>
             <SmallCard>
               <DesignSystem />
-              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color11">
+              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
                 Design Systems
               </Paragraph>
             </SmallCard>
             <SmallCard>
               <WebDevelopment />
-              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color11">
+              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
                 Front-end Development
               </Paragraph>
             </SmallCard>
             <SmallCard>
               <Strategy />
-              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color11">
+              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
                 Business Strategy
               </Paragraph>
             </SmallCard>
@@ -161,50 +191,59 @@ const Services = () => {
 
 const Stats = () => {
   return (
-    <StaticCard>
-      <YStack f={1} h="$16">
-        <XStack
-          justifyContent="space-evenly"
-          w="100%"
-          gap="$5"
-          ai="center"
-          h="100%"
-          $xs={{ flexDirection: 'column' }}
-        >
-          <SmallCard>
-            <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
-              <H4>5</H4>
-              {/*<Paragraph ta="center" color="$color11" tt="uppercase">*/}
-              <Eyebrow>Years experience</Eyebrow>
-              {/*</Paragraph>*/}
-            </YStack>
-          </SmallCard>
-          <SmallCard>
-            <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
-              <H4>20+</H4>
-              <Paragraph ta="center" color="$color11" tt="uppercase">
-                Clients worldwide
-              </Paragraph>
-              {/*<div className="font">Test</div>*/}
-            </YStack>
-          </SmallCard>
-          <SmallCard>
-            <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
-              <H4>100+</H4>
-              <Paragraph ta="center" color="$color11" tt="uppercase">
-                Total projects
-              </Paragraph>
-            </YStack>
-          </SmallCard>
-        </XStack>
-      </YStack>
-    </StaticCard>
+    <Link to="/" underlayColor="$color9" style={{ flexGrow: 1 }}>
+      <StaticCard>
+        <YStack f={1} h="$16">
+          <XStack
+            justifyContent="space-evenly"
+            w="100%"
+            gap="$5"
+            ai="center"
+            h="100%"
+            $xs={{ flexDirection: 'column' }}
+          >
+            <SmallCard>
+              <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
+                <H4 color="$color11">5</H4>
+                <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">
+                  Years experience
+                </Paragraph>
+              </YStack>
+            </SmallCard>
+            <SmallCard>
+              <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
+                <H4 color="$color11">20+</H4>
+                <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">
+                  Clients worldwide
+                </Paragraph>
+              </YStack>
+            </SmallCard>
+            <SmallCard>
+              <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
+                <H4 color="$color11">100+</H4>
+                <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">
+                  Total projects
+                </Paragraph>
+              </YStack>
+            </SmallCard>
+            {/*<SmallCard>*/}
+            {/*  <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>*/}
+            {/*    <H4 color="$color11">3+</H4>*/}
+            {/*    <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">*/}
+            {/*      Awards won*/}
+            {/*    </Paragraph>*/}
+            {/*  </YStack>*/}
+            {/*</SmallCard>*/}
+          </XStack>
+        </YStack>
+      </StaticCard>
+    </Link>
   )
 }
 
 const Resume = () => {
   return (
-    <Link to="/resume" underlayColor="$color9">
+    <Link to="/resume" underlayColor="$color9" style={{ flex: 1, flexGrow: 1 }}>
       <Card>
         <YStack f={1} h="$16">
           <YStack w="100%" h="100%" f={1}>
@@ -230,7 +269,7 @@ const Resume = () => {
 
 const Blog = () => {
   return (
-    <Link to="/blog" underlayColor="$color9">
+    <Link to="/blog" underlayColor="$color9" style={{ flex: 1, flexGrow: 1 }}>
       <Card>
         <YStack f={1} h="$16">
           <YStack w="100%" h="100%" f={1}>

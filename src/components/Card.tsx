@@ -1,7 +1,13 @@
 import { H1, H2, H3, H4, H5, H6, Paragraph, Stack, YStack } from 'tamagui'
 import React from 'react'
+import { useHref } from 'react-router-dom'
 
-export function Card({ children }) {
+export type CardTypes = {
+  children?: any
+  link?: any
+}
+
+export function Card({ children, link }: CardTypes) {
   return (
     <Stack
       bc="$color3"
@@ -32,8 +38,9 @@ export function StaticCard({ children }) {
 export function SmallCard({ children }) {
   return (
     <Stack
-      bc="$color3"
-      boc="$color4"
+      col="$color11"
+      bc="$color4"
+      boc="$color5"
       bw="$1"
       ai="center"
       w="$10"
