@@ -1,0 +1,10 @@
+/* File: font.css */@font-face {
+    font-family: 'Whirlybats';
+    src: local('Whirlybats'),
+    url('./WhirlybatsVariable.ttf') format('ttf')
+}
+@font-face {
+    font-family: 'Whirly Birdie';
+    src: local('Whirly Birdie'),
+    url('./WhirlyBirdieVariable.ttf') format('ttf');
+}
