@@ -26,9 +26,8 @@ export const Home = () => {
               animation="bouncy"
               hoverStyle={{
                 scale: 0.925,
-                rotate: '2deg',
               }}
-              pressStyle={{ scale: 0.875, rotate: '-2deg' }}
+              pressStyle={{ scale: 0.875 }}
               boc="$color4"
               bw="$1"
               br="$10"
@@ -77,9 +76,8 @@ export const Home = () => {
                   animation="bouncy"
                   hoverStyle={{
                     scale: 0.925,
-                    rotate: '-1deg',
                   }}
-                  pressStyle={{ scale: 0.875, rotate: '1deg' }}
+                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
@@ -127,9 +125,8 @@ export const Home = () => {
                   animation="bouncy"
                   hoverStyle={{
                     scale: 0.925,
-                    rotate: '-2deg',
                   }}
-                  pressStyle={{ scale: 0.875, rotate: '2deg' }}
+                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
@@ -178,9 +175,8 @@ export const Home = () => {
                 animation="bouncy"
                 hoverStyle={{
                   scale: 0.925,
-                  rotate: '3deg',
                 }}
-                pressStyle={{ scale: 0.875, rotate: '-3deg' }}
+                pressStyle={{ scale: 0.875 }}
                 boc="$color4"
                 bw="$1"
                 br="$10"
@@ -275,9 +271,8 @@ export const Home = () => {
                 animation="bouncy"
                 hoverStyle={{
                   scale: 0.925,
-                  rotate: '3deg',
                 }}
-                pressStyle={{ scale: 0.875, rotate: '-3deg' }}
+                pressStyle={{ scale: 0.875 }}
                 boc="$color4"
                 bw="$1"
                 br="$10"
@@ -463,9 +458,8 @@ export const Home = () => {
                   animation="bouncy"
                   hoverStyle={{
                     scale: 0.925,
-                    rotate: '1deg',
                   }}
-                  pressStyle={{ scale: 0.875, rotate: '-1deg' }}
+                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
@@ -517,9 +511,8 @@ export const Home = () => {
                   animation="bouncy"
                   hoverStyle={{
                     scale: 0.925,
-                    rotate: '-3deg',
                   }}
-                  pressStyle={{ scale: 0.875, rotate: '3deg' }}
+                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
