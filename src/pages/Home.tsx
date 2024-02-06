@@ -23,11 +23,6 @@ export const Home = () => {
             <Stack
               bc="$color3"
               p="$6"
-              animation="bouncy"
-              hoverStyle={{
-                scale: 0.925,
-              }}
-              pressStyle={{ scale: 0.875 }}
               boc="$color4"
               bw="$1"
               br="$10"
@@ -73,11 +68,6 @@ export const Home = () => {
                 <Stack
                   bc="$color3"
                   p="$6"
-                  animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                  }}
-                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
@@ -122,11 +112,6 @@ export const Home = () => {
                 <Stack
                   bc="$color3"
                   p="$6"
-                  animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                  }}
-                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
@@ -172,11 +157,7 @@ export const Home = () => {
               <Stack
                 bc="$color3"
                 p="$6"
-                animation="bouncy"
-                hoverStyle={{
-                  scale: 0.925,
-                }}
-                pressStyle={{ scale: 0.875 }}
+                ressStyle={{ scale: 0.875 }}
                 boc="$color4"
                 bw="$1"
                 br="$10"
@@ -268,11 +249,6 @@ export const Home = () => {
               <Stack
                 bc="$color3"
                 p="$6"
-                animation="bouncy"
-                hoverStyle={{
-                  scale: 0.925,
-                }}
-                pressStyle={{ scale: 0.875 }}
                 boc="$color4"
                 bw="$1"
                 br="$10"
@@ -455,11 +431,6 @@ export const Home = () => {
                 <Stack
                   bc="$color3"
                   p="$6"
-                  animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                  }}
-                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
@@ -508,11 +479,6 @@ export const Home = () => {
                 <Stack
                   bc="$color3"
                   p="$6"
-                  animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                  }}
-                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
