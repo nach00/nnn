@@ -6,6 +6,7 @@ import { Resume } from './pages/Resume'
 import { Projects } from './pages/Projects'
 import { Contact } from './pages/Contact'
 import { Tamagui } from './pages/projects/Tamagui'
+import { Fossil } from './pages/projects/Fossil'
 import { Button, H4, H6, Nav, Paragraph, XStack } from 'tamagui'
 import { TopBar } from './components/TopBar'
 import { BottomBar } from './components/BottomBar'
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects/tamagui" element={<Tamagui />} />
+          <Route path="projects/fossil" element={<Fossil />} />
           {/*<Route path="dashboard" element={<Dashboard />} />*/}
 
           {/* Using path="*"" means "match anything", so this route

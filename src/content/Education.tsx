@@ -17,9 +17,14 @@ export function Education() {
           title="Certificate of Completion"
           // description="React 3 Fiber"
         >
-          <Button size="$3" width="min-content">
-            View certificate
-          </Button>
+          <a
+            href="https://threejs-journey.com/certificate/view/32409"
+            style={{ textDecoration: 'none' }}
+          >
+            <Button size="$3" width="min-content">
+              View certificate
+            </Button>
+          </a>
         </ResumeItem>
 
         <ResumeItem

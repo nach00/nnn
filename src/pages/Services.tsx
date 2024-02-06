@@ -1,16 +1,8 @@
 import { H2, Stack, XStack, YStack, Image, H6, H1, Paragraph } from 'tamagui'
-import { Link } from 'react-router-dom'
-import { ChevronRight, Sparkle } from '../assets/icons'
+import { Link } from 'react-router-native'
 import { Eyebrow } from '../components/Eyebrow'
 import { Title } from '../components/Title'
-import {
-  UXUIDesign,
-  DesignSystem,
-  WebDevelopment,
-  Strategy,
-  ChevronRight,
-  Sparkle,
-} from '../assets/icons'
+import { UXUIDesign, DesignSystem, WebDevelopment, ChevronRight, Sparkle } from '../assets/icons'
 
 export function Services() {
   return (
@@ -26,11 +18,13 @@ export function Services() {
           <YStack f={1} $gtSm={{ w: 300 }} $gtLg={{ w: 400 }}>
             <YStack
               m="$3"
+              f={1}
               bc="$color3"
               p="$6"
               br="$10"
               boc="$color4"
               bw="$1"
+              jc="space-evenly"
               style={{
                 boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
               }}
@@ -59,7 +53,7 @@ export function Services() {
             <YStack ai="center">
               <XStack gap="$2">
                 <Sparkle />
-                <H2 tt="uppercase">My offerings</H2>
+                <H2 tt="uppercase">Services</H2>
                 <Sparkle />
               </XStack>
             </YStack>
@@ -72,6 +66,7 @@ export function Services() {
                 br="$10"
                 p="$6"
                 gap="$6"
+                m="$3"
                 style={{
                   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
                 }}
@@ -124,6 +119,9 @@ export function Services() {
               bw="$1"
               br="$10"
               w="100%"
+              style={{
+                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              }}
             >
               <Stack ai="center" jc="center" h="100%" f={1}>
                 <Image

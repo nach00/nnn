@@ -27,8 +27,6 @@ export const Home = () => {
               hoverStyle={{
                 scale: 0.925,
                 rotate: '2deg',
-                // backgroundColor: '$blue3',
-                // borderColor: '$blue4',
               }}
               pressStyle={{ scale: 0.875, rotate: '-2deg' }}
               boc="$color4"
