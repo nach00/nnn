@@ -1,85 +1,64 @@
-import { H2, H6, Stack, H1, Paragraph, XStack, YStack, Image, Separator } from 'tamagui'
-import { Card, StaticCard } from '../components/Card'
-import { ResumeItem } from '../components/ResumeItem'
+import { H2, Stack, Paragraph, XStack, YStack, Image, Button } from 'tamagui'
 import { Experience } from '../content/Experience'
 import { Education } from '../content/Education'
-import { TopBar } from '../components/TopBar'
-import { BottomBar } from '../components/BottomBar'
 import { Overview } from '../content/Overview'
 import { Awards } from '../content/Awards'
 
 export function Resume() {
   return (
     <>
-      {/*<TopBar />*/}
-      <YStack f={1} ai="center" jc="center" flexWrap="wrap">
-        <YStack maw={1200} gap="$6">
-          <XStack gap="$12">
-            <YStack f={1} w="100%" height="100%">
-              <StaticCard>
-                <YStack ai="center" w="100%" gap="$6">
-                  <Image
-                    source={{
-                      uri: '/assets/photos/ai_profile.jpg',
-                      width: '100%',
-                      height: 240,
-                    }}
-                    br="$7"
-                  />
-
-                  <YStack ai="center">
-                    <H2>Natcha Pradappet</H2>
-
-                    <Paragraph color="$color11">@npradappet</Paragraph>
-                  </YStack>
-
-                  {/*<XStack gap="$2">*/}
-                  {/*  <Button*/}
-                  {/*    alignSelf="center"*/}
-                  {/*    icon={Linkedin}*/}
-                  {/*    size="$5"*/}
-                  {/*    borderRadius={999}*/}
-                  {/*    {...useLink({ href: 'https://www.linkedin.com/in/natcha-pradappet/' })}*/}
-                  {/*  />*/}
-                  {/*  <Button*/}
-                  {/*    alignSelf="center"*/}
-                  {/*    icon={Twitter}*/}
-                  {/*    size="$5"*/}
-                  {/*    borderRadius={999}*/}
-                  {/*    {...useLink({ href: 'https://twitter.com/nach0s/' })}*/}
-                  {/*  />*/}
-                  {/*  <Button*/}
-                  {/*    alignSelf="center"*/}
-                  {/*    icon={Github}*/}
-                  {/*    size="$5"*/}
-                  {/*    borderRadius={999}*/}
-                  {/*    {...useLink({ href: 'https://github.com/nach00/' })}*/}
-                  {/*  />*/}
-                  {/*</XStack>*/}
-                  {/*<Button {...useLink({ href: 'mailto:npradappet@gmail.com' })}>Email me</Button>*/}
-                </YStack>
-              </StaticCard>
+      <YStack jc="center" $gtSm={{ fd: 'row', margin: '$3' }}>
+        <YStack ai="center">
+          <YStack
+            p="$6"
+            bc="$color3"
+            br="$10"
+            boc="$color4"
+            bw="$1"
+            style={{
+              boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+            }}
+          >
+            <Image
+              source={{
+                uri: '/assets/photos/ai_profile.jpg',
+                width: 300,
+                height: 300,
+              }}
+              f={1}
+              br="$7"
+            />
+            <YStack gap="$3" ai="center" mt="$6">
+              <H2 ta="center">Natcha Pradappet</H2>
+              <Paragraph>@npradappet</Paragraph>
+              <Button>Contact me</Button>
             </YStack>
-            <YStack f={1} flexWrap="wrap" gap="$6">
-              <Overview />
+          </YStack>
+        </YStack>
+        <YStack
+          p="$6"
+          gap="$12"
+          $gtSm={{ paddingVertical: '$0', w: 450 }}
+          $gtMd={{ w: 600 }}
+          $gtLg={{ w: 800 }}
+        >
+          <Stack gap="$6">
+            <Overview />
+          </Stack>
 
-              <Separator />
+          <Stack gap="$6">
+            <Experience />
+          </Stack>
 
-              <Experience />
+          <Stack gap="$6">
+            <Education />
+          </Stack>
 
-              <Separator />
-
-              <Education />
-
-              <Separator />
-
-              <Awards />
-            </YStack>
-          </XStack>
+          <Stack gap="$6">
+            <Awards />
+          </Stack>
         </YStack>
       </YStack>
-
-      {/*<BottomBar />*/}
     </>
   )
 }

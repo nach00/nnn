@@ -3,8 +3,8 @@ import React from 'react'
 
 export function Title({ children }) {
   return (
-    <H2 tt="capitalize" col="$color9">
+    <H3 tt="capitalize" col="$color9">
       {children}
-    </H2>
+    </H3>
   )
 }

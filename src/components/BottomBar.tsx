@@ -14,17 +14,18 @@ import {
 } from 'tamagui'
 import React from 'react'
 import { Email, Instagram, LinkedIn } from '../assets/icons'
+import { Link } from 'react-router-dom'
 
 export const BottomBar = () => {
   return (
     <YStack>
       <Separator mt="$16" />
-      <H1 ta="center" mt="$16">
+      <H1 ta="center" mt="$12">
         Let's work together.
       </H1>
       <XStack
         marginTop="$12"
-        marginBottom="$20"
+        marginBottom="$12"
         marginHorizontal="auto"
         width="100%"
         maxWidth={1200}
@@ -32,7 +33,9 @@ export const BottomBar = () => {
         justifyContent="center"
       >
         <XStack gap="$10" ai="center">
-          <Email />
+          <Link to="mailto:npradappet@gmail.com">
+            <Email />
+          </Link>
           <LinkedIn />
           <Instagram />
         </XStack>

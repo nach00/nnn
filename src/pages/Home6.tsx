@@ -11,7 +11,11 @@ import { Link } from 'react-router-native'
 export const Home = () => {
   return (
     <>
-      <YStack ai="center" $gtSm={{ fd: 'row', jc: 'center' }}>
+      <YStack
+        // boc="yellow" bw="$1"
+        ai="center"
+        $gtSm={{ fd: 'row', jc: 'center' }}
+      >
         <Link to="/about" underlayColor="$color9">
           <XStack
             h={600}
@@ -22,25 +26,18 @@ export const Home = () => {
             $gtLg={{ w: 600, h: 600 }}
             p="$3"
           >
+            {/*<About />*/}
             <Stack
               bc="$color3"
               p="$6"
               animation="bouncy"
-              hoverStyle={{
-                scale: 0.925,
-                rotate: '2deg',
-                // backgroundColor: '$blue3',
-                // borderColor: '$blue4',
-              }}
-              pressStyle={{ scale: 0.875, rotate: '-2deg' }}
+              hoverStyle={{ scale: 0.925 }}
+              pressStyle={{ scale: 0.875 }}
               boc="$color4"
               bw="$1"
               br="$10"
               w="100%"
               gap="$6"
-              style={{
-                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-              }}
             >
               <Image
                 source={{
@@ -55,6 +52,7 @@ export const Home = () => {
                 <YStack f={1} gap="$1">
                   <Eyebrow>Designer & Developer</Eyebrow>
                   <Title>Natcha Pradappet</Title>
+                  {/*<Paragraph>Lorem ipsum</Paragraph>*/}
                 </YStack>
                 <Stack>
                   <ChevronRight />
@@ -79,21 +77,12 @@ export const Home = () => {
                   bc="$color3"
                   p="$6"
                   animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                    rotate: '-1deg',
-                    // backgroundColor: '$red3',
-                    // borderColor: '$red4',
-                  }}
-                  pressStyle={{ scale: 0.875, rotate: '1deg' }}
+                  hoverStyle={{ scale: 0.925 }}
+                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
                   w="100%"
-                  style={{
-                    boxShadow:
-                      '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                  }}
                 >
                   <Stack ai="center" jc="center" h="100%" f={1}>
                     <Image
@@ -109,7 +98,7 @@ export const Home = () => {
                   </Stack>
 
                   <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>
-                    <Title>Projects</Title>
+                    <Title>Work</Title>
                     <Stack>
                       <ChevronRight />
                     </Stack>
@@ -131,21 +120,12 @@ export const Home = () => {
                   bc="$color3"
                   p="$6"
                   animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                    rotate: '-2deg',
-                    // backgroundColor: '$green3',
-                    // borderColor: '$green4',
-                  }}
-                  pressStyle={{ scale: 0.875, rotate: '2deg' }}
+                  hoverStyle={{ scale: 0.925 }}
+                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
                   w="100%"
-                  style={{
-                    boxShadow:
-                      '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                  }}
                 >
                   <Stack ai="center" jc="center" h="100%" f={1}>
                     <Image
@@ -184,20 +164,12 @@ export const Home = () => {
                 bc="$color3"
                 p="$6"
                 animation="bouncy"
-                hoverStyle={{
-                  scale: 0.925,
-                  rotate: '3deg',
-                  // backgroundColor: '$yellow3',
-                  // borderColor: '$yellow4',
-                }}
-                pressStyle={{ scale: 0.875, rotate: '-3deg' }}
+                hoverStyle={{ scale: 0.925 }}
+                pressStyle={{ scale: 0.875 }}
                 boc="$color4"
                 bw="$1"
                 br="$10"
                 w="100%"
-                style={{
-                  boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                }}
               >
                 <XStack ai="center" jc="space-evenly" h="100%" f={1} $xs={{ fd: 'row' }}>
                   <SmallCard>
@@ -218,6 +190,12 @@ export const Home = () => {
                       Front-end Development
                     </Paragraph>
                   </SmallCard>
+                  {/*<SmallCard>*/}
+                  {/*  <Strategy />*/}
+                  {/*  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">*/}
+                  {/*    Business Strategy*/}
+                  {/*  </Paragraph>*/}
+                  {/*</SmallCard>*/}
                 </XStack>
 
                 <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
@@ -247,20 +225,12 @@ export const Home = () => {
                 bc="$color3"
                 p="$6"
                 animation="bouncy"
-                hoverStyle={{
-                  scale: 0.925,
-                  rotate: '3deg',
-                  // backgroundColor: '$yellow3',
-                  // borderColor: '$yellow4',
-                }}
-                pressStyle={{ scale: 0.875, rotate: '-3deg' }}
+                hoverStyle={{ scale: 0.925 }}
+                pressStyle={{ scale: 0.875 }}
                 boc="$color4"
                 bw="$1"
                 br="$10"
                 w="100%"
-                style={{
-                  boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                }}
               >
                 <XStack ai="center" jc="space-evenly" h="100%" f={1}>
                   <SmallCard>
@@ -281,6 +251,12 @@ export const Home = () => {
                       Front-end Development
                     </Paragraph>
                   </SmallCard>
+                  {/*<SmallCard>*/}
+                  {/*  <Strategy />*/}
+                  {/*<Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">*/}
+                  {/*  Business Strategy*/}
+                  {/*</Paragraph>*/}
+                  {/*</SmallCard>*/}
                 </XStack>
 
                 <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
@@ -302,20 +278,11 @@ export const Home = () => {
           $gtLg={{ w: 600, h: 300 }}
           p="$3"
         >
-          <Stack
-            bc="$color3"
-            p="$6"
-            boc="$color4"
-            bw="$1"
-            br="$10"
-            w="100%"
-            style={{
-              boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-            }}
-          >
+          <Stack bc="$color3" p="$6" boc="$color4" bw="$1" br="$10" w="100%">
             <XStack
               justifyContent="space-evenly"
               w="100%"
+              gap="$5"
               ai="center"
               h="100%"
               $gtSm={{ flexDirection: 'column' }}
@@ -345,6 +312,14 @@ export const Home = () => {
                   </Paragraph>
                 </YStack>
               </SmallCard>
+              {/*<SmallCard>*/}
+              {/*  <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>*/}
+              {/*    <H4 color="$color11">3+</H4>*/}
+              {/*    <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">*/}
+              {/*      Awards won*/}
+              {/*    </Paragraph>*/}
+              {/*  </YStack>*/}
+              {/*</SmallCard>*/}
             </XStack>{' '}
           </Stack>
         </XStack>
@@ -364,21 +339,12 @@ export const Home = () => {
                   bc="$color3"
                   p="$6"
                   animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                    rotate: '1deg',
-                    // backgroundColor: '$purple3',
-                    // borderColor: '$purple4',
-                  }}
-                  pressStyle={{ scale: 0.875, rotate: '-1deg' }}
+                  hoverStyle={{ scale: 0.925 }}
+                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
                   w="100%"
-                  style={{
-                    boxShadow:
-                      '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                  }}
                 >
                   <Stack ai="center" jc="center" h="100%" f={1}>
                     <Image
@@ -402,11 +368,7 @@ export const Home = () => {
                 </Stack>
               </XStack>
             </Link>
-            <a
-              href="https://darntoot.in"
-              underlayColor="$color9"
-              style={{ textDecoration: 'none' }}
-            >
+            <Link to="/blog" underlayColor="$color9">
               <XStack
                 h={360}
                 w="100vw"
@@ -420,21 +382,12 @@ export const Home = () => {
                   bc="$color3"
                   p="$6"
                   animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                    rotate: '-3deg',
-                    // backgroundColor: '$pink3',
-                    // borderColor: '$pink4',
-                  }}
-                  pressStyle={{ scale: 0.875, rotate: '3deg' }}
+                  hoverStyle={{ scale: 0.925 }}
+                  pressStyle={{ scale: 0.875 }}
                   boc="$color4"
                   bw="$1"
                   br="$10"
                   w="100%"
-                  style={{
-                    boxShadow:
-                      '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                  }}
                 >
                   <Stack ai="center" jc="center" h="100%" f={1}>
                     <Image
@@ -457,10 +410,331 @@ export const Home = () => {
                   </XStack>
                 </Stack>
               </XStack>
-            </a>
+            </Link>
           </YStack>
         </YStack>
       </YStack>
     </>
+  )
+}
+
+const About = () => {
+  return (
+    <Link to="/about" underlayColor="$color9">
+      <YStack
+        bc="$color3"
+        p="$6"
+        animation="bouncy"
+        hoverStyle={{ scale: 0.925 }}
+        pressStyle={{ scale: 0.875 }}
+        boc="$color4"
+        bw="$1"
+        br="$10"
+        // m="$3"
+        gap="$6"
+        ai="center"
+        w={360}
+        // $xs={{ w: 600 }}
+      >
+        <Image
+          source={{
+            uri: '/assets/photos/ai_profile.jpg',
+            width: 300,
+            height: 300,
+          }}
+          br="$7"
+        />
+        <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+          <YStack f={1}>
+            <Eyebrow>Designer & Developer</Eyebrow>
+            <Title>Natcha Pradappet</Title>
+            <Paragraph>I'm a designer and developer based in Dallas, Texas.</Paragraph>
+          </YStack>
+          <Stack>
+            <ChevronRight />
+          </Stack>
+        </XStack>
+      </YStack>
+    </Link>
+  )
+}
+const Projects = () => {
+  return (
+    <Link to="/projects" underlayColor="$color9">
+      <YStack
+        bc="$color3"
+        p="$6"
+        animation="bouncy"
+        hoverStyle={{ scale: 0.925 }}
+        pressStyle={{ scale: 0.875 }}
+        boc="$color4"
+        bw="$1"
+        br="$10"
+        m="$3"
+        gap="$6"
+        ai="center"
+        w={360}
+        $xs={{ w: 300 }}
+        h={360}
+      >
+        <Stack ai="center" jc="center" h="100%" f={1}>
+          <Image
+            source={{
+              uri: '/assets/portfolio/tamagui/laptop-transparent-bg.png',
+              width: 200,
+              height: 200,
+            }}
+          />
+        </Stack>
+
+        <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+          <Title>Portfolio</Title>
+          <ChevronRight />
+        </XStack>
+      </YStack>
+    </Link>
+  )
+}
+const Featured = () => {
+  return (
+    <Link to="/projects/tamagui" underlayColor="$color9">
+      <YStack
+        bc="$color3"
+        p="$6"
+        animation="bouncy"
+        hoverStyle={{ scale: 0.925 }}
+        pressStyle={{ scale: 0.875 }}
+        boc="$color4"
+        bw="$1"
+        br="$10"
+        m="$3"
+        gap="$6"
+        ai="center"
+        w={360}
+        $xs={{ w: 300 }}
+        h={360}
+      >
+        <Stack ai="center" jc="center" h="100%" f={1}>
+          <Image
+            source={{
+              uri: '/assets/icons/tamagui-logo.svg',
+              width: 200,
+              height: 150,
+            }}
+          />
+        </Stack>
+
+        <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+          <YStack f={1}>
+            <Eyebrow>Tamagui Design System</Eyebrow>
+            <Title>Featured</Title>
+          </YStack>
+          <ChevronRight />
+        </XStack>
+      </YStack>
+    </Link>
+  )
+}
+
+const Services = () => {
+  return (
+    <Link to="/services" underlayColor="$color9" style={{ flexGrow: 1 }}>
+      <YStack
+        bc="$color3"
+        p="$6"
+        animation="bouncy"
+        hoverStyle={{ scale: 0.925 }}
+        pressStyle={{ scale: 0.875 }}
+        boc="$color4"
+        bw="$1"
+        br="$10"
+        m="$3"
+        gap="$6"
+        ai="center"
+        w={360}
+        $xs={{ w: 600 }}
+        h={360}
+      >
+        <Stack ai="center" jc="center" h="100%" f={1} gap="$3">
+          <XStack gap="$3">
+            <SmallCard>
+              <UXUIDesign />
+              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                UX/UI Design
+              </Paragraph>
+            </SmallCard>
+            <SmallCard>
+              <DesignSystem />
+              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                Design Systems
+              </Paragraph>
+            </SmallCard>
+          </XStack>
+          <XStack gap="$3">
+            <SmallCard>
+              <WebDevelopment />
+              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                Front-end Development
+              </Paragraph>
+            </SmallCard>
+            <SmallCard>
+              <Strategy />
+              <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                Business Strategy
+              </Paragraph>
+            </SmallCard>
+          </XStack>
+        </Stack>
+
+        <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+          <Title>Services</Title>
+          <ChevronRight />
+        </XStack>
+      </YStack>
+
+      {/*<Card>*/}
+      {/*  <YStack color="$color9" h="100%" jc="space-between">*/}
+      {/*    <XStack h="100%" f={1} ai="center" jc="center" gap="$3">*/}
+      {/*      <XStack gap="$3">*/}
+      {/*        <SmallCard>*/}
+      {/*          <UXUIDesign />*/}
+      {/*          <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">*/}
+      {/*            UX/UI Design*/}
+      {/*          </Paragraph>*/}
+      {/*        </SmallCard>*/}
+      {/*        <SmallCard>*/}
+      {/*          <DesignSystem />*/}
+      {/*          <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">*/}
+      {/*            Design Systems*/}
+      {/*          </Paragraph>*/}
+      {/*        </SmallCard>*/}
+      {/*      </XStack>*/}
+      {/*      <XStack gap="$3">*/}
+      {/*        <SmallCard>*/}
+      {/*          <WebDevelopment />*/}
+      {/*          <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">*/}
+      {/*            Front-end Development*/}
+      {/*          </Paragraph>*/}
+      {/*        </SmallCard>*/}
+      {/*        <SmallCard>*/}
+      {/*          <Strategy />*/}
+      {/*          <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">*/}
+      {/*            Business Strategy*/}
+      {/*          </Paragraph>*/}
+      {/*        </SmallCard>*/}
+      {/*      </XStack>*/}
+      {/*    </XStack>*/}
+
+      {/*    <XStack color="$color9" jc="space-between" ai="flex-end">*/}
+      {/*      <Title>Services</Title>*/}
+      {/*      <ChevronRight />*/}
+      {/*    </XStack>*/}
+      {/*  </YStack>*/}
+      {/*</Card>*/}
+    </Link>
+  )
+}
+
+const Stats = () => {
+  return (
+    <Link to="/" underlayColor="$color9" style={{ flexGrow: 1 }}>
+      <StaticCard>
+        <YStack f={1} h="$16">
+          <XStack
+            justifyContent="space-evenly"
+            w="100%"
+            gap="$5"
+            ai="center"
+            h="100%"
+            $xs={{ flexDirection: 'column' }}
+          >
+            <SmallCard>
+              <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
+                <H4 color="$color11">5</H4>
+                <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">
+                  Years experience
+                </Paragraph>
+              </YStack>
+            </SmallCard>
+            <SmallCard>
+              <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
+                <H4 color="$color11">20+</H4>
+                <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">
+                  Clients worldwide
+                </Paragraph>
+              </YStack>
+            </SmallCard>
+            <SmallCard>
+              <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
+                <H4 color="$color11">100+</H4>
+                <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">
+                  Total projects
+                </Paragraph>
+              </YStack>
+            </SmallCard>
+            {/*<SmallCard>*/}
+            {/*  <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>*/}
+            {/*    <H4 color="$color11">3+</H4>*/}
+            {/*    <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">*/}
+            {/*      Awards won*/}
+            {/*    </Paragraph>*/}
+            {/*  </YStack>*/}
+            {/*</SmallCard>*/}
+          </XStack>
+        </YStack>
+      </StaticCard>
+    </Link>
+  )
+}
+
+const Resume = () => {
+  return (
+    <Link to="/resume" underlayColor="$color9" style={{ flex: 1, flexGrow: 1 }}>
+      <Card>
+        <YStack f={1} h="$16">
+          <YStack w="100%" h="100%" f={1}>
+            <Stack h="100%" f={1} ai="center" jc="center">
+              <Image
+                source={{
+                  uri: '/assets/icons/fade1.svg',
+                  width: 100,
+                  height: 100,
+                }}
+              />
+            </Stack>
+            <XStack color="$color9" jc="space-between" ai="flex-end">
+              <Title>Resume</Title>
+              <ChevronRight />
+            </XStack>
+          </YStack>
+        </YStack>
+      </Card>
+    </Link>
+  )
+}
+
+const Blog = () => {
+  return (
+    <Link to="/blog" underlayColor="$color9" style={{ flex: 1, flexGrow: 1 }}>
+      <Card>
+        <YStack f={1} h="$16">
+          <YStack w="100%" h="100%" f={1}>
+            <Stack h="100%" f={1} ai="center" jc="center">
+              <Image
+                source={{
+                  uri: '/assets/photos/hazel.png',
+                  width: 180,
+                  height: 180,
+                }}
+              />
+            </Stack>
+            <XStack color="$color9" jc="space-between" ai="flex-end">
+              <Title>Blog</Title>
+              <ChevronRight />
+            </XStack>
+          </YStack>
+        </YStack>
+      </Card>
+    </Link>
   )
 }

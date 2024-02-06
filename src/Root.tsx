@@ -9,6 +9,7 @@ import { Tamagui } from './pages/projects/Tamagui'
 import { Button, H4, H6, Nav, Paragraph, XStack } from 'tamagui'
 import { TopBar } from './components/TopBar'
 import { BottomBar } from './components/BottomBar'
+import { Services } from './pages/Services'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="resume" element={<Resume />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects/tamagui" element={<Tamagui />} />
           {/*<Route path="dashboard" element={<Dashboard />} />*/}
@@ -41,31 +43,9 @@ function Layout() {
     <>
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
-      {/*<Nav flexDirection="row" maxWidth={1200} ai="center" jc="space-between">*/}
-      {/*  <Link to="/">*/}
-      {/*    <H4>Natcha Pradappet</H4>*/}
-      {/*  </Link>*/}
-
-      {/*  <XStack gap="$6">*/}
-      {/*    <Paragraph>*/}
-      {/*      <Link to="/about">About</Link>*/}
-      {/*    </Paragraph>*/}
-      {/*    <Paragraph>*/}
-      {/*      <Link to="/resume">Resume</Link>*/}
-      {/*    </Paragraph>*/}
-      {/*    <Paragraph>*/}
-      {/*      <Link to="/projects">Projects</Link>*/}
-      {/*    </Paragraph>*/}
-      {/*  </XStack>*/}
-      {/*  <Link to="/contact">*/}
-      {/*    <Button>Let's talk</Button>*/}
-      {/*  </Link>*/}
-      {/*</Nav>*/}
 
       <TopBar />
-      {/* An <Outlet> renders whatever child route is currently active,
-          so you can think about this <Outlet> as a placeholder for
-          the child routes we defined above. */}
+
       <Outlet />
 
       <BottomBar />

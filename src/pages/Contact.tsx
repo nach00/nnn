@@ -15,93 +15,112 @@ import {
 } from 'tamagui'
 import React, { useState } from 'react'
 import { Card, SmallCard } from '../components/Card'
-import { ResumeItem } from '../components/ResumeItem'
-import { Experience } from '../content/Experience'
-import { Education } from '../content/Education'
-import { TopBar } from '../components/TopBar'
-import { BottomBar } from '../components/BottomBar'
 
 import emailjs from '@emailjs/browser'
+import { Eyebrow } from '../components/Eyebrow'
+
+import {
+  UXUIDesign,
+  DesignSystem,
+  WebDevelopment,
+  Strategy,
+  ChevronRight,
+  Pin,
+  Phone,
+  Email,
+} from '../assets/icons'
+import { Title } from '../components/Title'
 
 export function Contact() {
   return (
     <>
-      {/*<TopBar />*/}
-      {/*<PageLayout>*/}
-      <XStack gap="$20" miw={1200}>
-        <YStack gap="$6">
-          <YStack gap="$6">
-            <H6>Contact info</H6>
-            <XStack ai="center" gap="$4">
-              <SmallCard>
-                <Stack>{/*<Mail />*/}</Stack>
-              </SmallCard>
-              <YStack>
-                <H5 color="$color11">Mail me</H5>
-                <Paragraph>npradappet@gmail.com</Paragraph>
-              </YStack>
-            </XStack>
-            <XStack ai="center" gap="$4">
-              <SmallCard>
-                <Stack>{/*<Phone />*/}</Stack>
-              </SmallCard>
-              <YStack>
-                <H5 color="$color11">Call me</H5>
-                <Paragraph>469-909-1010</Paragraph>
-              </YStack>
-            </XStack>
-            <XStack ai="center" gap="$4">
-              <SmallCard>
-                <Stack>{/*<MapPin />*/}</Stack>
-              </SmallCard>
-              <YStack>
-                <H5 color="$color11">FIND ME</H5>
-                <Paragraph>Dallas, Texas</Paragraph>
-              </YStack>
-            </XStack>
-          </YStack>
-          <YStack marginTop="$6" gap="$6">
-            <H6>Social Info</H6>
-            <XStack gap="$2">
-              {/*<Button*/}
-              {/*  alignSelf="center"*/}
-              {/*  icon={Linkedin}*/}
-              {/*  size="$5"*/}
-              {/*  borderRadius={999}*/}
-              {/*  {...useLink({ href: 'https://www.linkedin.com/in/natcha-pradappet/' })}*/}
-              {/*/>*/}
-              {/*<Button*/}
-              {/*  alignSelf="center"*/}
-              {/*  icon={Twitter}*/}
-              {/*  size="$5"*/}
-              {/*  borderRadius={999}*/}
-              {/*  {...useLink({ href: 'https://twitter.com/nach0s/' })}*/}
-              {/*/>*/}
-              {/*<Button*/}
-              {/*  alignSelf="center"*/}
-              {/*  icon={Github}*/}
-              {/*  size="$5"*/}
-              {/*  borderRadius={999}*/}
-              {/*  {...useLink({ href: 'https://github.com/nach00/' })}*/}
-              {/*/>*/}
-            </XStack>
-          </YStack>
+      <YStack
+        m="$3"
+        $gtXs={{ w: 600, m: 'auto' }}
+        $gtSm={{ w: 800, fd: 'row' }}
+        $gtMd={{ w: 1000 }}
+        $gtLg={{ w: 1200 }}
+      >
+        <YStack gap="$6" p="$3" $gtSm={{ w: 300 }} $gtLg={{ w: 400 }}>
+          <H6>Contact Info</H6>
+          <XStack gap="$3" ai="center">
+            <Stack
+              bc="$color3"
+              p="$3"
+              br="$5"
+              boc="$color4"
+              bw="$1"
+              color="$color11"
+              style={{
+                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              }}
+            >
+              <Email />
+            </Stack>
+            <YStack>
+              <Eyebrow>Email me</Eyebrow>
+              <Paragraph>npradappet@gmail.com</Paragraph>
+            </YStack>
+          </XStack>
+          <XStack gap="$3" ai="center">
+            <Stack
+              bc="$color3"
+              p="$3"
+              br="$5"
+              boc="$color4"
+              bw="$1"
+              color="$color11"
+              style={{
+                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              }}
+            >
+              <Phone />
+            </Stack>
+            <YStack>
+              <Eyebrow>Call me</Eyebrow>
+              <Paragraph>469-909-1010</Paragraph>
+            </YStack>
+          </XStack>
+          <XStack gap="$3" ai="center">
+            <Stack
+              bc="$color3"
+              p="$3"
+              br="$5"
+              boc="$color4"
+              bw="$1"
+              color="$color11"
+              style={{
+                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              }}
+            >
+              <Pin />
+            </Stack>
+            <YStack>
+              <Eyebrow>FIND ME</Eyebrow>
+              <Paragraph>Dallas, Texas</Paragraph>
+            </YStack>
+          </XStack>
         </YStack>
 
-        <Card fixedWidth="100%" flex="1">
-          <YStack gap="$6" p="$6" w="100%" f={1}>
-            <XStack gap="$3" w="100%" f={1}>
-              <H1>Let's work</H1>
-              <H1 color="$color9">together.</H1>
-              {/*<H1>together</H1>*/}
-            </XStack>
-
+        <Stack p="$3" $gtSm={{ w: 500 }} $gtMd={{ w: 700 }} $gtLg={{ w: 800 }}>
+          <YStack
+            boc="$color4"
+            bw="$1"
+            p="$6"
+            bc="$color3"
+            br="$10"
+            style={{
+              boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+            }}
+          >
+            <YStack gap="$3" w="100%" f={1} marginBottom="$6" $gtXs={{ fd: 'row' }}>
+              <H1>Send a</H1>
+              <H1 color="$color9">message.</H1>
+            </YStack>
             <EmailForm />
           </YStack>
-        </Card>
-      </XStack>
-      {/*</PageLayout>*/}
-      {/*<BottomBar />*/}
+        </Stack>
+      </YStack>
     </>
   )
 }

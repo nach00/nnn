@@ -12,13 +12,15 @@ export function Card({ children, link }: CardTypes) {
     <Stack
       bc="$color3"
       p="$6"
+      gap="$6"
+      w="100%"
+      f={1}
       animation="bouncy"
       hoverStyle={{ scale: 0.925 }}
       pressStyle={{ scale: 0.875 }}
       boc="$color4"
       bw="$1"
       br="$10"
-      m="$3"
     >
       {children}
     </Stack>
@@ -27,7 +29,7 @@ export function Card({ children, link }: CardTypes) {
 
 export function StaticCard({ children }) {
   return (
-    <Stack bc="$color3" p="$6" gap="$6" f={1} boc="$color4" bw="$1" br="$10" m="$3">
+    <Stack bc="$color3" p="$6" gap="$6" w="100%" f={1} boc="$color4" bw="$1" br="$10">
       {children}
     </Stack>
   )
