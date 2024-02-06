@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, Link } from 'react-router-dom'
+import { Routes, Route, Outlet, Link } from 'react-router-native'
 
 import { Home } from './pages/Home'
 import { About } from './pages/About'

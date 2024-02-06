@@ -60,7 +60,7 @@ export function Fossil() {
                 a tight schedule and that they were consistent with the brand.
               </Paragraph>
               <Link to="/fossil/FSL.html">
-                <Button>Sample email</Button>
+                <Button theme="active">Sample email</Button>
               </Link>
             </YStack>
             <YStack
