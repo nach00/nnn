@@ -183,14 +183,14 @@ export const Home = () => {
               <Stack
                 bc="$color3"
                 p="$6"
-                animation="bouncy"
-                hoverStyle={{
-                  scale: 0.925,
-                  rotate: '3deg',
-                  // backgroundColor: '$yellow3',
-                  // borderColor: '$yellow4',
-                }}
-                pressStyle={{ scale: 0.875, rotate: '-3deg' }}
+                // animation="bouncy"
+                // hoverStyle={{
+                //   scale: 0.925,
+                //   rotate: '3deg',
+                //   backgroundColor: '$yellow3',
+                //   borderColor: '$yellow4',
+                // }}
+                // pressStyle={{ scale: 0.875, rotate: '-3deg' }}
                 boc="$color4"
                 bw="$1"
                 br="$10"
