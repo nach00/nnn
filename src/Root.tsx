@@ -28,6 +28,7 @@ export default function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="projects/tamagui" element={<Tamagui />} />
           <Route path="projects/fossil" element={<Fossil />} />
+          {/*<Route path="fossil/FSL.html" />*/}
           {/*<Route path="dashboard" element={<Dashboard />} />*/}
 
           {/* Using path="*"" means "match anything", so this route

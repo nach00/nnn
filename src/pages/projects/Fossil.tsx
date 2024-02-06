@@ -59,6 +59,9 @@ export function Fossil() {
                 devices. I worked closely with the marketing team to ensure that the emails were on
                 a tight schedule and that they were consistent with the brand.
               </Paragraph>
+              <Link to="/fossil/FSL.html">
+                <Button>Sample email</Button>
+              </Link>
             </YStack>
             <YStack
               bc="$color4"
