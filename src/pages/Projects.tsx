@@ -30,9 +30,9 @@ export function Projects() {
             <Stack
               bc="$color3"
               p="$6"
-              animation="bouncy"
-              hoverStyle={{ scale: 0.925 }}
-              pressStyle={{ scale: 0.875 }}
+              // animation="bouncy"
+              // hoverStyle={{ scale: 0.925 }}
+              // pressStyle={{ scale: 0.875 }}
               boc="$color4"
               bw="$1"
               br="$10"
