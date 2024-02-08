@@ -555,7 +555,7 @@ export const Home = () => {
                   </Stack>
 
                   <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>
-                    <Title>Blog</Title>
+                    <Title>Promo</Title>
                     <Stack>
                       <ChevronRight />
                     </Stack>
