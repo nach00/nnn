@@ -13,7 +13,7 @@ import {
   Separator,
 } from 'tamagui'
 import React from 'react'
-import { Email, Instagram, LinkedIn } from '../assets/icons'
+import { Email, Github, Instagram, LinkedIn } from '../assets/icons'
 import { Link } from 'react-router-dom'
 
 export const BottomBar = () => {
@@ -36,8 +36,15 @@ export const BottomBar = () => {
           <Link to="mailto:npradappet@gmail.com">
             <Email />
           </Link>
-          <LinkedIn />
-          <Instagram />
+          <a href="https://www.linkedin.com/in/natcha-pradappet/">
+            <LinkedIn />
+          </a>
+          <a href="https://www.instagram.com/planetnachodesigns/">
+            <Instagram />
+          </a>
+          <a href="https://github.com/nach00/">
+            <Github />
+          </a>
         </XStack>
       </XStack>
     </YStack>
