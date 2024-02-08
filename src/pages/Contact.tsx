@@ -16,7 +16,7 @@ import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { Eyebrow } from '../components/Eyebrow'
 
-import { Pin, Phone, Email } from '../assets/icons'
+import { Pin, Phone, Email, Meeting } from '../assets/icons'
 
 export function Contact() {
   return (
@@ -85,6 +85,27 @@ export function Contact() {
             <YStack>
               <Eyebrow>FIND ME</Eyebrow>
               <Paragraph>Dallas, Texas</Paragraph>
+            </YStack>
+          </XStack>
+          <XStack gap="$3" ai="center">
+            <Stack
+              bc="$color3"
+              p="$3"
+              br="$5"
+              boc="$color4"
+              bw="$1"
+              color="$color11"
+              style={{
+                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              }}
+            >
+              <Meeting />
+            </Stack>
+            <YStack>
+              <Eyebrow>Meet ME</Eyebrow>
+              <a href="https://calendly.com/npradappet/alpha" style={{ textDecoration: 'none' }}>
+                <Button size="$2">Book an appointment</Button>
+              </a>
             </YStack>
           </XStack>
         </YStack>
@@ -181,7 +202,7 @@ const EmailForm = () => {
       <AlertDialog>
         <AlertDialog.Trigger asChild>
           <Form.Trigger asChild>
-            <Button>Show Alert</Button>
+            <Button>Send</Button>
           </Form.Trigger>
         </AlertDialog.Trigger>
 
