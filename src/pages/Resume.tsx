@@ -35,7 +35,12 @@ export function Resume() {
               <Link to="/contact">
                 <Button>Contact me</Button>
               </Link>
-              <Button>Download resume</Button>
+              <a
+                href="https://drive.google.com/file/d/1CtfntNdtceR6QrpqUcvav9MngrgLtbOf/view?usp=sharing"
+                style={{ textDecoration: 'none' }}
+              >
+                <Button>Download resume</Button>
+              </a>
             </YStack>
           </YStack>
         </YStack>
