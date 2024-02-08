@@ -3,7 +3,7 @@ import '../assets/styles.css'
 import { Title } from '../components/Title'
 import { Eyebrow } from '../components/Eyebrow'
 import { UXUIDesign, DesignSystem, WebDevelopment, Strategy, ChevronRight } from '../assets/icons'
-import { H4, Image, Paragraph, Stack, XStack, YStack } from 'tamagui'
+import { H1, H4, Image, Paragraph, Stack, XStack, YStack } from 'tamagui'
 import { Link } from 'react-router-native'
 
 export const Home = () => {
@@ -566,6 +566,347 @@ export const Home = () => {
           </YStack>
         </YStack>
       </YStack>
+      <XStack
+        m="auto"
+        h={600}
+        w="100vw"
+        $gtXs={{ w: 600, h: 600 }}
+        $gtSm={{ w: 800, h: 400 }}
+        $gtMd={{ w: 1000, h: 400 }}
+        $gtLg={{ w: 1200, h: 400 }}
+        p="$3"
+      >
+        <Stack
+          bc="$color3"
+          p="$6"
+          boc="$color4"
+          bw="$1"
+          br="$10"
+          w="100%"
+          style={{
+            boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+          }}
+        >
+          <YStack ai="center" gap="$2" h="100%" f={1}>
+            <YStack gap="$2" $gtSm={{ fd: 'row', gap: '$2' }}>
+              <XStack gap="$2">
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/baker-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    Baker & Taylor
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/banfield-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    Banfield Pet Hospital
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/bimbo-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    Bimbo Bakeries
+                  </Paragraph>
+                </Stack>
+              </XStack>
+              <XStack gap="$2">
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/ggwp-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    Good Game, Well Played
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/njevity-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    Njevity
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/pawzpurr-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    PawzPurr
+                  </Paragraph>
+                </Stack>
+              </XStack>
+            </YStack>
+            <YStack gap="$2" $gtSm={{ fd: 'row', gap: '$2' }}>
+              <XStack gap="$2">
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/rfid-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    RFID Interlock
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/scoutflix-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    ScoutFlix
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/sprint-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    Sprint
+                  </Paragraph>
+                </Stack>
+              </XStack>
+              <XStack gap="$2">
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/topgolf-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    TopGolf
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/upquest-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    Upquest
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                  p="$1"
+                >
+                  <Image
+                    source={{
+                      uri: '/assets/logos/waltz-white.svg',
+                      width: 30,
+                      height: 30,
+                    }}
+                  />
+                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    Waltz Health
+                  </Paragraph>
+                </Stack>
+              </XStack>
+            </YStack>
+          </YStack>
+
+          <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+            <Title>Past clients include</Title>
+          </XStack>
+        </Stack>
+      </XStack>
     </>
   )
 }
