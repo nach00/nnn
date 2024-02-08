@@ -29,6 +29,7 @@ module.exports = {
     },
   },
   devServer: {
+    historyApiFallback: true,
     client: {
       overlay: false,
       logging: 'warn',

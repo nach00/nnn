@@ -20,6 +20,8 @@
     "@tamagui/font-inter": "^1.88.13",
     "@tamagui/react-native-svg": "^1.88.13",
     "@tamagui/themes": "^1.88.13",
+    "@tamagui/toast": "^1.89.15",
+    "burnt": "^0.12.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.3",
     "prettier": "latest",

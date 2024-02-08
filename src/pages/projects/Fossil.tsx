@@ -59,7 +59,7 @@ export function Fossil() {
                 devices. I worked closely with the marketing team to ensure that the emails were on
                 a tight schedule and that they were consistent with the brand.
               </Paragraph>
-              <Link to="/fossil/FSL.html">
+              <Link to="/fsl">
                 <Button theme="active">Sample email</Button>
               </Link>
             </YStack>
@@ -87,16 +87,6 @@ export function Fossil() {
           </YStack>
 
           <YStack m="$3" gap="$4">
-            {/*<Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }}>*/}
-            {/*  <Image*/}
-            {/*    source={{*/}
-            {/*      uri: '/assets/portfolio/fossil/fossil-multi-mock.png',*/}
-            {/*      width: '100%',*/}
-            {/*      height: '100%',*/}
-            {/*    }}*/}
-            {/*    br="$10"*/}
-            {/*  />*/}
-            {/*</Stack>*/}
             <YStack gap="$4" $gtSm={{ fd: 'row' }}>
               <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
                 <Image
@@ -106,6 +96,8 @@ export function Fossil() {
                     height: '100%',
                   }}
                   br="$10"
+                  boc="$color4"
+                  bw="$1"
                 />
               </Stack>
               <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>

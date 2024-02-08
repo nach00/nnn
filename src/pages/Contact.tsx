@@ -1,35 +1,24 @@
 import {
-  H2,
   H6,
-  H5,
   Stack,
   H1,
   Paragraph,
   XStack,
   YStack,
-  Image,
   Form,
   Input,
   TextArea,
   Button,
+  Label,
+  Switch,
+  AlertDialog,
 } from 'tamagui'
 import React, { useState } from 'react'
-import { Card, SmallCard } from '../components/Card'
 
 import emailjs from '@emailjs/browser'
 import { Eyebrow } from '../components/Eyebrow'
 
-import {
-  UXUIDesign,
-  DesignSystem,
-  WebDevelopment,
-  Strategy,
-  ChevronRight,
-  Pin,
-  Phone,
-  Email,
-} from '../assets/icons'
-import { Title } from '../components/Title'
+import { Pin, Phone, Email } from '../assets/icons'
 
 export function Contact() {
   return (
@@ -121,6 +110,8 @@ export function Contact() {
           </YStack>
         </Stack>
       </YStack>
+
+      {/*<Success />*/}
     </>
   )
 }
@@ -135,7 +126,7 @@ const EmailForm = () => {
 
     const serviceId = 'service_f8tjezh'
     const templateId = 'template_9f5uyux'
-    const publicKey = '4-T2suWd5232K-kKR___'
+    const publicKey = '4-T2suWd5232K-kKR'
 
     const templateParams = {
       from_name: name,
@@ -144,32 +135,23 @@ const EmailForm = () => {
       message: message,
     }
 
-    const toast = useToastController()
-
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log('Email sent successfully!', response)
-        toast.show('Email sent successfully!', {
-          message: "I'll get back to you as soon as possible.",
-        })
+        // Success()
         setName('')
         setEmail('')
         setMessage('')
       })
       .catch((error) => {
         console.error('Error sending email:', error)
-        toast.show('Error sending email, please try again', {
-          message: 'or email me directly at npradappet@gmail.com.',
-        })
       })
   }
 
   return (
     <Form onSubmit={onSubmit} gap="$4">
-      {/*<XStack jc="flex-end" alignItems="flex-start" gap="$4">*/}
       <XStack>
-        {/*<Label htmlFor="name">Name</Label>*/}
         <Input
           inputMode="text"
           id="name"
@@ -179,10 +161,7 @@ const EmailForm = () => {
           w="100%"
         />
       </XStack>
-      {/*<XStack jc="flex-end" alignItems="flex-start" gap="$4">*/}
       <XStack>
-        {/*<Label htmlFor="email">Email</Label>*/}
-
         <Input
           inputMode="email"
           id="email"
@@ -192,10 +171,7 @@ const EmailForm = () => {
           w="100%"
         />
       </XStack>
-      {/*<XStack jc="flex-end" alignItems="flex-start" gap="$4">*/}
       <XStack>
-        {/*<Label htmlFor="message">Message</Label>*/}
-
         <TextArea
           id="message"
           placeholder="Your message here"
@@ -205,11 +181,106 @@ const EmailForm = () => {
         />
       </XStack>
 
-      <Form.Trigger asChild>
-        {/*<Stack ai="flex-end">*/}
-        <Button w="100%">Send Message</Button>
-        {/*</Stack>*/}
-      </Form.Trigger>
+      <AlertDialog>
+        <AlertDialog.Trigger asChild>
+          <Form.Trigger asChild>
+            <Button>Show Alert</Button>
+          </Form.Trigger>
+        </AlertDialog.Trigger>
+
+        <AlertDialog.Portal>
+          <AlertDialog.Overlay
+            key="overlay"
+            animation="lazy"
+            opacity={0.5}
+            enterStyle={{ opacity: 0 }}
+            exitStyle={{ opacity: 0 }}
+          />
+          <AlertDialog.Content
+            bordered
+            elevate
+            key="content"
+            animation={[
+              'quick',
+              {
+                opacity: {
+                  overshootClamping: true,
+                },
+              },
+            ]}
+            enterStyle={{ x: 0, y: -20, opacity: 0, scale: 0.9 }}
+            exitStyle={{ x: 0, y: 10, opacity: 0, scale: 0.95 }}
+            x={0}
+            scale={1}
+            opacity={1}
+            y={0}
+          >
+            <YStack gap="$3">
+              <AlertDialog.Title>Success!</AlertDialog.Title>
+              <AlertDialog.Description>
+                Thanks for reaching out! I'll get back to you as soon as possible.
+              </AlertDialog.Description>
+
+              <XStack gap="$3" justifyContent="flex-end">
+                <AlertDialog.Action asChild>
+                  <Button theme="active">Dismiss</Button>
+                </AlertDialog.Action>
+              </XStack>
+            </YStack>
+          </AlertDialog.Content>
+        </AlertDialog.Portal>
+      </AlertDialog>
     </Form>
+  )
+}
+export function Success() {
+  return (
+    <AlertDialog>
+      {/*<AlertDialog.Trigger asChild>*/}
+      {/*  <Button>Show Alert</Button>*/}
+      {/*</AlertDialog.Trigger>*/}
+
+      <AlertDialog.Portal>
+        <AlertDialog.Overlay
+          key="overlay"
+          animation="lazy"
+          opacity={0.5}
+          enterStyle={{ opacity: 0 }}
+          exitStyle={{ opacity: 0 }}
+        />
+        <AlertDialog.Content
+          bordered
+          elevate
+          key="content"
+          animation={[
+            'quick',
+            {
+              opacity: {
+                overshootClamping: true,
+              },
+            },
+          ]}
+          enterStyle={{ x: 0, y: -20, opacity: 0, scale: 0.9 }}
+          exitStyle={{ x: 0, y: 10, opacity: 0, scale: 0.95 }}
+          x={0}
+          scale={1}
+          opacity={1}
+          y={0}
+        >
+          <YStack gap="$3">
+            <AlertDialog.Title>Success!</AlertDialog.Title>
+            <AlertDialog.Description>
+              Thanks for reaching out! I'll get back to you as soon as possible.
+            </AlertDialog.Description>
+
+            <XStack gap="$3" justifyContent="flex-end">
+              <AlertDialog.Action asChild>
+                <Button theme="active">Dismiss</Button>
+              </AlertDialog.Action>
+            </XStack>
+          </YStack>
+        </AlertDialog.Content>
+      </AlertDialog.Portal>
+    </AlertDialog>
   )
 }

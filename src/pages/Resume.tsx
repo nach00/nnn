@@ -3,6 +3,7 @@ import { Experience } from '../content/Experience'
 import { Education } from '../content/Education'
 import { Overview } from '../content/Overview'
 import { Awards } from '../content/Awards'
+import { Link } from 'react-router-native'
 
 export function Resume() {
   return (
@@ -31,7 +32,10 @@ export function Resume() {
             <YStack gap="$3" ai="center" mt="$6">
               <H2 ta="center">Natcha Pradappet</H2>
               <Paragraph>@npradappet</Paragraph>
-              <Button>Contact me</Button>
+              <Link to="/contact">
+                <Button>Contact me</Button>
+              </Link>
+              <Button>Download resume</Button>
             </YStack>
           </YStack>
         </YStack>
