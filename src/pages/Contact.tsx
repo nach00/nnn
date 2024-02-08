@@ -9,8 +9,6 @@ import {
   Input,
   TextArea,
   Button,
-  Label,
-  Switch,
   AlertDialog,
 } from 'tamagui'
 import React, { useState } from 'react'
@@ -139,7 +137,6 @@ const EmailForm = () => {
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log('Email sent successfully!', response)
-        // Success()
         setName('')
         setEmail('')
         setMessage('')
@@ -191,7 +188,6 @@ const EmailForm = () => {
         <AlertDialog.Portal>
           <AlertDialog.Overlay
             key="overlay"
-            animation="lazy"
             opacity={0.5}
             enterStyle={{ opacity: 0 }}
             exitStyle={{ opacity: 0 }}
