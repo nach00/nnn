@@ -45,6 +45,15 @@ export const BottomBar = () => {
           <a href="https://github.com/nach00/">
             <Github />
           </a>
+          <a href="https://planetnacho.com">
+            <Image
+              source={{
+                uri: '/assets/logos/planet-nacho-color.svg',
+                width: 28,
+                height: 28,
+              }}
+            />
+          </a>
         </XStack>
       </XStack>
     </YStack>
