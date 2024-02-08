@@ -111,16 +111,6 @@ export function About() {
               <XStack gap="$2" ai="center">
                 <Image
                   source={{
-                    uri: '/assets/logos/software/arduino.svg',
-                    width: 20,
-                    height: 20,
-                  }}
-                />
-                <Paragraph>Arduino</Paragraph>
-              </XStack>
-              <XStack gap="$2" ai="center">
-                <Image
-                  source={{
                     uri: '/assets/logos/software/bootstrap.svg',
                     width: 20,
                     height: 20,
@@ -191,16 +181,6 @@ export function About() {
               <XStack gap="$2" ai="center">
                 <Image
                   source={{
-                    uri: '/assets/logos/software/raspberry-pi.svg',
-                    width: 20,
-                    height: 20,
-                  }}
-                />
-                <Paragraph>Raspberry Pi</Paragraph>
-              </XStack>
-              <XStack gap="$2" ai="center">
-                <Image
-                  source={{
                     uri: '/assets/logos/software/react.svg',
                     width: 20,
                     height: 20,
@@ -249,16 +229,7 @@ export function About() {
                 />
                 <Paragraph>Three.js</Paragraph>
               </XStack>
-              <XStack gap="$2" ai="center">
-                <Image
-                  source={{
-                    uri: '/assets/logos/software/vim.svg',
-                    width: 20,
-                    height: 20,
-                  }}
-                />
-                <Paragraph>Vim</Paragraph>
-              </XStack>
+
               <XStack gap="$2" ai="center">
                 <Image
                   source={{
