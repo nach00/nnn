@@ -32,7 +32,7 @@ export const BottomBar = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <XStack gap="$10" ai="center">
+        <XStack gap="$6" ai="center">
           <Link to="mailto:npradappet@gmail.com">
             <Email />
           </Link>
@@ -48,7 +48,7 @@ export const BottomBar = () => {
           <a href="https://planetnacho.com">
             <Image
               source={{
-                uri: '/assets/logos/planet-nacho-color.svg',
+                uri: '/assets/logos/planet-nacho-white.svg',
                 width: 28,
                 height: 28,
               }}

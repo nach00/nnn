@@ -32,15 +32,15 @@ export function Contact() {
           <H6>Contact Info</H6>
           <XStack gap="$3" ai="center">
             <Stack
-              bc="$color3"
+              // bc="$color3"
               p="$3"
-              br="$5"
-              boc="$color4"
-              bw="$1"
+              // br="$5"
+              // boc="$color4"
+              // bw="$1"
               color="$color11"
-              style={{
-                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-              }}
+              // style={{
+              //   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              // }}
             >
               <Email />
             </Stack>
@@ -51,15 +51,15 @@ export function Contact() {
           </XStack>
           <XStack gap="$3" ai="center">
             <Stack
-              bc="$color3"
+              // bc="$color3"
               p="$3"
-              br="$5"
-              boc="$color4"
-              bw="$1"
+              // br="$5"
+              // boc="$color4"
+              // bw="$1"
               color="$color11"
-              style={{
-                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-              }}
+              // style={{
+              //   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              // }}
             >
               <Phone />
             </Stack>
@@ -70,15 +70,15 @@ export function Contact() {
           </XStack>
           <XStack gap="$3" ai="center">
             <Stack
-              bc="$color3"
+              // bc="$color3"
               p="$3"
-              br="$5"
-              boc="$color4"
-              bw="$1"
+              // br="$5"
+              // boc="$color4"
+              // bw="$1"
               color="$color11"
-              style={{
-                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-              }}
+              // style={{
+              //   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              // }}
             >
               <Pin />
             </Stack>
@@ -89,15 +89,15 @@ export function Contact() {
           </XStack>
           <XStack gap="$3" ai="center">
             <Stack
-              bc="$color3"
+              // bc="$color3"
               p="$3"
-              br="$5"
-              boc="$color4"
-              bw="$1"
+              // br="$5"
+              // boc="$color4"
+              // bw="$1"
               color="$color11"
-              style={{
-                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-              }}
+              // style={{
+              //   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              // }}
             >
               <Meeting />
             </Stack>
@@ -122,8 +122,8 @@ export function Contact() {
             }}
           >
             <YStack gap="$3" w="100%" f={1} marginBottom="$6" $gtXs={{ fd: 'row' }}>
-              <H1>Send a</H1>
-              <H1 color="$color9">message.</H1>
+              <H1>Send a message.</H1>
+              {/*<H1 color="$color9">message.</H1>*/}
             </YStack>
             <EmailForm />
           </YStack>
@@ -202,7 +202,7 @@ const EmailForm = () => {
       <AlertDialog>
         <AlertDialog.Trigger asChild>
           <Form.Trigger asChild>
-            <Button>Send</Button>
+            <Button theme="active">Send</Button>
           </Form.Trigger>
         </AlertDialog.Trigger>
 

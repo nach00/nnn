@@ -28,7 +28,7 @@ export const ResumeItem = ({
       </Paragraph>
       {/*<Paragraph color="$color11">{location}</Paragraph>*/}
       <YStack gap="$1">
-        <Paragraph color="$color9" size="$6" fontWeight="bold">
+        <Paragraph color="$color12" size="$6" fontWeight="bold">
           {title}
         </Paragraph>
         <Paragraph color="$color11">

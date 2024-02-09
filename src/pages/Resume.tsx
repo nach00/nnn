@@ -31,7 +31,7 @@ export function Resume() {
             />
             <YStack gap="$3" ai="center" mt="$6">
               <H2 ta="center">Natcha Pradappet</H2>
-              <Paragraph>@npradappet</Paragraph>
+              {/*<Paragraph>@npradappet</Paragraph>*/}
               <Link to="/contact">
                 <Button>Contact me</Button>
               </Link>
@@ -51,9 +51,9 @@ export function Resume() {
           $gtMd={{ w: 600 }}
           $gtLg={{ w: 800 }}
         >
-          <Stack gap="$6">
-            <Overview />
-          </Stack>
+          {/*<Stack gap="$6">*/}
+          {/*  <Overview />*/}
+          {/*</Stack>*/}
 
           <Stack gap="$6">
             <Experience />

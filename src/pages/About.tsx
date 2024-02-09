@@ -1,4 +1,18 @@
-import { H2, H6, Stack, H1, Paragraph, XStack, YStack, Image, H5, H4, H3, Text } from 'tamagui'
+import {
+  H2,
+  H6,
+  Stack,
+  H1,
+  Paragraph,
+  XStack,
+  YStack,
+  Image,
+  H5,
+  H4,
+  H3,
+  Text,
+  Button,
+} from 'tamagui'
 import React, { useState } from 'react'
 import { Card, SmallCard, StaticCard } from '../components/Card'
 import { ResumeItem } from '../components/ResumeItem'
@@ -10,6 +24,7 @@ import { Eyebrow } from '../components/Eyebrow'
 import { Title } from '../components/Title'
 import { ChevronRight, DesignSystem, UXUIDesign, WebDevelopment, Sparkle } from '../assets/icons'
 import { Link } from 'react-router-native'
+import { Overview } from '../content/Overview'
 
 export function About() {
   return (
@@ -44,13 +59,7 @@ export function About() {
           <YStack ai="center" $gtMd={{ w: 600 }} $gtLg={{ w: 800 }}>
             <XStack ai="center" gap="$2">
               <Sparkle />
-              <H3
-                tt="uppercase"
-                marginVertical="$6"
-                $gtXs={{ size: '$10', textTransform: 'uppercase' }}
-              >
-                Self-summary
-              </H3>
+              <H3 tt="uppercase">Self-summary</H3>
               <Sparkle />
             </XStack>
 
@@ -74,12 +83,17 @@ export function About() {
                   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
                 }}
               >
-                <H3>Natcha Pradappet</H3>
-                <Paragraph>
-                  I am a Dallas-based UX/UI designer and front-end developer with a focus on web
-                  design, information architecture, and design systems. I have a diverse range of
-                  experience having worked across various fields and industries.
-                </Paragraph>
+                <Overview />
+
+                <Link to="/resume">
+                  <Button>View resume</Button>
+                </Link>
+                {/*<H3>Natcha Pradappet</H3>*/}
+                {/*<Paragraph>*/}
+                {/*  I am a Dallas-based UX/UI designer and front-end developer with a focus on web*/}
+                {/*  design, information architecture, and design systems. I have a diverse range of*/}
+                {/*  experience having worked across various fields and industries.*/}
+                {/*</Paragraph>*/}
               </YStack>
             </XStack>
           </YStack>
@@ -475,49 +489,49 @@ export function About() {
           </XStack>
         </YStack>
 
-        <Link to="/resume" underlayColor="$color9">
-          <XStack
-            h={300}
-            w="100vw"
-            $gtXs={{ w: 600 }}
-            $gtSm={{ w: 800 }}
-            $gtMd={{ w: 1000 }}
-            $gtLg={{ w: 1200 }}
-            p="$3"
-          >
-            <Stack
-              bc="$color3"
-              p="$6"
-              animation="bouncy"
-              hoverStyle={{ scale: 0.925 }}
-              pressStyle={{ scale: 0.875 }}
-              boc="$color4"
-              bw="$1"
-              br="$10"
-              w="100%"
-              style={{
-                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-              }}
-            >
-              <Stack ai="center" jc="center" h="100%" f={1}>
-                <Image
-                  source={{
-                    uri: '/assets/icons/fade1.svg',
-                    width: 150,
-                    height: 150,
-                  }}
-                />
-              </Stack>
+        {/*<Link to="/resume" underlayColor="$color9">*/}
+        {/*  <XStack*/}
+        {/*    h={300}*/}
+        {/*    w="100vw"*/}
+        {/*    $gtXs={{ w: 600 }}*/}
+        {/*    $gtSm={{ w: 800 }}*/}
+        {/*    $gtMd={{ w: 1000 }}*/}
+        {/*    $gtLg={{ w: 1200 }}*/}
+        {/*    p="$3"*/}
+        {/*  >*/}
+        {/*    <Stack*/}
+        {/*      bc="$color3"*/}
+        {/*      p="$6"*/}
+        {/*      animation="bouncy"*/}
+        {/*      hoverStyle={{ scale: 0.925 }}*/}
+        {/*      pressStyle={{ scale: 0.875 }}*/}
+        {/*      boc="$color4"*/}
+        {/*      bw="$1"*/}
+        {/*      br="$10"*/}
+        {/*      w="100%"*/}
+        {/*      style={{*/}
+        {/*        boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',*/}
+        {/*      }}*/}
+        {/*    >*/}
+        {/*      <Stack ai="center" jc="center" h="100%" f={1}>*/}
+        {/*        <Image*/}
+        {/*          source={{*/}
+        {/*            uri: '/assets/icons/fade1.svg',*/}
+        {/*            width: 150,*/}
+        {/*            height: 150,*/}
+        {/*          }}*/}
+        {/*        />*/}
+        {/*      </Stack>*/}
 
-              <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>
-                <Title>Resume</Title>
-                <Stack>
-                  <ChevronRight />
-                </Stack>
-              </XStack>
-            </Stack>
-          </XStack>
-        </Link>
+        {/*      <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>*/}
+        {/*        <Title>Resume</Title>*/}
+        {/*        <Stack>*/}
+        {/*          <ChevronRight />*/}
+        {/*        </Stack>*/}
+        {/*      </XStack>*/}
+        {/*    </Stack>*/}
+        {/*  </XStack>*/}
+        {/*</Link>*/}
       </YStack>
     </>
   )

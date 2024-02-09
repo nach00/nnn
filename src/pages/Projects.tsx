@@ -51,7 +51,7 @@ export function Projects() {
                 f={1}
                 br="$7"
               />
-              <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+              <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
                 <YStack f={1} gap="$1">
                   <Eyebrow>Design system</Eyebrow>
                   <Title>Tamagui</Title>
@@ -97,7 +97,7 @@ export function Projects() {
                 f={1}
                 br="$7"
               />
-              <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+              <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
                 <YStack f={1} gap="$1">
                   <Eyebrow>Email development</Eyebrow>
                   <Title>Fossil</Title>

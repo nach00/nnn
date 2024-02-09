@@ -47,7 +47,7 @@ export const Home = () => {
                 f={1}
                 br="$7"
               />
-              <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+              <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
                 <YStack f={1} gap="$1">
                   <Eyebrow>Designer & Developer</Eyebrow>
                   <Title>Natcha Pradappet</Title>
@@ -104,7 +104,7 @@ export const Home = () => {
                     />
                   </Stack>
 
-                  <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>
+                  <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
                     <Title>Projects</Title>
                     <Stack>
                       <ChevronRight />
@@ -156,7 +156,7 @@ export const Home = () => {
                     />
                   </Stack>
 
-                  <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>
+                  <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
                     <Title>Featured</Title>
                     <Stack>
                       <ChevronRight />
@@ -210,7 +210,13 @@ export const Home = () => {
                     br="$7"
                   >
                     <UXUIDesign />
-                    <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    <Paragraph
+                      textAlign="center"
+                      tt="uppercase"
+                      size="$1"
+                      color="$color12"
+                      fontWeight="bold"
+                    >
                       UX/UI Design
                     </Paragraph>
                   </Stack>
@@ -228,7 +234,13 @@ export const Home = () => {
                     br="$7"
                   >
                     <DesignSystem />
-                    <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    <Paragraph
+                      textAlign="center"
+                      tt="uppercase"
+                      size="$1"
+                      color="$color12"
+                      fontWeight="bold"
+                    >
                       Design Systems
                     </Paragraph>
                   </Stack>
@@ -246,13 +258,19 @@ export const Home = () => {
                     br="$7"
                   >
                     <WebDevelopment />
-                    <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    <Paragraph
+                      textAlign="center"
+                      tt="uppercase"
+                      size="$1"
+                      color="$color12"
+                      fontWeight="bold"
+                    >
                       Front-end Development
                     </Paragraph>
                   </Stack>
                 </XStack>
 
-                <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
                   <Title>Services</Title>
                   <ChevronRight />
                 </XStack>
@@ -309,7 +327,13 @@ export const Home = () => {
                     br="$7"
                   >
                     <UXUIDesign />
-                    <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    <Paragraph
+                      textAlign="center"
+                      tt="uppercase"
+                      size="$1"
+                      color="$color12"
+                      fontWeight="bold"
+                    >
                       UX/UI Design
                     </Paragraph>
                   </Stack>
@@ -327,7 +351,13 @@ export const Home = () => {
                     br="$7"
                   >
                     <DesignSystem />
-                    <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    <Paragraph
+                      textAlign="center"
+                      tt="uppercase"
+                      size="$1"
+                      color="$color12"
+                      fontWeight="bold"
+                    >
                       Design Systems
                     </Paragraph>
                   </Stack>
@@ -346,13 +376,19 @@ export const Home = () => {
                     br="$7"
                   >
                     <WebDevelopment />
-                    <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                    <Paragraph
+                      textAlign="center"
+                      tt="uppercase"
+                      size="$1"
+                      color="$color12"
+                      fontWeight="bold"
+                    >
                       Front-end Development
                     </Paragraph>
                   </Stack>
                 </XStack>
 
-                <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
                   <Title>Services</Title>
                   <ChevronRight />
                 </XStack>
@@ -498,7 +534,7 @@ export const Home = () => {
                     />
                   </Stack>
 
-                  <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>
+                  <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
                     <Title>Resume</Title>
                     <Stack>
                       <ChevronRight />
@@ -554,7 +590,7 @@ export const Home = () => {
                     />
                   </Stack>
 
-                  <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>
+                  <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
                     <Title>Promo</Title>
                     <Stack>
                       <ChevronRight />
@@ -587,23 +623,14 @@ export const Home = () => {
             boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
           }}
         >
-          <YStack ai="center" gap="$2" h="100%" f={1}>
+          <XStack jc="center">
+            <Title>Past clients include</Title>
+          </XStack>
+
+          <YStack ai="center" jc="center" gap="$2" h="100%" f={1}>
             <YStack gap="$2" $gtSm={{ fd: 'row', gap: '$2' }}>
               <XStack gap="$2">
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/baker-white.svg',
@@ -611,24 +638,17 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     Baker & Taylor
                   </Paragraph>
                 </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/banfield-white.svg',
@@ -636,24 +656,17 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     Banfield Pet Hospital
                   </Paragraph>
                 </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/bimbo-white.svg',
@@ -661,26 +674,19 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     Bimbo Bakeries
                   </Paragraph>
                 </Stack>
               </XStack>
               <XStack gap="$2">
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/ggwp-white.svg',
@@ -688,24 +694,17 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     Good Game, Well Played
                   </Paragraph>
                 </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/njevity-white.svg',
@@ -713,24 +712,17 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     Njevity
                   </Paragraph>
                 </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/pawzpurr-white.svg',
@@ -738,7 +730,13 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     PawzPurr
                   </Paragraph>
                 </Stack>
@@ -746,20 +744,7 @@ export const Home = () => {
             </YStack>
             <YStack gap="$2" $gtSm={{ fd: 'row', gap: '$2' }}>
               <XStack gap="$2">
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/rfid-white.svg',
@@ -767,24 +752,17 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     RFID Interlock
                   </Paragraph>
                 </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/scoutflix-white.svg',
@@ -792,24 +770,17 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     ScoutFlix
                   </Paragraph>
                 </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/sprint-white.svg',
@@ -817,26 +788,19 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     Sprint
                   </Paragraph>
                 </Stack>
               </XStack>
               <XStack gap="$2">
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/topgolf-white.svg',
@@ -844,24 +808,17 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     TopGolf
                   </Paragraph>
                 </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/upquest-white.svg',
@@ -869,24 +826,17 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     Upquest
                   </Paragraph>
                 </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                  p="$1"
-                >
+                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
                       uri: '/assets/logos/waltz-white.svg',
@@ -894,17 +844,19 @@ export const Home = () => {
                       height: 30,
                     }}
                   />
-                  <Paragraph textAlign="center" tt="uppercase" size="$1" color="$color12">
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
+                  >
                     Waltz Health
                   </Paragraph>
                 </Stack>
               </XStack>
             </YStack>
           </YStack>
-
-          <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
-            <Title>Past clients include</Title>
-          </XStack>
         </Stack>
       </XStack>
     </>

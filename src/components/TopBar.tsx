@@ -92,7 +92,7 @@ export const TopBar = () => {
         </XStack>
         <Stack $sm={{ display: 'none' }}>
           <Link to="/contact" underlayColor="$color9">
-            <Button>Let's talk</Button>
+            <Button theme="active">Let's talk</Button>
           </Link>
         </Stack>
       </XStack>
