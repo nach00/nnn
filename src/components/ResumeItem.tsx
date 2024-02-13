@@ -23,7 +23,7 @@ export const ResumeItem = ({
 }: ResumeItemTypes) => {
   return (
     <YStack gap="$2">
-      <Paragraph color="$color11" tt="uppercase">
+      <Paragraph letterSpacing={1} color="$color11" tt="uppercase">
         {dates}
       </Paragraph>
       {/*<Paragraph color="$color11">{location}</Paragraph>*/}
