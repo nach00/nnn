@@ -21,7 +21,7 @@ export function Fossil() {
         <YStack bc="$color9" h={300} $gtXs={{ h: 400 }} $gtSm={{ h: 550 }} $gtXl={{ h: 800 }}>
           <Image
             source={{
-              uri: '/assets/portfolio/fossil/all-multi-mock.png',
+              uri: '/assets/portfolio/fossil/multi-fossil.png',
 
               width: '100%',
               height: '100%',
@@ -86,55 +86,6 @@ export function Fossil() {
             </YStack>
           </YStack>
 
-          <YStack m="$3" gap="$4">
-            <YStack gap="$4" $gtSm={{ fd: 'row' }}>
-              <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/fossil/skagen-multi.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  br="$10"
-                  boc="$color4"
-                  bw="$1"
-                />
-              </Stack>
-              <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/fossil/michele-mock.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  br="$10"
-                />
-              </Stack>
-            </YStack>
-            <YStack gap="$4" $gtSm={{ fd: 'row' }}>
-              <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/fossil/watch-station-mock.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  br="$10"
-                />
-              </Stack>
-              <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/fossil/logo-group.svg',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  br="$10"
-                />
-              </Stack>
-            </YStack>
-          </YStack>
-
           <YStack
             backgroundColor="$color3"
             gap="$6"
@@ -175,7 +126,7 @@ export function Fossil() {
                 <Paragraph>Insite</Paragraph>
               </YStack>
             </YStack>
-            <YStack f={1}>
+            <YStack f={1} gap="$6">
               <Eyebrow>OVERVIEW</Eyebrow>
               <YStack gap="$6">
                 <Paragraph>
@@ -193,6 +144,53 @@ export function Fossil() {
                   devices.
                 </Paragraph>
               </YStack>
+            </YStack>
+          </YStack>
+
+          <YStack m="$3" gap="$4">
+            <YStack gap="$4" $gtSm={{ fd: 'row' }}>
+              <Stack h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
+                <Image
+                  source={{
+                    uri: '/assets/portfolio/fossil/skagen-multi.png',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  br="$10"
+                />
+              </Stack>
+              <Stack h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
+                <Image
+                  source={{
+                    uri: '/assets/portfolio/fossil/michele-mock.png',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  br="$10"
+                />
+              </Stack>
+            </YStack>
+            <YStack gap="$4" $gtSm={{ fd: 'row' }}>
+              <Stack h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
+                <Image
+                  source={{
+                    uri: '/assets/portfolio/fossil/watch-station-mock.png',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  br="$10"
+                />
+              </Stack>
+              <Stack h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
+                <Image
+                  source={{
+                    uri: '/assets/portfolio/fossil/logo-group.svg',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  br="$10"
+                />
+              </Stack>
             </YStack>
           </YStack>
         </YStack>

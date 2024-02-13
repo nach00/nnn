@@ -21,7 +21,7 @@ export function Tamagui() {
         <YStack bc="$color9" h={300} $gtXs={{ h: 400 }} $gtSm={{ h: 550 }} $gtXl={{ h: 800 }}>
           <Image
             source={{
-              uri: '/assets/portfolio/tamagui/mock5wide.png',
+              uri: '/assets/portfolio/tamagui/laptop-tamagui-mock.png',
               width: '100%',
               height: '100%',
             }}
@@ -64,19 +64,19 @@ export function Tamagui() {
                 pages and channels.
               </Paragraph>
               <a
-                href="https://www.figma.com/community/file/1326593766534421119"
-                style={{ textDecoration: 'none' }}
-              >
-                <Button theme="active" w="100%">
-                  Figma Community page
-                </Button>
-              </a>
-              <a
                 href="https://www.figma.com/file/Vj2tgOgM43Kiq1I4VdfR0h/Tamagui-v1.2.1-Community?type=design&is-community-duplicate=1&fuid="
                 style={{ textDecoration: 'none' }}
               >
                 <Button theme="active" w="100%">
                   Open in Figma
+                </Button>
+              </a>
+              <a
+                href="https://www.figma.com/community/file/1326593766534421119"
+                style={{ textDecoration: 'none' }}
+              >
+                <Button w="100%" boc="$color7" bw="$1">
+                  Figma Community page
                 </Button>
               </a>
             </YStack>
@@ -100,63 +100,6 @@ export function Tamagui() {
                   Tamagui website
                 </Button>
               </a>
-            </YStack>
-          </YStack>
-
-          <YStack m="$3" gap="$4">
-            <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }}>
-              <Image
-                source={{
-                  uri: '/assets/portfolio/tamagui/iso1.png',
-                  width: '100%',
-                  height: '100%',
-                }}
-                br="$10"
-              />
-            </Stack>
-            <YStack gap="$4" $gtSm={{ fd: 'row' }}>
-              <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/tamagui/mock1.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  br="$10"
-                />
-              </Stack>
-              <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/tamagui/mock2.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  br="$10"
-                />
-              </Stack>
-            </YStack>
-            <YStack gap="$4" $gtSm={{ fd: 'row' }}>
-              <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/tamagui/mock3.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  br="$10"
-                />
-              </Stack>
-              <Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/tamagui/dark-gray.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  br="$10"
-                />
-              </Stack>
             </YStack>
           </YStack>
           <YStack
@@ -195,7 +138,7 @@ export function Tamagui() {
                 <Paragraph>Figma</Paragraph>
               </YStack>
             </YStack>
-            <YStack f={1}>
+            <YStack f={1} gap="$6">
               <Eyebrow>OVERVIEW</Eyebrow>
               <YStack gap="$6">
                 <Paragraph>
@@ -213,6 +156,62 @@ export function Tamagui() {
                   and more.
                 </Paragraph>
               </YStack>
+            </YStack>
+          </YStack>
+          <YStack m="$3" gap="$4">
+            {/*<Stack bc="$color9" br="$10" h={300} $gtXs={{ h: 400 }}>*/}
+            {/*  <Image*/}
+            {/*    source={{*/}
+            {/*      uri: '/assets/portfolio/tamagui/mock5wide.png',*/}
+            {/*      width: '100%',*/}
+            {/*      height: '100%',*/}
+            {/*    }}*/}
+            {/*    br="$10"*/}
+            {/*  />*/}
+            {/*</Stack>*/}
+            <YStack gap="$4" $gtSm={{ fd: 'row' }}>
+              <Stack h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
+                <Image
+                  source={{
+                    uri: '/assets/portfolio/tamagui/button-variations.png',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  br="$10"
+                />
+              </Stack>
+              <Stack h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
+                <Image
+                  source={{
+                    uri: '/assets/portfolio/tamagui/input-variations.png',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  br="$10"
+                />
+              </Stack>
+            </YStack>
+            <YStack gap="$4" $gtSm={{ fd: 'row' }}>
+              <Stack h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
+                <Image
+                  source={{
+                    uri: '/assets/portfolio/tamagui/color-theme-adjust.png',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  br="$10"
+                />
+              </Stack>
+              <Stack h={300} $gtXs={{ h: 400 }} $gtSm={{ w: '100%', f: 1 }}>
+                <Image
+                  source={{
+                    uri: '/assets/portfolio/tamagui/dark-gray-2.png',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  br="$10"
+                />
+              </Stack>
             </YStack>
           </YStack>
         </YStack>
