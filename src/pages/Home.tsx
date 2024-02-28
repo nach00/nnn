@@ -634,8 +634,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/baker-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -652,8 +652,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/banfield-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -670,8 +670,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/bimbo-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -690,8 +690,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/ggwp-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -708,8 +708,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/njevity-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -726,8 +726,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/pawzpurr-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -748,8 +748,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/rfid-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -766,8 +766,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/scoutflix-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -784,8 +784,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/sprint-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -804,8 +804,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/topgolf-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -822,8 +822,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/upquest-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
@@ -840,8 +840,8 @@ export const Home = () => {
                   <Image
                     source={{
                       uri: '/assets/logos/waltz-white.svg',
-                      width: 30,
-                      height: 30,
+                      width: 50,
+                      height: 50,
                     }}
                   />
                   <Paragraph
