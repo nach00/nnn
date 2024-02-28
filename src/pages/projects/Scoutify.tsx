@@ -108,16 +108,41 @@ export function Scoutify() {
           </Paragraph>
         </YStack>
 
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 743,
-              uri: '/assets/portfolio/scoutify/scoutify-competitive-analysis.png',
-            }}
-            width="100%"
-            height="100%"
-          />
+        {/*<Stack bc="red" w="100vw" h="100vh" />*/}
+
+        {/*<Stack m="auto" w="100%" maw={900} h="100%">*/}
+        {/*  <Image*/}
+        {/*    source={{*/}
+        {/*      width: '100%',*/}
+        {/*      height: '100%',*/}
+        {/*      uri: '/assets/portfolio/scoutify/scoutify-competitive-analysis.png',*/}
+        {/*    }}*/}
+        {/*  />*/}
+        {/*</Stack>*/}
+        {/*<Stack m="auto" w={900 / 2.5} h={743 / 2.5}>*/}
+        {/*  <Image*/}
+        {/*    source={{*/}
+        {/*      width: '100%',*/}
+        {/*      height: '100%',*/}
+        {/*      uri: '/assets/portfolio/scoutify/scoutify-competitive-analysis.png',*/}
+        {/*    }}*/}
+        {/*  />*/}
+        {/*</Stack>*/}
+        <Stack w="100%" ai="center">
+          <Stack
+            width={900 / 2.5}
+            height={743 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 743 / 1.5 }}
+            $gtSm={{ width: 900, height: 743 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-competitive-analysis.png',
+              }}
+            />
+          </Stack>
         </Stack>
         <YStack
           maw={600}
@@ -184,17 +209,21 @@ export function Scoutify() {
             account, or needs to create one.
           </Paragraph>
         </YStack>
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 1398,
-              uri: '/assets/portfolio/scoutify/scoutify-user-flow-1.png',
-            }}
-            width="100%"
-            height="100%"
-            ai="center"
-          />
+        <Stack w="100%" ai="center">
+          <Stack
+            width={900 / 2.5}
+            height={1398 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+            $gtSm={{ width: 900, height: 1398 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-user-flow-1.png',
+              }}
+            />
+          </Stack>
         </Stack>
 
         <YStack
@@ -219,18 +248,21 @@ export function Scoutify() {
             child’s account.
           </Paragraph>
         </YStack>
-
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 506,
-              uri: '/assets/portfolio/scoutify/scoutify-user-flow-2.png',
-            }}
-            width="100%"
-            height="100%"
-            ai="center"
-          />
+        <Stack w="100%" ai="center">
+          <Stack
+            width={900 / 2.5}
+            height={506 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
+            $gtSm={{ width: 900, height: 506 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-user-flow-2.png',
+              }}
+            />
+          </Stack>
         </Stack>
 
         <YStack
@@ -248,19 +280,23 @@ export function Scoutify() {
             account, and how a Parent account can be created instead.
           </Paragraph>
         </YStack>
-
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 612,
-              uri: '/assets/portfolio/scoutify/scoutify-user-flow-3.png',
-            }}
-            width="100%"
-            height="100%"
-            ai="center"
-          />
+        <Stack w="100%" ai="center">
+          <Stack
+            width={900 / 2.5}
+            height={612 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 612 / 1.5 }}
+            $gtSm={{ width: 900, height: 612 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-user-flow-3.png',
+              }}
+            />
+          </Stack>
         </Stack>
+
         <YStack
           maw={600}
           marginHorizontal="auto"
@@ -277,18 +313,24 @@ export function Scoutify() {
             received feedback from the client.
           </Paragraph>
         </YStack>
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 698,
-              uri: '/assets/portfolio/scoutify/scoutify-wireframe-1.png',
-            }}
-            width="100%"
-            height="100%"
-            ai="center"
-          />
+
+        <Stack w="100%" ai="center">
+          <Stack
+            width={900 / 2.5}
+            height={698 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 698 / 1.5 }}
+            $gtSm={{ width: 900, height: 698 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-wireframe-1.png',
+              }}
+            />
+          </Stack>
         </Stack>
+
         <YStack
           maw={600}
           marginHorizontal="auto"
@@ -308,18 +350,24 @@ export function Scoutify() {
             and not all the screens that the navigation bar exist.
           </Paragraph>
         </YStack>
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 506,
-              uri: '/assets/portfolio/scoutify/scoutify-wireframe-2.png',
-            }}
-            width="100%"
-            height="100%"
-            ai="center"
-          />
+
+        <Stack w="100%" ai="center">
+          <Stack
+            width={900 / 2.5}
+            height={506 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
+            $gtSm={{ width: 900, height: 506 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-wireframe-2.png',
+              }}
+            />
+          </Stack>
         </Stack>
+
         <YStack
           maw={600}
           marginHorizontal="auto"
@@ -335,18 +383,23 @@ export function Scoutify() {
             Next are some more refined screens of an athlete profile.
           </Paragraph>
         </YStack>
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 570,
-              uri: '/assets/portfolio/scoutify/scoutify-wireframe-3.png',
-            }}
-            width="100%"
-            height="100%"
-            ai="center"
-          />
+        <Stack w="100%" ai="center">
+          <Stack
+            width={900 / 2.5}
+            height={570 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 570 / 1.5 }}
+            $gtSm={{ width: 900, height: 570 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-wireframe-3.png',
+              }}
+            />
+          </Stack>
         </Stack>
+
         <YStack
           maw={600}
           marginHorizontal="auto"
@@ -357,18 +410,23 @@ export function Scoutify() {
         >
           <Paragraph>I continued creating the rest of the screens, seen below. </Paragraph>
         </YStack>
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 455,
-              uri: '/assets/portfolio/scoutify/scoutify-wireframe-4.png',
-            }}
-            width="100%"
-            height="100%"
-            ai="center"
-          />
+        <Stack w="100%" ai="center">
+          <Stack
+            width={900 / 2.5}
+            height={455 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 455 / 1.5 }}
+            $gtSm={{ width: 900, height: 455 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-wireframe-4.png',
+              }}
+            />
+          </Stack>
         </Stack>
+
         <YStack
           maw={600}
           marginHorizontal="auto"
@@ -380,18 +438,24 @@ export function Scoutify() {
           <H5>Prototyping</H5>
           <Paragraph>Then added in prototyping to allow for a clickthrough demo. </Paragraph>
         </YStack>
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 458,
-              uri: '/assets/portfolio/scoutify/scoutify-prototype-1.png',
-            }}
-            width="100%"
-            height="100%"
-            ai="center"
-          />
+
+        <Stack w="100%" ai="center">
+          <Stack
+            width={900 / 2.5}
+            height={458 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 458 / 1.5 }}
+            $gtSm={{ width: 900, height: 458 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-prototype-1.png',
+              }}
+            />
+          </Stack>
         </Stack>
+
         <YStack
           maw={600}
           marginHorizontal="auto"
@@ -410,18 +474,21 @@ export function Scoutify() {
             account creation process just to see how the screen looks as a new user.
           </Paragraph>
         </YStack>
-        <Stack ai="center">
-          <Image
-            source={{
-              width: 900,
-              height: 506,
-              uri: '/assets/portfolio/scoutify/scoutify-landing-page.png',
-            }}
-            width="100%"
-            height="100%"
-            ai="center"
-            mb="$12"
-          />
+        <Stack w="100%" ai="center" mb="$12">
+          <Stack
+            width={900 / 2.5}
+            height={506 / 2.5}
+            $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
+            $gtSm={{ width: 900, height: 506 }}
+          >
+            <Image
+              source={{
+                width: '100%',
+                height: '100%',
+                uri: '/assets/portfolio/scoutify/scoutify-landing-page.png',
+              }}
+            />
+          </Stack>
         </Stack>
       </YStack>
     </>
