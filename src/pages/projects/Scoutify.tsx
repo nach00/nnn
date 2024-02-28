@@ -32,7 +32,7 @@ export function Scoutify() {
           paddingHorizontal="$3"
           gap="$3"
         >
-          <Eyebrow>UX/UI Design</Eyebrow>
+          <Eyebrow>User Experience Design</Eyebrow>
           <Title>Scoutify</Title>
 
           <Paragraph mt="$5">
