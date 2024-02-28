@@ -136,7 +136,7 @@ export function Projects() {
             >
               <Image
                 source={{
-                  uri: '/assets/portfolio/scoutify/scoutify-cover.jpg',
+                  uri: '/assets/portfolio/scoutify/scoutify-tablet-cover.png',
                   width: '100%',
                   height: '100%',
                 }}

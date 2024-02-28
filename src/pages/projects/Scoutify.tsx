@@ -36,6 +36,22 @@ export function Scoutify() {
           <Title>Scoutify</Title>
 
           <Paragraph mt="$5">
+            <Stack w="100%" ai="center">
+              <Stack
+                width={900 / 2.5}
+                height={675 / 2.5}
+                $gtXs={{ width: 900 / 1.5, height: 675 / 1.5 }}
+                $gtSm={{ width: 900, height: 675 }}
+              >
+                <Image
+                  source={{
+                    width: '100%',
+                    height: '100%',
+                    uri: '/assets/portfolio/scoutify/scoutify-tablet-cover-white.png',
+                  }}
+                />
+              </Stack>
+            </Stack>{' '}
             Scoutify is a social media platform, similar to LinkedIn, but specifically for baseball
             athletes. The main types of users are:
           </Paragraph>
