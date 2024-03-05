@@ -52,7 +52,7 @@ export function Scoutify() {
                     }}
                   />
                 </Stack>
-              </Stack>{' '}
+              </Stack>
               Scoutify is a social media platform, similar to LinkedIn, but specifically for
               baseball athletes. The main types of users are:
             </Paragraph>

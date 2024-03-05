@@ -786,7 +786,7 @@ export const Home = () => {
                 <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
                   <Image
                     source={{
-                      uri: '/assets/logos/scoutflix-white.svg',
+                      uri: '/assets/logos/scoutify-white.svg',
                       width: 50,
                       height: 50,
                     }}
@@ -798,7 +798,7 @@ export const Home = () => {
                     color="$color12"
                     fontWeight="bold"
                   >
-                    ScoutFlix
+                    Scoutify
                   </Paragraph>
                 </Stack>
                 <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
