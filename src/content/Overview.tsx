@@ -1,27 +1,63 @@
 import { ResumeItem } from '../components/ResumeItem'
 
 import React from 'react'
-import { H6, Paragraph } from 'tamagui'
+import { H6, Paragraph, XStack, YStack } from 'tamagui'
 export function Overview() {
   return (
     <>
-      {/*<H6 fontWeight="bold">Overview</H6>*/}
-      <Paragraph lh="$5">
-        I’m Natcha, a UX/UI designer and front-end web developer who understands how to create
-        memorable experiences, from conceptualization to implementation. I am passionate about
-        building beautiful and functional interfaces for all devices and screen resolutions. I have
-        a firm grasp of current and future technologies and digital design trends, and comfortable
-        working in design and development.
+      <H6 fontWeight="bold">Summary</H6>
+      <Paragraph lineHeight="$5">
+        Experienced Designer and Developer with over five years of multifaceted experience in design
+        leadership, specialized UX/UI expertise, and front-end development. A business-minded
+        designer with an MBA, adept at spearheading strategic design solutions to drive business
+        goals across various platforms for diverse clientele. Accelerator in synthesizing user
+        research insights, championing responsive web design principles, and establishing
+        industry-leading design standards to meet high user experience (UX) expectations.
       </Paragraph>
-      <Paragraph lh="$5">
-        I have experience working on multiple SaaS products with product and engineering teams using
-        2-week Agile workflows. I am extremely proficient with Figma design software and have
-        assisted many teams with transitioning from Sketch.
+      <Paragraph lineHeight="$5">
+        Proficient in leveraging a robust toolkit including Adobe Creative Suite, Figma, React.js,
+        and other cutting-edge technologies to deliver impactful design solutions that resonate with
+        users. Excels in collaborative environments, fostering innovation, and mentoring junior
+        designers to achieve design excellence. Continuously stays ahead of the curve by keeping
+        abreast of industry trends and emerging technologies, poised to drive transformative UX/UI
+        initiatives that exceed expectations.
       </Paragraph>
-      {/*<Paragraph lh="$5">*/}
-      {/*  I love solving unique and challenging problems, and believe anything can be solved with*/}
-      {/*  creativity, determination, and follow through.*/}
-      {/*</Paragraph>*/}
+
+      {/*<H6 fontWeight="bold" mt="$10">*/}
+      {/*  Areas of Expertise*/}
+      {/*</H6>*/}
+      {/*<XStack jc="space-between">*/}
+      {/*  <YStack>*/}
+      {/*    <Paragraph>✓ A/B Testing</Paragraph>*/}
+      {/*    <Paragraph>✓ Accessibility</Paragraph>*/}
+      {/*    <Paragraph>✓ Adobe CC Suite</Paragraph>*/}
+      {/*    <Paragraph>✓ Affinity Suite</Paragraph>*/}
+      {/*    <Paragraph>✓ Agile Methodologies</Paragraph>*/}
+      {/*    <Paragraph>✓ Competitive Analysis</Paragraph>*/}
+      {/*    <Paragraph>✓ Design Systems</Paragraph>*/}
+      {/*    <Paragraph>✓ Design Thinking</Paragraph>*/}
+      {/*  </YStack>*/}
+      {/*  <YStack>*/}
+      {/*    <Paragraph>✓ Figma</Paragraph>*/}
+      {/*    <Paragraph>✓ Front-End Development</Paragraph>*/}
+      {/*    <Paragraph>✓ HTML & CSS</Paragraph>*/}
+      {/*    <Paragraph>✓ Information Architecture</Paragraph>*/}
+      {/*    <Paragraph>✓ Interaction Design</Paragraph>*/}
+      {/*    <Paragraph>✓ JavaScript & TypeScript</Paragraph>*/}
+      {/*    <Paragraph>✓ Prototyping</Paragraph>*/}
+      {/*    <Paragraph>✓ React & React Native</Paragraph>*/}
+      {/*  </YStack>*/}
+      {/*  <YStack>*/}
+      {/*    <Paragraph>✓ Usability Testing</Paragraph>*/}
+      {/*    <Paragraph>✓ User Flows</Paragraph>*/}
+      {/*    <Paragraph>✓ User Interviews</Paragraph>*/}
+      {/*    <Paragraph>✓ UX/UI</Paragraph>*/}
+      {/*    <Paragraph>✓ UX Research</Paragraph>*/}
+      {/*    <Paragraph>✓ Vue.js</Paragraph>*/}
+      {/*    <Paragraph>✓ Visual Design</Paragraph>*/}
+      {/*    <Paragraph>✓ Wireframing</Paragraph>*/}
+      {/*  </YStack>*/}
+      {/*</XStack>*/}
     </>
   )
 }

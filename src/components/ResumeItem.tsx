@@ -34,7 +34,9 @@ export const ResumeItem = ({
         <Paragraph color="$color11">
           {organization} ({location})
         </Paragraph>
-        <Paragraph color="$color12">{description}</Paragraph>
+        <Paragraph color="$color12" fontWeight="bold" lineHeight="$5" mt="$2">
+          {description}
+        </Paragraph>
       </YStack>
       {children}
     </YStack>

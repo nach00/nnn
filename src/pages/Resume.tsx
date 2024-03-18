@@ -51,9 +51,9 @@ export function Resume() {
           $gtMd={{ w: 600 }}
           $gtLg={{ w: 800 }}
         >
-          {/*<Stack gap="$6">*/}
-          {/*  <Overview />*/}
-          {/*</Stack>*/}
+          <Stack gap="$6">
+            <Overview />
+          </Stack>
 
           <Stack gap="$6">
             <Experience />

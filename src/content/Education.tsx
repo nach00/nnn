@@ -9,12 +9,31 @@ export function Education() {
     <>
       <H6 fontWeight="bold">Education</H6>
 
+      <YStack gap="$8" mb="$10">
+        <ResumeItem
+          dates="August 2011 to 2013"
+          location="Richardson, TX"
+          organization="University of Texas at Dallas"
+          title="Master's in Business Administration (MBA)"
+          description="Strategic management"
+        />
+
+        <ResumeItem
+          dates="August 2005 to 2007"
+          location="Waco, TX"
+          organization="Baylor University"
+          title="Bachelor's in Business Administration (BBA)"
+          description="Marketing"
+        />
+      </YStack>
+      <H6 fontWeight="bold">Certificates</H6>
+
       <YStack gap="$8">
         <ResumeItem
           dates="October 2023"
-          location="Remote"
+          location="Online"
           organization="Three.js Journey"
-          title="Certificate of Completion"
+          title="Bootcamp, React Three FIber Certificate"
           // description="React 3 Fiber"
         >
           <a
@@ -28,19 +47,10 @@ export function Education() {
         </ResumeItem>
 
         <ResumeItem
-          dates="August 2011 to 2013"
-          location="Richardson, TX"
-          organization="University of Texas at Dallas"
-          title="Master's in Business Administration"
-          description="Strategic management"
-        />
-
-        <ResumeItem
-          dates="August 2005 to 2007"
-          location="Waco, TX"
-          organization="Baylor University"
-          title="Bachelor's in Business Administration"
-          description="Marketing"
+          dates="November 2018"
+          location="Online"
+          organization="Launch School"
+          title="Bootcamp, Full Stack Development - JavaScript"
         />
       </YStack>
     </>
