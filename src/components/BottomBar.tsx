@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom'
 export const BottomBar = () => {
   return (
     <YStack>
-      <Separator mt="$16" />
+      <Separator mt="$12" />
       <H1 ta="center" mt="$12">
         Let's work together.
       </H1>
