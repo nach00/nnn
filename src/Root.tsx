@@ -7,6 +7,7 @@ import { Projects } from './pages/Projects'
 import { Contact } from './pages/Contact'
 import { Tamagui } from './pages/projects/Tamagui'
 import { Scoutify } from './pages/projects/Scoutify'
+import { ZConsole } from './pages/projects/ZConsole'
 import { Fossil } from './pages/projects/Fossil'
 import { TopBar } from './components/TopBar'
 import { BottomBar } from './components/BottomBar'
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="projects/tamagui" element={<Tamagui />} />
           <Route path="projects/fossil" element={<Fossil />} />
           <Route path="projects/scoutify" element={<Scoutify />} />
+          <Route path="projects/zconsole" element={<ZConsole />} />
           <Route path="fsl" element={<Skagen />} />
         </Route>
       </Routes>
