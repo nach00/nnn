@@ -119,7 +119,7 @@ export const Home = () => {
                 </Stack>
               </XStack>
             </Link>
-            <Link to="/projects/tamagui" underlayColor="$color9">
+            <Link to="/projects/zconsole" underlayColor="$color9">
               <XStack
                 h={360}
                 w="100vw"
@@ -155,9 +155,11 @@ export const Home = () => {
                   <Stack ai="center" jc="center" h="100%" f={1}>
                     <Image
                       source={{
-                        uri: '/assets/icons/tamagui-logo.svg',
-                        width: 160,
-                        height: 120,
+                        uri: '/assets/portfolio/zimperium/logo-zconsole-transparent.png',
+                        // uri: '/assets/icons/tamagui-logo.svg',
+
+                        width: 180,
+                        height: 130,
                       }}
                       $gtSm={{ scale: 1 }}
                       $gtMd={{ scale: 0.75 }}
