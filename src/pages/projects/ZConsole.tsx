@@ -25,6 +25,19 @@ export function ZConsole() {
     <>
       <Stack bc="$color12">
         <YStack maw={1200} m="auto" themeInverse="true" ai="center" w="100%">
+          <YStack maw={900} bc="$color6" p="$6" mt="$6" gap="$3" mx="$3">
+            <Paragraph>
+              "Natcha was a talented colleague I have had the pleasure to work with for a couple of
+              years. We worked together on building enterprise products at Zimperium . He was very
+              integral on designing UX mockups (for both web apps and mobile apps) for use by the
+              software developers. He is a very quick when it comes to timelines and has a talent
+              for really pleasing designs. Even after we are both no longer at the company we met
+              at, we have kept in touch as friends over the years and I really look forward to
+              working with him in the future and would highly recommend Natcha."
+            </Paragraph>
+
+            <Paragraph fontWeight="bold">-Tom Vongphakdy, Software Engineer</Paragraph>
+          </YStack>
           <YStack
             bc="$color1"
             ai="center"
