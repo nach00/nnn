@@ -249,7 +249,7 @@ export function ZConsole() {
                 />
               </Stack>
               <Paragraph w="100%" mt="$3">
-                Manage allow/deny third-party apps, or “Out-of-Compliance”
+                Display the data associated with a compromised device
               </Paragraph>
             </YStack>
             <YStack
@@ -309,7 +309,7 @@ export function ZConsole() {
                 />
               </Stack>
               <Paragraph w="100%" mt="$3">
-                Display the data associated with a compromised device
+                Manage allow/deny third-party apps, or “Out-of-Compliance”
               </Paragraph>
             </YStack>
             <YStack
@@ -705,7 +705,7 @@ export function ZConsole() {
                 />
               </Stack>
               <Paragraph w="100%" mt="$3">
-                Modal dialog to mass invite users by uploading CSV file
+                Manage security metric and specify proximity and threat value
               </Paragraph>
             </YStack>
             <YStack

@@ -24,124 +24,109 @@ export function Scoutify() {
   return (
     <>
       <Stack bc="$color12">
-        <YStack maw={1200} m="auto" themeInverse="true" ai="center" w="100%" gap="$3">
+
+        <YStack themeInverse="true" bc="$color1" maw={1200} m="auto">
+
           <YStack
-            bc="$color1"
-            ai="center"
-            jc="space-between"
-            marginHorizontal="auto"
-            marginTop="$3"
-            paddingHorizontal="$3"
-            // $gtXs={{ maw: 600 }}
-            // $gtSm={{ maw: 800 }}
             maw={600}
-            mb="$3"
+            marginHorizontal="auto"
+            marginVertical="$6"
             w="100%"
+            paddingHorizontal="$3"
             gap="$3"
           >
-            <YStack my="$6" w="100%">
-              <YStack gap="$1">
-                <Eyebrow>User Experience Design</Eyebrow>
-                <Title>Scoutify</Title>
-              </YStack>
-            </YStack>
+            <Eyebrow>User Experience Design</Eyebrow>
+            <Title>Scoutify</Title>
 
-            <Stack w="100%" ai="center">
-              <Stack
-                width={900 / 2.5}
-                height={675 / 2.5}
-                $gtXs={{ width: 900 / 1.5, height: 675 / 1.5 }}
-                $gtSm={{ width: 900, height: 675 }}
-              >
-                <Image
-                  source={{
-                    width: '100%',
-                    height: '100%',
-                    uri: '/assets/portfolio/scoutify/scoutify-tablet-cover-white.png',
-                  }}
-                />
+            <Paragraph mt="$5">
+              <Stack w="100%" ai="center">
+                <Stack
+                  width={900 / 2.5}
+                  height={675 / 2.5}
+                  $gtXs={{ width: 900 / 1.5, height: 675 / 1.5 }}
+                  $gtSm={{ width: 900, height: 675 }}
+                >
+                  <Image
+                    source={{
+                      width: '100%',
+                      height: '100%',
+                      uri: '/assets/portfolio/scoutify/scoutify-tablet-cover-white.png',
+                    }}
+                  />
+                </Stack>
               </Stack>
-            </Stack>
-            <YStack gap="$6">
-              <Paragraph mt="$5">
-                Scoutify is a social media platform, similar to LinkedIn, but specifically for
-                baseball athletes. The main types of users are:
-              </Paragraph>
-              <YStack>
-                <ListItem>
-                  - Baseball players of all ages (under 13 require a parent account)
-                </ListItem>
-                <ListItem>- Talent scouting agents</ListItem>
-                <ListItem>- Baseball organizations</ListItem>
-              </YStack>
-              <Paragraph>
-                I joined Scoutify at the beginning of its life, filling the design role and working
-                closely with both the owner and a project manager. Scoutify is still currently in
-                it’s infancy stage and is seeking funds and developers to continue progress. My work
-                at Scoutify encompassed the following:
-              </Paragraph>
-
-              <YStack>
-                <ListItem>1. Plan, conduct, and analyze user research</ListItem>
-                <ListItem>2. Define user problems and ideate solutions</ListItem>
-                <ListItem>
-                  3. Establish navigation, user flows, and information architecture
-                </ListItem>
-                <ListItem>4. Create wireframes and prototypes</ListItem>
-              </YStack>
-
-              <Paragraph>
-                At this phase of the project, Scoutify plans to only focus on providing solutions
-                for the sport of baseball. There may be plans to expand into other sports in the
-                future, but as of now, those options are not available.
-              </Paragraph>
-
-              <Paragraph>
-                The client stated that the main requirement is to be accessible for desktop and
-                tablet only. Designing for mobile would not be required, which put this project into
-                scope.
-              </Paragraph>
-              <H4 mt="$3">1. Plan, conduct, and analyze user research</H4>
-              <Paragraph>
-                Upon joining Scoutify, there was very little user research I could perform, as the
-                client wanted to see some designs immediately, and research was not budgeted into
-                the timeline. I did perform some gain some initial quantitative and qualitative
-                research by looking up baseball industry statistics, but just enough to establish a
-                foundation. I also performed a brief competitive analysis, but as the client
-                previously mentioned, there are currently no tools that provide this kind of
-                service.
-              </Paragraph>
-              <H5>Conducting stakeholder interviews</H5>
-              <Paragraph>
-                A majority of my research relied on talking to the client directly. We scheduled
-                some time to discuss the project in detail, which led to lots of question asking,
-                such as:
-                <YStack>
-                  <ListItem>What are the basics of the business?</ListItem>
-                  <ListItem>
-                    What’s the problem that needs a solution? What are their pain points?
-                  </ListItem>
-                  <ListItem>What are some big trends in your industry?</ListItem>
-                  <ListItem>
-                    Where do you sell / sales channels? (e.g. In-person, Resell, eComm, etc.)
-                  </ListItem>
-                  <ListItem>
-                    If time and money were not an object, what would the perfect solution be?
-                  </ListItem>
-                  <ListItem>What’s your timeline?</ListItem>
-                  <ListItem>What do you need to see in a proposal?</ListItem>
-                </YStack>
-              </Paragraph>
-              <H5>Competitive Analysis</H5>
-              <Paragraph>
-                Looking around online to see how other brands display player statistics, I came
-                across these designs. It was great to see how existing companies organize data. I
-                wanted to see important pieces of information and how they are categorized on the
-                screen. I thought also thought about baseball cards, and how they show player stats
-                and info within such a small frame, and wanted to implement some of that nostalgic
-                feel and fun when using Scoutify.
-              </Paragraph>
+              Scoutify is a social media platform, similar to LinkedIn, but specifically for
+              baseball athletes. The main types of users are:
+            </Paragraph>
+            <YStack>
+              <ListItem>
+                - Baseball players of all ages (under 13 require a parent account)
+              </ListItem>
+              <ListItem>- Talent scouting agents</ListItem>
+              <ListItem>- Baseball organizations</ListItem>
             </YStack>
+            <Paragraph>
+              I joined Scoutify at the beginning of its life, filling the design role and working
+              closely with both the owner and a project manager. Scoutify is still currently in it’s
+              infancy stage and is seeking funds and developers to continue progress. My work at
+              Scoutify encompassed the following:
+            </Paragraph>
+
+            <YStack>
+              <ListItem>1. Plan, conduct, and analyze user research</ListItem>
+              <ListItem>2. Define user problems and ideate solutions</ListItem>
+              <ListItem>3. Establish navigation, user flows, and information architecture</ListItem>
+              <ListItem>4. Create wireframes and prototypes</ListItem>
+            </YStack>
+
+            <Paragraph>
+              At this phase of the project, Scoutify plans to only focus on providing solutions for
+              the sport of baseball. There may be plans to expand into other sports in the future,
+              but as of now, those options are not available.
+            </Paragraph>
+
+            <Paragraph>
+              The client stated that the main requirement is to be accessible for desktop and tablet
+              only. Designing for mobile would not be required, which put this project into scope.
+            </Paragraph>
+            <H4 mt="$3">1. Plan, conduct, and analyze user research</H4>
+            <Paragraph>
+              Upon joining Scoutify, there was very little user research I could perform, as the
+              client wanted to see some designs immediately, and research was not budgeted into the
+              timeline. I did perform some gain some initial quantitative and qualitative research
+              by looking up baseball industry statistics, but just enough to establish a foundation.
+              I also performed a brief competitive analysis, but as the client previously mentioned,
+              there are currently no tools that provide this kind of service.
+            </Paragraph>
+            <H5>Conducting stakeholder interviews</H5>
+            <Paragraph>
+              A majority of my research relied on talking to the client directly. We scheduled some
+              time to discuss the project in detail, which led to lots of question asking, such as:
+              <YStack>
+                <ListItem>What are the basics of the business?</ListItem>
+                <ListItem>
+                  What’s the problem that needs a solution? What are their pain points?
+                </ListItem>
+                <ListItem>What are some big trends in your industry?</ListItem>
+                <ListItem>
+                  Where do you sell / sales channels? (e.g. In-person, Resell, eComm, etc.)
+                </ListItem>
+                <ListItem>
+                  If time and money were not an object, what would the perfect solution be?
+                </ListItem>
+                <ListItem>What’s your timeline?</ListItem>
+                <ListItem>What do you need to see in a proposal?</ListItem>
+              </YStack>
+            </Paragraph>
+            <H5>Competitive Analysis</H5>
+            <Paragraph>
+              Looking around online to see how other brands display player statistics, I came across
+              these designs. It was great to see how existing companies organize data. I wanted to
+              see important pieces of information and how they are categorized on the screen. I
+              thought also thought about baseball cards, and how they show player stats and info
+              within such a small frame, and wanted to implement some of that nostalgic feel and fun
+              when using Scoutify.
+            </Paragraph>
           </YStack>
 
           {/*<Stack bc="red" w="100vw" h="100vh" />*/}
