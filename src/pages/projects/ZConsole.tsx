@@ -836,8 +836,8 @@ export function ZConsole() {
           <YStack gap="$3">
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
@@ -850,8 +850,8 @@ export function ZConsole() {
             </Stack>
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
@@ -864,8 +864,8 @@ export function ZConsole() {
             </Stack>
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
@@ -878,8 +878,8 @@ export function ZConsole() {
             </Stack>
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
@@ -892,8 +892,8 @@ export function ZConsole() {
             </Stack>
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
@@ -906,8 +906,8 @@ export function ZConsole() {
             </Stack>
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
@@ -920,8 +920,8 @@ export function ZConsole() {
             </Stack>
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
@@ -959,8 +959,8 @@ export function ZConsole() {
           <YStack gap="$3" mb="$12">
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
@@ -973,8 +973,8 @@ export function ZConsole() {
             </Stack>
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
@@ -987,8 +987,8 @@ export function ZConsole() {
             </Stack>
             <Stack
               width={900 / 2.5}
-              height={1398 / 2.5}
-              $gtXs={{ width: 900 / 1.5, height: 1398 / 1.5 }}
+              height={506 / 2.5}
+              $gtXs={{ width: 900 / 1.5, height: 506 / 1.5 }}
               $gtSm={{ width: 900, height: 506 }}
             >
               <Image
