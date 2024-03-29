@@ -20,7 +20,7 @@ export const BottomBar = () => {
   return (
     <YStack>
       <Separator mt="$12" />
-      <H1 ta="center" mt="$12">
+      <H1 ta="center" mt="$12" mx="$3">
         Let's work together.
       </H1>
       <XStack
