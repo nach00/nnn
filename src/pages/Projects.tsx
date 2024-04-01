@@ -1,4 +1,4 @@
-import { H2, Stack, XStack, YStack, Image } from 'tamagui'
+import { H2, Stack, XStack, YStack, Image, H5 } from 'tamagui'
 // import { Link } from 'react-router-dom'
 import { Link } from 'react-router-native'
 import { ProjectCard } from '../components/ProjectCard'
@@ -16,6 +16,9 @@ export function Projects() {
 
           <H2 tt="uppercase">All projects</H2>
           <Sparkle />
+        </XStack>
+        <XStack $gtLg={{ w: 1200 }} w={300} flexWrap="wrap" jc="center" p="$3">
+          <H5 w="100%">Recent UX Case Studies</H5>
         </XStack>
         <XStack $gtLg={{ w: 1200 }} w={300} flexWrap="wrap" jc="center">
           {/*ZCONSOLE==================================================================================================*/}
@@ -135,6 +138,11 @@ export function Projects() {
               </Stack>
             </XStack>
           </Link>
+        </XStack>
+        <XStack $gtLg={{ w: 1200 }} w={300} flexWrap="wrap" jc="center" p="$3">
+          <H5 w="100%">Recent Work</H5>
+        </XStack>
+        <XStack $gtLg={{ w: 1200 }} w={300} flexWrap="wrap" jc="center">
           {/*TAMAGUI====================================================================-===============================*/}
           <Link to="/projects/tamagui" underlayColor="$color9">
             <XStack
@@ -251,62 +259,67 @@ export function Projects() {
               </Stack>
             </XStack>
           </Link>
+        </XStack>
+        <XStack $gtLg={{ w: 1200 }} w={300} flexWrap="wrap" jc="center" p="$3">
+          <H5 w="100%">Past Portfolio Pieces</H5>
+        </XStack>
+        <XStack $gtLg={{ w: 1200 }} w={300} flexWrap="wrap" jc="center">
           {/*UPQUEST ====================================================================-===============================*/}
-          <a href="https://www.upquest.com" style={{ textDecoration: 'none' }}>
-            <XStack
-              h={600}
-              w="100vw"
-              $gtXs={{ w: 600, h: 600 }}
-              $gtSm={{ w: 500, h: 600 }}
-              $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
-              p="$3"
-            >
-              <Stack
-                bc="$color3"
-                p="$6"
-                animation="bouncy"
-                hoverStyle={{ scale: 0.925 }}
-                pressStyle={{ scale: 0.875 }}
-                boc="$color4"
-                bw="$1"
-                br="$10"
-                w="100%"
-                gap="$6"
-                style={{
-                  boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                }}
-              >
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/project-upquest.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  f={1}
-                  br="$7"
-                />
-                <XStack gap="$2" flexWrap="wrap" mb="$3">
-                  <Chip>Front-End Development</Chip>
-                  <Chip>React.js</Chip>
-                  <Chip>HTML</Chip>
-                  <Chip>CSS</Chip>
-                  <Chip>Adobe XD</Chip>
-                  <Chip>User Interface</Chip>
-                  <Chip>User Experience</Chip>
-                </XStack>
-                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
-                  <YStack f={1} gap="$1">
-                    <Eyebrow>2020-2021</Eyebrow>
-                    <Title>Upquest</Title>
-                  </YStack>
-                  <Stack>
-                    <LinkOut />
-                  </Stack>
-                </XStack>
-              </Stack>
-            </XStack>
-          </a>
+          {/*<a href="https://www.upquest.com" style={{ textDecoration: 'none' }}>*/}
+          {/*  <XStack*/}
+          {/*    h={600}*/}
+          {/*    w="100vw"*/}
+          {/*    $gtXs={{ w: 600, h: 600 }}*/}
+          {/*    $gtSm={{ w: 500, h: 600 }}*/}
+          {/*    $gtMd={{ w: 500, h: 500 }}*/}
+          {/*    $gtLg={{ w: 400, h: 400 }}*/}
+          {/*    p="$3"*/}
+          {/*  >*/}
+          {/*    <Stack*/}
+          {/*      bc="$color3"*/}
+          {/*      p="$6"*/}
+          {/*      animation="bouncy"*/}
+          {/*      hoverStyle={{ scale: 0.925 }}*/}
+          {/*      pressStyle={{ scale: 0.875 }}*/}
+          {/*      boc="$color4"*/}
+          {/*      bw="$1"*/}
+          {/*      br="$10"*/}
+          {/*      w="100%"*/}
+          {/*      gap="$6"*/}
+          {/*      style={{*/}
+          {/*        boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',*/}
+          {/*      }}*/}
+          {/*    >*/}
+          {/*      <Image*/}
+          {/*        source={{*/}
+          {/*          uri: '/assets/portfolio/project-upquest.png',*/}
+          {/*          width: '100%',*/}
+          {/*          height: '100%',*/}
+          {/*        }}*/}
+          {/*        f={1}*/}
+          {/*        br="$7"*/}
+          {/*      />*/}
+          {/*      <XStack gap="$2" flexWrap="wrap" mb="$3">*/}
+          {/*        <Chip>Front-End Development</Chip>*/}
+          {/*        <Chip>React.js</Chip>*/}
+          {/*        <Chip>HTML</Chip>*/}
+          {/*        <Chip>CSS</Chip>*/}
+          {/*        <Chip>Adobe XD</Chip>*/}
+          {/*        <Chip>User Interface</Chip>*/}
+          {/*        <Chip>User Experience</Chip>*/}
+          {/*      </XStack>*/}
+          {/*      <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">*/}
+          {/*        <YStack f={1} gap="$1">*/}
+          {/*          <Eyebrow>2020-2021</Eyebrow>*/}
+          {/*          <Title>Upquest</Title>*/}
+          {/*        </YStack>*/}
+          {/*        <Stack>*/}
+          {/*          <LinkOut />*/}
+          {/*        </Stack>*/}
+          {/*      </XStack>*/}
+          {/*    </Stack>*/}
+          {/*  </XStack>*/}
+          {/*</a>*/}
 
           {/*ZIPS UX RESEARCH====================================================================-===============================*/}
           <a
@@ -319,7 +332,7 @@ export function Projects() {
               $gtXs={{ w: 600, h: 600 }}
               $gtSm={{ w: 500, h: 600 }}
               $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
+              $gtLg={{ w: 400, h: 400 }}
               p="$3"
             >
               <Stack
@@ -362,7 +375,7 @@ export function Projects() {
                 <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
                   <YStack f={1} gap="$1">
                     <Eyebrow>2019-2021</Eyebrow>
-                    <Title>zIPS Mobile Security</Title>
+                    <Title>zIPS UX Research</Title>
                   </YStack>
                   <Stack>
                     <LinkOut />
@@ -382,7 +395,7 @@ export function Projects() {
               $gtXs={{ w: 600, h: 600 }}
               $gtSm={{ w: 500, h: 600 }}
               $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
+              $gtLg={{ w: 400, h: 400 }}
               p="$3"
             >
               <Stack
@@ -440,7 +453,7 @@ export function Projects() {
               $gtXs={{ w: 600, h: 600 }}
               $gtSm={{ w: 500, h: 600 }}
               $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
+              $gtLg={{ w: 400, h: 400 }}
               p="$3"
             >
               <Stack
@@ -502,7 +515,7 @@ export function Projects() {
               $gtXs={{ w: 600, h: 600 }}
               $gtSm={{ w: 500, h: 600 }}
               $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
+              $gtLg={{ w: 400, h: 400 }}
               p="$3"
             >
               <Stack
@@ -562,7 +575,7 @@ export function Projects() {
               $gtXs={{ w: 600, h: 600 }}
               $gtSm={{ w: 500, h: 600 }}
               $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
+              $gtLg={{ w: 400, h: 400 }}
               p="$3"
             >
               <Stack
@@ -620,7 +633,7 @@ export function Projects() {
               $gtXs={{ w: 600, h: 600 }}
               $gtSm={{ w: 500, h: 600 }}
               $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
+              $gtLg={{ w: 400, h: 400 }}
               p="$3"
             >
               <Stack
@@ -680,7 +693,7 @@ export function Projects() {
               $gtXs={{ w: 600, h: 600 }}
               $gtSm={{ w: 500, h: 600 }}
               $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
+              $gtLg={{ w: 400, h: 400 }}
               p="$3"
             >
               <Stack
@@ -736,7 +749,7 @@ export function Projects() {
               $gtXs={{ w: 600, h: 600 }}
               $gtSm={{ w: 500, h: 600 }}
               $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
+              $gtLg={{ w: 400, h: 400 }}
               p="$3"
             >
               <Stack
@@ -793,7 +806,7 @@ export function Projects() {
               $gtXs={{ w: 600, h: 600 }}
               $gtSm={{ w: 500, h: 600 }}
               $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
+              $gtLg={{ w: 400, h: 400 }}
               p="$3"
             >
               <Stack
@@ -840,116 +853,116 @@ export function Projects() {
             </XStack>
           </a>
           {/*TEXAS TRACK ====================================================================-===============================*/}
-          <a
-            href="https://pradappet.myportfolio.com/texas-track-twister-racing"
-            style={{ textDecoration: 'none' }}
-          >
-            <XStack
-              h={600}
-              w="100vw"
-              $gtXs={{ w: 600, h: 600 }}
-              $gtSm={{ w: 500, h: 600 }}
-              $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
-              p="$3"
-            >
-              <Stack
-                bc="$color3"
-                p="$6"
-                animation="bouncy"
-                hoverStyle={{ scale: 0.925 }}
-                pressStyle={{ scale: 0.875 }}
-                boc="$color4"
-                bw="$1"
-                br="$10"
-                w="100%"
-                gap="$6"
-                style={{
-                  boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                }}
-              >
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/project-tttr.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  f={1}
-                  br="$7"
-                />
-                <XStack gap="$2" flexWrap="wrap" mb="$3">
-                  <Chip>Web Design</Chip>
-                  <Chip>User Experience</Chip>
-                  <Chip>User Interface</Chip>
-                  <Chip>Adobe XD</Chip>
-                </XStack>
-                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
-                  <YStack f={1} gap="$1">
-                    <Eyebrow>2019</Eyebrow>
-                    <Title>Texas Track Twister Racing</Title>
-                  </YStack>
-                  <Stack>
-                    <LinkOut />
-                  </Stack>
-                </XStack>
-              </Stack>
-            </XStack>
-          </a>
+          {/*<a*/}
+          {/*  href="https://pradappet.myportfolio.com/texas-track-twister-racing"*/}
+          {/*  style={{ textDecoration: 'none' }}*/}
+          {/*>*/}
+          {/*  <XStack*/}
+          {/*    h={600}*/}
+          {/*    w="100vw"*/}
+          {/*    $gtXs={{ w: 600, h: 600 }}*/}
+          {/*    $gtSm={{ w: 500, h: 600 }}*/}
+          {/*    $gtMd={{ w: 500, h: 500 }}*/}
+          {/*    $gtLg={{ w: 400, h: 400 }}*/}
+          {/*    p="$3"*/}
+          {/*  >*/}
+          {/*    <Stack*/}
+          {/*      bc="$color3"*/}
+          {/*      p="$6"*/}
+          {/*      animation="bouncy"*/}
+          {/*      hoverStyle={{ scale: 0.925 }}*/}
+          {/*      pressStyle={{ scale: 0.875 }}*/}
+          {/*      boc="$color4"*/}
+          {/*      bw="$1"*/}
+          {/*      br="$10"*/}
+          {/*      w="100%"*/}
+          {/*      gap="$6"*/}
+          {/*      style={{*/}
+          {/*        boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',*/}
+          {/*      }}*/}
+          {/*    >*/}
+          {/*      <Image*/}
+          {/*        source={{*/}
+          {/*          uri: '/assets/portfolio/project-tttr.png',*/}
+          {/*          width: '100%',*/}
+          {/*          height: '100%',*/}
+          {/*        }}*/}
+          {/*        f={1}*/}
+          {/*        br="$7"*/}
+          {/*      />*/}
+          {/*      <XStack gap="$2" flexWrap="wrap" mb="$3">*/}
+          {/*        <Chip>Web Design</Chip>*/}
+          {/*        <Chip>User Experience</Chip>*/}
+          {/*        <Chip>User Interface</Chip>*/}
+          {/*        <Chip>Adobe XD</Chip>*/}
+          {/*      </XStack>*/}
+          {/*      <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">*/}
+          {/*        <YStack f={1} gap="$1">*/}
+          {/*          <Eyebrow>2019</Eyebrow>*/}
+          {/*          <Title>Texas Track Twister Racing</Title>*/}
+          {/*        </YStack>*/}
+          {/*        <Stack>*/}
+          {/*          <LinkOut />*/}
+          {/*        </Stack>*/}
+          {/*      </XStack>*/}
+          {/*    </Stack>*/}
+          {/*  </XStack>*/}
+          {/*</a>*/}
           {/*ZIMPERIUM ====================================================================-===============================*/}
-          <a href="https://www.zimperium.com" style={{ textDecoration: 'none' }}>
-            <XStack
-              h={600}
-              w="100vw"
-              $gtXs={{ w: 600, h: 600 }}
-              $gtSm={{ w: 500, h: 600 }}
-              $gtMd={{ w: 500, h: 500 }}
-              $gtLg={{ w: 600, h: 600 }}
-              p="$3"
-            >
-              <Stack
-                bc="$color3"
-                p="$6"
-                animation="bouncy"
-                hoverStyle={{ scale: 0.925 }}
-                pressStyle={{ scale: 0.875 }}
-                boc="$color4"
-                bw="$1"
-                br="$10"
-                w="100%"
-                gap="$6"
-                style={{
-                  boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                }}
-              >
-                <Image
-                  source={{
-                    uri: '/assets/portfolio/project-zimperium.png',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  f={1}
-                  br="$7"
-                />
-                <XStack gap="$2" flexWrap="wrap" mb="$3">
-                  <Chip>User Experience</Chip>
-                  <Chip>User Interface</Chip>
-                  <Chip>Dashboard</Chip>
-                  <Chip>Prototyping</Chip>
-                  <Chip>Adobe XD</Chip>
-                  <Chip>Security</Chip>
-                </XStack>
-                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
-                  <YStack f={1} gap="$1">
-                    <Eyebrow>2019-2021</Eyebrow>
-                    <Title>Zimperium</Title>
-                  </YStack>
-                  <Stack>
-                    <LinkOut />
-                  </Stack>
-                </XStack>
-              </Stack>
-            </XStack>
-          </a>
+          {/*<a href="https://www.zimperium.com" style={{ textDecoration: 'none' }}>*/}
+          {/*  <XStack*/}
+          {/*    h={600}*/}
+          {/*    w="100vw"*/}
+          {/*    $gtXs={{ w: 600, h: 600 }}*/}
+          {/*    $gtSm={{ w: 500, h: 600 }}*/}
+          {/*    $gtMd={{ w: 500, h: 500 }}*/}
+          {/*    $gtLg={{ w: 400, h: 400 }}*/}
+          {/*    p="$3"*/}
+          {/*  >*/}
+          {/*    <Stack*/}
+          {/*      bc="$color3"*/}
+          {/*      p="$6"*/}
+          {/*      animation="bouncy"*/}
+          {/*      hoverStyle={{ scale: 0.925 }}*/}
+          {/*      pressStyle={{ scale: 0.875 }}*/}
+          {/*      boc="$color4"*/}
+          {/*      bw="$1"*/}
+          {/*      br="$10"*/}
+          {/*      w="100%"*/}
+          {/*      gap="$6"*/}
+          {/*      style={{*/}
+          {/*        boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',*/}
+          {/*      }}*/}
+          {/*    >*/}
+          {/*      <Image*/}
+          {/*        source={{*/}
+          {/*          uri: '/assets/portfolio/project-zimperium.png',*/}
+          {/*          width: '100%',*/}
+          {/*          height: '100%',*/}
+          {/*        }}*/}
+          {/*        f={1}*/}
+          {/*        br="$7"*/}
+          {/*      />*/}
+          {/*      <XStack gap="$2" flexWrap="wrap" mb="$3">*/}
+          {/*        <Chip>User Experience</Chip>*/}
+          {/*        <Chip>User Interface</Chip>*/}
+          {/*        <Chip>Dashboard</Chip>*/}
+          {/*        <Chip>Prototyping</Chip>*/}
+          {/*        <Chip>Adobe XD</Chip>*/}
+          {/*        <Chip>Security</Chip>*/}
+          {/*      </XStack>*/}
+          {/*      <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">*/}
+          {/*        <YStack f={1} gap="$1">*/}
+          {/*          <Eyebrow>2019-2021</Eyebrow>*/}
+          {/*          <Title>Zimperium</Title>*/}
+          {/*        </YStack>*/}
+          {/*        <Stack>*/}
+          {/*          <LinkOut />*/}
+          {/*        </Stack>*/}
+          {/*      </XStack>*/}
+          {/*    </Stack>*/}
+          {/*  </XStack>*/}
+          {/*</a>*/}
         </XStack>
       </YStack>
     </>
