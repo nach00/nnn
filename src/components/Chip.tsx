@@ -8,7 +8,8 @@ export function Chip({ children }) {
       col="$color11"
       size="$1"
       borderRadius="$20"
-      padding="$2"
+      px="$2"
+      py="$1"
     >
       {children}
     </Paragraph>
