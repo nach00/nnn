@@ -177,120 +177,120 @@ export const Home = () => {
               </XStack>
             </Link>
           </YStack>
-          <Link to="/services" underlayColor="$color9">
-            <XStack
-              h={360}
-              w="100vw"
-              $gtXs={{ w: 600, h: 300 }}
-              $gtSm={{ display: 'none' }}
-              $gtMd={{ w: 500, h: 250, display: 'flex' }}
-              $gtLg={{ w: 600, h: 300, display: 'flex' }}
-              p="$3"
+          {/*<Link to="/services" underlayColor="$color9">*/}
+          <XStack
+            h={360}
+            w="100vw"
+            $gtXs={{ w: 600, h: 300 }}
+            $gtSm={{ display: 'none' }}
+            $gtMd={{ w: 500, h: 250, display: 'flex' }}
+            $gtLg={{ w: 600, h: 300, display: 'flex' }}
+            p="$3"
+          >
+            <Stack
+              bc="$color3"
+              p="$6"
+              animation="bouncy"
+              // hoverStyle={{
+              //   scale: 0.925,
+              //   rotate: '3deg',
+              //   backgroundColor: '$yellow3',
+              //   borderColor: '$yellow4',
+              // }}
+              // pressStyle={{
+              //   scale: 0.875,
+              //   rotate: '-3deg'
+              // }}
+              boc="$color4"
+              bw="$1"
+              br="$10"
+              w="100%"
+              style={{
+                boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+              }}
             >
-              <Stack
-                bc="$color3"
-                p="$6"
-                animation="bouncy"
-                hoverStyle={{
-                  scale: 0.925,
-                  // rotate: '3deg',
-                  // backgroundColor: '$yellow3',
-                  // borderColor: '$yellow4',
-                }}
-                pressStyle={{
-                  scale: 0.875,
-                  // rotate: '-3deg'
-                }}
-                boc="$color4"
-                bw="$1"
-                br="$10"
-                w="100%"
-                style={{
-                  boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                }}
-              >
-                <XStack ai="center" jc="space-evenly" h="100%" f={1} $xs={{ fd: 'row' }}>
-                  <Stack
-                    col="$color11"
-                    bc="$color4"
-                    boc="$color5"
-                    bw="$1"
-                    ai="center"
-                    w="$10"
-                    h="$10"
-                    ai="center"
-                    gap="$2"
-                    jc="center"
-                    br="$7"
+              <XStack ai="center" jc="space-evenly" h="100%" f={1} $xs={{ fd: 'row' }}>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                >
+                  <UXUIDesign />
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
                   >
-                    <UXUIDesign />
-                    <Paragraph
-                      textAlign="center"
-                      tt="uppercase"
-                      size="$1"
-                      color="$color12"
-                      fontWeight="bold"
-                    >
-                      UX/UI Design
-                    </Paragraph>
-                  </Stack>
-                  <Stack
-                    col="$color11"
-                    bc="$color4"
-                    boc="$color5"
-                    bw="$1"
-                    ai="center"
-                    w="$10"
-                    h="$10"
-                    ai="center"
-                    gap="$2"
-                    jc="center"
-                    br="$7"
+                    UX/UI Design
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                >
+                  <DesignSystem />
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
                   >
-                    <DesignSystem />
-                    <Paragraph
-                      textAlign="center"
-                      tt="uppercase"
-                      size="$1"
-                      color="$color12"
-                      fontWeight="bold"
-                    >
-                      Design Systems
-                    </Paragraph>
-                  </Stack>
-                  <Stack
-                    col="$color11"
-                    bc="$color4"
-                    boc="$color5"
-                    bw="$1"
-                    ai="center"
-                    w="$10"
-                    h="$10"
-                    ai="center"
-                    gap="$2"
-                    jc="center"
-                    br="$7"
+                    Design Systems
+                  </Paragraph>
+                </Stack>
+                <Stack
+                  col="$color11"
+                  bc="$color4"
+                  boc="$color5"
+                  bw="$1"
+                  ai="center"
+                  w="$10"
+                  h="$10"
+                  ai="center"
+                  gap="$2"
+                  jc="center"
+                  br="$7"
+                >
+                  <WebDevelopment />
+                  <Paragraph
+                    textAlign="center"
+                    tt="uppercase"
+                    size="$1"
+                    color="$color12"
+                    fontWeight="bold"
                   >
-                    <WebDevelopment />
-                    <Paragraph
-                      textAlign="center"
-                      tt="uppercase"
-                      size="$1"
-                      color="$color12"
-                      fontWeight="bold"
-                    >
-                      Front-end Development
-                    </Paragraph>
-                  </Stack>
-                </XStack>
+                    Front-end Development
+                  </Paragraph>
+                </Stack>
+              </XStack>
 
-                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
-                  <Title>Services</Title>
-                  <ChevronRight />
-                </XStack>
-              </Stack>
-            </XStack>
-          </Link>
+              <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+                <Title>Services</Title>
+                {/*<ChevronRight />*/}
+              </XStack>
+            </Stack>
+          </XStack>
+          {/*</Link>*/}
         </YStack>
       </YStack>
       <YStack ai="center" $gtSm={{ fd: 'row', jc: 'center' }}>
