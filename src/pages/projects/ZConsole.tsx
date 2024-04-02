@@ -19,6 +19,7 @@ import { Eyebrow } from '../../components/Eyebrow'
 import { Title } from '../../components/Title'
 import { Link } from 'react-router-native'
 import React from 'react'
+import { LinkOut } from '../../assets/icons'
 
 export function ZConsole() {
   return (
@@ -826,7 +827,7 @@ export function ZConsole() {
             mb="$3"
           >
             <YStack mt="$6">
-              <H4>Step-by-step wizard for easy setup</H4>
+              <H5>Step-by-step wizard for easy setup</H5>
               <Paragraph mt="$3">
                 Shown below is my design for a user to setup and configure their mobile network with
                 the V5 zConsole.
@@ -945,14 +946,30 @@ export function ZConsole() {
             maw={600}
             mb="$3"
           >
+            <H4 my="$3" w="100%">
+              The Process
+            </H4>
+            <Paragraph>
+              Once I had established my general understanding of the company, its services, and the
+              stakeholders involved, I ultimately decided that creating a design system would be
+              vital to remaining consistent in all my designs. I designed Hyperion, which I describe
+              as a big data design system. You can see more about my design process creating this
+              system below.
+            </Paragraph>
+            <a
+              href="https://npradappet.myportfolio.com/hyperion-ds"
+              style={{ textDecoration: 'none' }}
+            >
+              <Button theme="active" w="100%" my="$6">
+                View Hyperion Design System
+              </Button>
+            </a>
             <YStack mt="$6">
-              <H4>Security analytics reports</H4>
+              <H5>Security analytics reports</H5>
               <Paragraph mt="$3">
-                Once I had established my general understanding of the company, its services, and
-                the stakeholders involved, I ultimately decided that creating a design system would
-                be vital to remaining consistent in all my designs. I designed Hyperion, which I
-                describe as a big data design system. You can see more about my design process
-                creating this system below.
+                One section that fully utilized the Hyperion Design System was the security
+                analytics reports that were generated when a user uploaded their mobile app to the
+                zConsole. Below are a few examples of the reports that were generated.
               </Paragraph>
             </YStack>
           </YStack>
