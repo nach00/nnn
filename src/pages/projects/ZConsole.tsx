@@ -39,6 +39,7 @@ export function ZConsole() {
 
             <Paragraph fontWeight="bold">-Tom Vongphakdy, Software Engineer</Paragraph>
           </YStack>
+
           <YStack
             bc="$color1"
             ai="center"
@@ -973,7 +974,7 @@ export function ZConsole() {
               </Paragraph>
             </YStack>
           </YStack>
-          <YStack gap="$3" mb="$12">
+          <YStack gap="$3" mb="">
             <Stack
               width={900 / 2.5}
               height={506 / 2.5}
@@ -1016,6 +1017,32 @@ export function ZConsole() {
                 }}
               />
             </Stack>
+          </YStack>
+          <YStack maw={900} bc="$color6" p="$6" mt="$6" gap="$3" mx="$3" mb="$12">
+            <Paragraph>
+              "I highly recommend Natcha for any UX / UI role. In his time at Zimperium, Natcha
+              aided greatly with both Mobile App Design and Web Design.
+              <ListItem bc="$color6">
+                * For Mobile App Design, we had both iOS and Android apps. Natcha spent time with
+                the iOS and Android developer teams to ensure that his designs could be implemented
+                within the timeframe specified by Product Management and made any necessary changes
+                until this was possible. His app designs were clear and succinct, making it look
+                easy to use our apps, while adding new features that seemed natural and intuitive to
+                use. His designs for mobile were personally praised by the VP of Engineering to the
+                entire department.
+              </ListItem>
+              <ListItem bc="$color6">
+                * For Web Design, we had several web apps. Natcha met with frontend developers to
+                ensure that the designs could be implemented while meeting specifications from
+                Product Management. He added features and pages quickly, and when possible, would
+                make changes to designs live in meetings to ensure all necessary changes were made.
+              </ListItem>
+              Natcha has an extraordinary ability to comprehend and transform complex verbal
+              requirements into UX designs. He has both fresh, innovative ideas and a collaborative
+              spirit."
+            </Paragraph>
+
+            <Paragraph fontWeight="bold">-Andrew Fausak, Principal Software Developer</Paragraph>
           </YStack>
         </YStack>
       </Stack>
