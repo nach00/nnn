@@ -1042,7 +1042,9 @@ export function ZConsole() {
               spirit."
             </Paragraph>
 
-            <Paragraph fontWeight="bold">-Andrew Fausak, Principal Software Developer</Paragraph>
+            <Paragraph fontWeight="bold">
+              -Andrew Fausak, Principal Software Developer at Dell Technologies
+            </Paragraph>
           </YStack>
         </YStack>
       </Stack>
