@@ -39,7 +39,13 @@ export function Resume() {
                 href="https://drive.google.com/file/d/1CtfntNdtceR6QrpqUcvav9MngrgLtbOf/view?usp=sharing"
                 style={{ textDecoration: 'none' }}
               >
-                <Button>Download resume</Button>
+                <Button>Download original resume</Button>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1UZHSnu19OoNIZKwutUrtb7TQCK_ipCQu/view?usp=drive_link"
+                style={{ textDecoration: 'none' }}
+              >
+                <Button>Download ATS resume</Button>
               </a>
             </YStack>
           </YStack>

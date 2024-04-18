@@ -9,6 +9,7 @@ import { Tamagui } from './pages/projects/Tamagui'
 import { Scoutify } from './pages/projects/Scoutify'
 import { ZConsole } from './pages/projects/ZConsole'
 import { Fossil } from './pages/projects/Fossil'
+import { RFIDInterlock } from './pages/projects/RFIDInterlock'
 import { TopBar } from './components/TopBar'
 import { BottomBar } from './components/BottomBar'
 import { Services } from './pages/Services'
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="projects/fossil" element={<Fossil />} />
           <Route path="projects/scoutify" element={<Scoutify />} />
           <Route path="projects/zconsole" element={<ZConsole />} />
+          <Route path="projects/rfidinterlock" element={<RFIDInterlock />} />
           <Route path="fsl" element={<Skagen />} />
         </Route>
       </Routes>
