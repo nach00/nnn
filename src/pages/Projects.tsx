@@ -128,7 +128,7 @@ export function Projects() {
                 </XStack>
                 <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
                   <YStack f={1} gap="$1">
-                    <Eyebrow>2021-2022</Eyebrow>
+                    <Eyebrow>2021-2023</Eyebrow>
                     <Title>Scoutify</Title>
                   </YStack>
                   <Stack>
