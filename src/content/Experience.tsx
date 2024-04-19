@@ -80,7 +80,7 @@ export function Experience() {
           dates="July 2022 to June 2023"
           location="Dallas, TX - Hybrid"
           organization="Insite"
-          title="UX Specialist"
+          title="UX Strategist"
           description="Specialized in UX strategy, UX design, and information architecture for a variety of clients, including:"
         >
           <YStack>
