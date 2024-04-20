@@ -21,22 +21,24 @@ export function Experience() {
               {/*Co-founded a design and development studio providing freelance services for a variety*/}
               {/*of clients, including:*/}
               <ListItem>
-                • Tamagui – Design system specialist for React Native framework compatible with web,
-                Android, and iOS.
+                • Tamagui: Design System Designer – organized Figma UI kit with 30+ components, 3
+                utility variables, and 4 color variants.
               </ListItem>
               <ListItem>
-                • Scoutflix – UI/UX designer for social media platform, similar to LinkedIn for
-                sports.
+                • Scoutflix: UX Director – established user flows, information architecture,
+                sitemap, low-fidelity wireframes, and prototypes.
               </ListItem>
               <ListItem>
-                • GGWP – UI/UX designer for reputation management solution in video games.
+                • GGWP: UI/UX Designer – created admin dashboard, user profile, and in-game overlay
+                design mockups for 3+ video games.
               </ListItem>
               <ListItem>
-                • Net Consensus – Front-end developer for Upquest, a Reddit alternative.
+                • Net Consensus: React Developer & UI Designer – modernized first-time user
+                experience and implemented color themes.
               </ListItem>
               <ListItem>
-                • RFID Interlock – UI/UX designer for hardware security and identity management
-                platform.
+                • RFID Interlock: UI/UX Designer – overhauled admin dashboard experience and reduced
+                time to task completion by 80%.
               </ListItem>
             </Paragraph>
 
@@ -86,24 +88,28 @@ export function Experience() {
           <YStack>
             <Paragraph>
               <ListItem>
-                • TopGolf – UX researcher for food and entertainment venue seeking to optimize the
-                online booking process.
+                • TopGolf: UX Researcher – administered 30+ user interviews and provided actionable
+                data to optimize online booking.
               </ListItem>
               <ListItem>
-                • Fossil Group – Email developer for brands Fossil, Relic, Michele Watch, Skagen
-                Denmark, Misfit, WSI, and Zodiac Watches.
+                • Fossil Group: Email Developer – translated Adobe XD design files into HTML and CSS
+                code for 7 watch brands.
               </ListItem>
               <ListItem>
-                • Bimbo Bakeries USA – Front end developer for bakery company distributing in-store
-                displays to retail stores.
+                • Bimbo Bakeries USA: Front end developer – resolved bugs and improved functionality
+                for Django/Bootstrap web app.
               </ListItem>
               <ListItem>
-                • UT Southwestern – Front-end developer for public academic health science center
-                looking to migrate CMS platforms.
+                • UT Southwestern: Front-End Developer – migrated CMS platform from Alfresco to
+                Drupal and updated new landing page.
               </ListItem>
               <ListItem>
-                • PawzPurr – UX strategist for startup company providing financial assistance to
-                pets of the deceased.
+                • PawzPurr: UX Strategist – developed new business model canvas, mapped process
+                flow, and ideated wireframes.
+              </ListItem>{' '}
+              <ListItem>
+                • Njevity: UX Auditor – scoped new project requirements, identified bottlenecks, and
+                synthesized swim lane diagrams.
               </ListItem>
             </Paragraph>
 
@@ -143,16 +149,16 @@ export function Experience() {
           <YStack>
             <Paragraph>
               <ListItem>
-                • Baker & Taylor – UI/UX designer for library e-reader app, similar to Netflix for
-                books.
+                • Baker & Taylor: UI/UX Designer – created mobile, tablet, and web designs and
+                transitioned team from Adobe XD to Figma.
               </ListItem>
               <ListItem>
-                • Banfield Pet Hospital – UI/UX designer for veterinary clinic seeking to upgrade
-                its online patient and scheduling software.
+                • Banfield Pet Hospital: UI/UX Designer – upgraded existing admin dashboard with new
+                feature requirements.
               </ListItem>
               <ListItem>
-                • Waltz Health – UI/UX designer for online pharmaceutical company, similar to
-                GoodRX.
+                • Waltz Health: UI/UX Designer – designed static website mockup for mobile and
+                desktop and directed motion graphics.
               </ListItem>
             </Paragraph>
 
@@ -186,15 +192,16 @@ export function Experience() {
           <YStack>
             <Paragraph>
               <ListItem>
-                • Collaborated with 3 engineering teams and 2 VPs of Product to provide optimal
-                solutions to project requirements.
+                • Collaborated with 3 engineering teams and 2 SVPs of Product Management and
+                provided optimal design solutions.
               </ListItem>
               <ListItem>
-                • Balanced features and improvements for current and next-gen admin dashboards.
+                • Balanced new features for both current and next-gen admin dashboards, while
+                prioritizing consistent design patterns.
               </ListItem>
               <ListItem>
-                • Organized design files for 5+ SaaS products, including a mobile app with 8+
-                cobrands.
+                • Organized and maintained design files for 5+ SaaS products, a mobile app with 8+
+                cobrands, and a Chrome extension.
               </ListItem>
             </Paragraph>
 

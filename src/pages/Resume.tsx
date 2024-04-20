@@ -42,7 +42,7 @@ export function Resume() {
                 <Button>Download original resume</Button>
               </a>
               <a
-                href="https://drive.google.com/file/d/1UZHSnu19OoNIZKwutUrtb7TQCK_ipCQu/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1AI9yE43z6eyZFr-Qubdlf0lW8JPbZRT0/view?usp=sharing"
                 style={{ textDecoration: 'none' }}
               >
                 <Button>Download ATS resume</Button>
