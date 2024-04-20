@@ -17,7 +17,7 @@ export function Experience() {
           // description="Co-founded the design and development studio that provides freelance services to a variety of clients, directing design to optimize product solutions spanning web and native apps and deliver enhanced user experiences (UX)."
         >
           <YStack>
-            <Paragraph>
+            <Paragraph lh="$6">
               {/*Co-founded a design and development studio providing freelance services for a variety*/}
               {/*of clients, including:*/}
               <ListItemText>
@@ -86,7 +86,7 @@ export function Experience() {
           description="Specialized in UX strategy, UX design, and information architecture for a variety of clients, including:"
         >
           <YStack>
-            <Paragraph>
+            <Paragraph lh="$6">
               <ListItemText>
                 • TopGolf: UX Researcher – administered 30+ user interviews and provided actionable
                 data to optimize online booking.
@@ -147,7 +147,7 @@ export function Experience() {
           description="Provided UX and product consultation for a variety of clients, including:"
         >
           <YStack>
-            <Paragraph>
+            <Paragraph lh="$6">
               <ListItemText>
                 • Baker & Taylor: UI/UX Designer – created mobile, tablet, and web designs and
                 transitioned team from Adobe XD to Figma.
@@ -190,7 +190,7 @@ export function Experience() {
           description="Led product design initiative cybersecurity agency specializing in mobile threat detection."
         >
           <YStack>
-            <Paragraph>
+            <Paragraph lh="$6">
               <ListItemText>
                 • Collaborated with 3 engineering teams and 2 SVPs of Product Management and
                 provided optimal design solutions.
