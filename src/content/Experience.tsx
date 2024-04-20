@@ -1,5 +1,5 @@
 import { ResumeItem } from '../components/ResumeItem'
-import { H6, ListItem, Paragraph, YStack } from 'tamagui'
+import { H6, ListItem, ListItemText, Paragraph, YStack } from 'tamagui'
 export function Experience() {
   return (
     <>
@@ -20,26 +20,26 @@ export function Experience() {
             <Paragraph>
               {/*Co-founded a design and development studio providing freelance services for a variety*/}
               {/*of clients, including:*/}
-              <ListItem>
+              <ListItemText>
                 • Tamagui: Design System Designer – organized Figma UI kit with 30+ components, 3
                 utility variables, and 4 color variants.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • Scoutflix: UX Director – established user flows, information architecture,
                 sitemap, low-fidelity wireframes, and prototypes.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • GGWP: UI/UX Designer – created admin dashboard, user profile, and in-game overlay
                 design mockups for 3+ video games.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • Net Consensus: React Developer & UI Designer – modernized first-time user
                 experience and implemented color themes.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • RFID Interlock: UI/UX Designer – overhauled admin dashboard experience and reduced
                 time to task completion by 80%.
-              </ListItem>
+              </ListItemText>
             </Paragraph>
 
             {/*<Paragraph lh="$5">*/}
@@ -87,30 +87,30 @@ export function Experience() {
         >
           <YStack>
             <Paragraph>
-              <ListItem>
+              <ListItemText>
                 • TopGolf: UX Researcher – administered 30+ user interviews and provided actionable
                 data to optimize online booking.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • Fossil Group: Email Developer – translated Adobe XD design files into HTML and CSS
                 code for 7 watch brands.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • Bimbo Bakeries USA: Front end developer – resolved bugs and improved functionality
                 for Django/Bootstrap web app.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • UT Southwestern: Front-End Developer – migrated CMS platform from Alfresco to
                 Drupal and updated new landing page.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • PawzPurr: UX Strategist – developed new business model canvas, mapped process
                 flow, and ideated wireframes.
-              </ListItem>{' '}
-              <ListItem>
+              </ListItemText>{' '}
+              <ListItemText>
                 • Njevity: UX Auditor – scoped new project requirements, identified bottlenecks, and
                 synthesized swim lane diagrams.
-              </ListItem>
+              </ListItemText>
             </Paragraph>
 
             {/*<Paragraph lh="$5">*/}
@@ -148,18 +148,18 @@ export function Experience() {
         >
           <YStack>
             <Paragraph>
-              <ListItem>
+              <ListItemText>
                 • Baker & Taylor: UI/UX Designer – created mobile, tablet, and web designs and
                 transitioned team from Adobe XD to Figma.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • Banfield Pet Hospital: UI/UX Designer – upgraded existing admin dashboard with new
                 feature requirements.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • Waltz Health: UI/UX Designer – designed static website mockup for mobile and
                 desktop and directed motion graphics.
-              </ListItem>
+              </ListItemText>
             </Paragraph>
 
             {/*<Paragraph lh="$5">*/}
@@ -191,18 +191,18 @@ export function Experience() {
         >
           <YStack>
             <Paragraph>
-              <ListItem>
+              <ListItemText>
                 • Collaborated with 3 engineering teams and 2 SVPs of Product Management and
                 provided optimal design solutions.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • Balanced new features for both current and next-gen admin dashboards, while
                 prioritizing consistent design patterns.
-              </ListItem>
-              <ListItem>
+              </ListItemText>
+              <ListItemText>
                 • Organized and maintained design files for 5+ SaaS products, a mobile app with 8+
                 cobrands, and a Chrome extension.
-              </ListItem>
+              </ListItemText>
             </Paragraph>
 
             {/*<Paragraph lh="$5">*/}
