@@ -1,6 +1,8 @@
 import { Routes, Route, Outlet } from 'react-router-native'
 import { Analytics } from '@vercel/analytics/react'
 
+import { SpeedInsights } from '@vercel/speed-insights/next'
+
 import { Home } from './pages/Home'
 import { About } from './pages/About'
 import { Resume } from './pages/Resume'
@@ -52,6 +54,8 @@ function Layout() {
           share across all the pages on your site, like navigation. */}
 
       <Analytics />
+
+      <SpeedInsights />
 
       <TopBar />
 
