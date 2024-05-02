@@ -1,4 +1,5 @@
 import { Routes, Route, Outlet } from 'react-router-native'
+import { Analytics } from '@vercel/analytics/react'
 
 import { Home } from './pages/Home'
 import { About } from './pages/About'
@@ -49,6 +50,8 @@ function Layout() {
     <>
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
+
+      <Analytics />
 
       <TopBar />
 

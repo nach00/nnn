@@ -9,7 +9,7 @@ export function SmallHomeCard({ children }: HomeCardTypes) {
   return (
     <XStack
       height={360}
-      width="100vw"
+      // width={'100vw'}
       $gtXs={{ width: 300, height: 300 }}
       $gtSm={{ width: 300, height: 300 }}
       $gtMd={{ width: 250, height: 250 }}
