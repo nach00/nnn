@@ -1,28 +1,5 @@
-import {
-  H2,
-  H6,
-  Stack,
-  H1,
-  Paragraph,
-  XStack,
-  YStack,
-  Image,
-  H5,
-  H4,
-  H3,
-  Text,
-  Button,
-} from 'tamagui'
-import React, { useState } from 'react'
-import { Card, SmallCard, StaticCard } from '../components/Card'
-import { ResumeItem } from '../components/ResumeItem'
-import { Experience } from '../content/Experience'
-import { Education } from '../content/Education'
-import { TopBar } from '../components/TopBar'
-import { BottomBar } from '../components/BottomBar'
-import { Eyebrow } from '../components/Eyebrow'
-import { Title } from '../components/Title'
-import { ChevronRight, DesignSystem, UXUIDesign, WebDevelopment, Sparkle } from '../assets/icons'
+import { H6, Stack, Paragraph, XStack, YStack, Image, H3, Text, Button } from 'tamagui'
+import { Sparkle } from '../assets/icons'
 import { Link } from 'react-router-native'
 import { Overview } from '../content/Overview'
 

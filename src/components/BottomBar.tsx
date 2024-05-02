@@ -1,17 +1,4 @@
-import {
-  YStack,
-  XStack,
-  Button,
-  Anchor,
-  H6,
-  H5,
-  H4,
-  H3,
-  Paragraph,
-  Image,
-  H1,
-  Separator,
-} from 'tamagui'
+import { YStack, XStack, Image, H1, Separator } from 'tamagui'
 import React from 'react'
 import { Email, Github, Instagram, LinkedIn } from '../assets/icons'
 import { Link } from 'react-router-dom'

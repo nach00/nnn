@@ -7,7 +7,7 @@ export function Chip({ children }) {
       backgroundColor="$color6"
       col="$color11"
       size="$1"
-      borderRadius="$20"
+      borderRadius="$12"
       px="$2"
       py="$1"
     >

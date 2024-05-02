@@ -108,44 +108,44 @@ export function Projects() {
             </ProjectCard>
           </Link>
           {/*RFID INTERLOCK ====================================================================-===============================*/}
-          <Link to="/projects/rfidinterlock" underlayColor="$color9">
-            <ProjectCard>
-              <Image
-                source={{
-                  uri: '/assets/portfolio/project-rfid.png',
-                  width: '100%',
-                  height: '100%',
-                }}
-                flex={1}
-                br="$7"
-              />
-              <XStack gap="$2" flexWrap="wrap" marginBottom="$3">
-                <Chip>User Experience</Chip>
-                <Chip>User Interface</Chip>
-                <Chip>High Fidelity</Chip>
-                <Chip>Dashboard</Chip>
-                <Chip>Desktop</Chip>
-                <Chip>Web</Chip>
-                <Chip>Adobe XD</Chip>
-                <Chip>Security</Chip>
-              </XStack>
-              <XStack
-                justifyContent="space-between"
-                alignItems="flex-end"
-                width="100%"
-                flex={1}
-                gap="$6"
-              >
-                <YStack flex={1} gap="$1">
-                  <Eyebrow>2019</Eyebrow>
-                  <Title>RFID Interlock</Title>
-                </YStack>
-                <Stack>
-                  <ChevronRight />
-                </Stack>
-              </XStack>
-            </ProjectCard>
-          </Link>
+          {/*<Link to="/projects/rfidinterlock" underlayColor="$color9">*/}
+          {/*  <ProjectCard>*/}
+          {/*    <Image*/}
+          {/*      source={{*/}
+          {/*        uri: '/assets/portfolio/project-rfid.png',*/}
+          {/*        width: '100%',*/}
+          {/*        height: '100%',*/}
+          {/*      }}*/}
+          {/*      flex={1}*/}
+          {/*      br="$7"*/}
+          {/*    />*/}
+          {/*    <XStack gap="$2" flexWrap="wrap" marginBottom="$3">*/}
+          {/*      <Chip>User Experience</Chip>*/}
+          {/*      <Chip>User Interface</Chip>*/}
+          {/*      <Chip>High Fidelity</Chip>*/}
+          {/*      <Chip>Dashboard</Chip>*/}
+          {/*      <Chip>Desktop</Chip>*/}
+          {/*      <Chip>Web</Chip>*/}
+          {/*      <Chip>Adobe XD</Chip>*/}
+          {/*      <Chip>Security</Chip>*/}
+          {/*    </XStack>*/}
+          {/*    <XStack*/}
+          {/*      justifyContent="space-between"*/}
+          {/*      alignItems="flex-end"*/}
+          {/*      width="100%"*/}
+          {/*      flex={1}*/}
+          {/*      gap="$6"*/}
+          {/*    >*/}
+          {/*      <YStack flex={1} gap="$1">*/}
+          {/*        <Eyebrow>2019</Eyebrow>*/}
+          {/*        <Title>RFID Interlock</Title>*/}
+          {/*      </YStack>*/}
+          {/*      <Stack>*/}
+          {/*        <ChevronRight />*/}
+          {/*      </Stack>*/}
+          {/*    </XStack>*/}
+          {/*  </ProjectCard>*/}
+          {/*</Link>*/}
         </XStack>
         <XStack
           $gtLg={{ width: 1200 }}
