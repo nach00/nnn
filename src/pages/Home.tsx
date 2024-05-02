@@ -2,14 +2,16 @@ import '@tamagui/core/reset.css'
 import '../assets/styles.css'
 import { Title } from '../components/Title'
 import { Eyebrow } from '../components/Eyebrow'
-import { UXUIDesign, DesignSystem, WebDevelopment, Strategy, ChevronRight } from '../assets/icons'
-import { H1, H4, Image, Paragraph, Stack, XStack, YStack } from 'tamagui'
+import { UXUIDesign, DesignSystem, WebDevelopment, ChevronRight } from '../assets/icons'
+import { H4, Image, Paragraph, Stack, XStack, YStack } from 'tamagui'
 import { Link } from 'react-router-native'
+import { MiniHomeCard, MiniHomeCardNoBg, SmallHomeCard } from '../components/HomeCards'
+import { SmallCaps } from '../components/SmallCaps'
 
 export const Home = () => {
   return (
     <>
-      <YStack ai="center" $gtSm={{ fd: 'row', jc: 'center' }}>
+      <YStack ai="center" $gtSm={{ flexDirection: 'row', justifyContent: 'center' }}>
         <Link to="/about" underlayColor="$color9">
           <XStack
             h={600}
@@ -63,118 +65,58 @@ export const Home = () => {
           </XStack>
         </Link>
         <YStack>
-          <YStack $gtXs={{ fd: 'row' }} $gtSm={{ fd: 'column' }} $gtMd={{ fd: 'row' }}>
+          <YStack
+            $gtXs={{ flexDirection: 'row' }}
+            $gtSm={{ flexDirection: 'column' }}
+            $gtMd={{ flexDirection: 'row' }}
+          >
             <Link to="/projects" underlayColor="$color9">
-              <XStack
-                h={360}
-                w="100vw"
-                $gtXs={{ w: 300, h: 300 }}
-                $gtSm={{ w: 300, h: 300 }}
-                $gtMd={{ w: 250, h: 250 }}
-                $gtLg={{ w: 300, h: 300 }}
-                p="$3"
-              >
-                <Stack
-                  bc="$color3"
-                  p="$6"
-                  animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                    // rotate: '-1deg',
-                    // backgroundColor: '$red3',
-                    // borderColor: '$red4',
-                  }}
-                  pressStyle={{
-                    scale: 0.875,
-                    // rotate: '1deg'
-                  }}
-                  boc="$color4"
-                  bw="$1"
-                  br="$10"
-                  w="100%"
-                  style={{
-                    boxShadow:
-                      '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                  }}
-                >
-                  <Stack ai="center" jc="center" h="100%" f={1}>
-                    <Image
-                      source={{
-                        uri: '/assets/portfolio/tamagui/laptop-transparent-bg.png',
-                        width: 150,
-                        height: 150,
-                      }}
-                      $gtSm={{ scale: 1 }}
-                      $gtMd={{ scale: 0.75 }}
-                      $gtLg={{ scale: 1 }}
-                    />
-                  </Stack>
-
-                  <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
-                    <Title>Projects</Title>
-                    <Stack>
-                      <ChevronRight />
-                    </Stack>
-                  </XStack>
+              <SmallHomeCard>
+                <Stack ai="center" jc="center" h="100%" f={1}>
+                  <Image
+                    source={{
+                      uri: '/assets/portfolio/tamagui/laptop-transparent-bg.png',
+                      width: 150,
+                      height: 150,
+                    }}
+                    $gtSm={{ scale: 1 }}
+                    $gtMd={{ scale: 0.75 }}
+                    $gtLg={{ scale: 1 }}
+                  />
                 </Stack>
-              </XStack>
+
+                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
+                  <Title>Projects</Title>
+                  <Stack>
+                    <ChevronRight />
+                  </Stack>
+                </XStack>
+              </SmallHomeCard>
             </Link>
             <Link to="/projects/zconsole" underlayColor="$color9">
-              <XStack
-                h={360}
-                w="100vw"
-                $gtXs={{ w: 300, h: 300 }}
-                $gtSm={{ w: 300, h: 300 }}
-                $gtMd={{ w: 250, h: 250 }}
-                $gtLg={{ w: 300, h: 300 }}
-                p="$3"
-              >
-                <Stack
-                  bc="$color3"
-                  p="$6"
-                  animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                    // rotate: '-2deg',
-                    // backgroundColor: '$green3',
-                    // borderColor: '$green4',
-                  }}
-                  pressStyle={{
-                    scale: 0.875,
-                    // rotate: '2deg'
-                  }}
-                  boc="$color4"
-                  bw="$1"
-                  br="$10"
-                  w="100%"
-                  style={{
-                    boxShadow:
-                      '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                  }}
-                >
-                  <Stack ai="center" jc="center" h="100%" f={1}>
-                    <Image
-                      source={{
-                        uri: '/assets/portfolio/zimperium/logo-zconsole-transparent.png',
-                        // uri: '/assets/icons/tamagui-logo.svg',
+              <SmallHomeCard>
+                <Stack ai="center" jc="center" h="100%" f={1}>
+                  <Image
+                    source={{
+                      uri: '/assets/portfolio/zimperium/logo-zconsole-transparent.png',
+                      // uri: '/assets/icons/tamagui-logo.svg',
 
-                        width: 180,
-                        height: 130,
-                      }}
-                      $gtSm={{ scale: 1 }}
-                      $gtMd={{ scale: 0.75 }}
-                      $gtLg={{ scale: 1 }}
-                    />
-                  </Stack>
-
-                  <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
-                    <Title>Featured</Title>
-                    <Stack>
-                      <ChevronRight />
-                    </Stack>
-                  </XStack>
+                      width: 180,
+                      height: 130,
+                    }}
+                    $gtSm={{ scale: 1 }}
+                    $gtMd={{ scale: 0.75 }}
+                    $gtLg={{ scale: 1 }}
+                  />
                 </Stack>
-              </XStack>
+
+                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
+                  <Title>Featured</Title>
+                  <Stack>
+                    <ChevronRight />
+                  </Stack>
+                </XStack>
+              </SmallHomeCard>
             </Link>
           </YStack>
           {/*<Link to="/services" underlayColor="$color9">*/}
@@ -209,20 +151,8 @@ export const Home = () => {
                 boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
               }}
             >
-              <XStack ai="center" jc="space-evenly" h="100%" f={1} $xs={{ fd: 'row' }}>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                >
+              <XStack ai="center" jc="space-evenly" h="100%" f={1} $xs={{ flexDirection: 'row' }}>
+                <MiniHomeCard>
                   <UXUIDesign />
                   <Paragraph
                     textAlign="center"
@@ -233,20 +163,8 @@ export const Home = () => {
                   >
                     UX/UI Design
                   </Paragraph>
-                </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                >
+                </MiniHomeCard>
+                <MiniHomeCard>
                   <DesignSystem />
                   <Paragraph
                     textAlign="center"
@@ -257,20 +175,8 @@ export const Home = () => {
                   >
                     Design Systems
                   </Paragraph>
-                </Stack>
-                <Stack
-                  col="$color11"
-                  bc="$color4"
-                  boc="$color5"
-                  bw="$1"
-                  ai="center"
-                  w="$10"
-                  h="$10"
-                  ai="center"
-                  gap="$2"
-                  jc="center"
-                  br="$7"
-                >
+                </MiniHomeCard>
+                <MiniHomeCard>
                   <WebDevelopment />
                   <Paragraph
                     textAlign="center"
@@ -281,7 +187,7 @@ export const Home = () => {
                   >
                     Front-end Development
                   </Paragraph>
-                </Stack>
+                </MiniHomeCard>
               </XStack>
 
               <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
@@ -293,9 +199,13 @@ export const Home = () => {
           {/*</Link>*/}
         </YStack>
       </YStack>
-      <YStack ai="center" $gtSm={{ fd: 'row', jc: 'center' }}>
+      <YStack ai="center" $gtSm={{ flexDirection: 'row', justifyContent: 'center' }}>
         <YStack>
-          <YStack $gtXs={{ fd: 'row' }} $gtSm={{ fd: 'column' }} $gtMd={{ fd: 'row' }}></YStack>
+          <YStack
+            $gtXs={{ flexDirection: 'row' }}
+            $gtSm={{ flexDirection: 'column' }}
+            $gtMd={{ flexDirection: 'row' }}
+          ></YStack>
           <Link to="/services" underlayColor="$color9">
             <XStack
               h={360}
@@ -330,79 +240,19 @@ export const Home = () => {
                 }}
               >
                 <XStack ai="center" jc="space-evenly" h="100%" f={1}>
-                  <Stack
-                    col="$color11"
-                    bc="$color4"
-                    boc="$color5"
-                    bw="$1"
-                    ai="center"
-                    w="$10"
-                    h="$10"
-                    ai="center"
-                    gap="$2"
-                    jc="center"
-                    br="$7"
-                  >
+                  <MiniHomeCard>
                     <UXUIDesign />
-                    <Paragraph
-                      textAlign="center"
-                      tt="uppercase"
-                      size="$1"
-                      color="$color12"
-                      fontWeight="bold"
-                    >
-                      UX/UI Design
-                    </Paragraph>
-                  </Stack>
-                  <Stack
-                    col="$color11"
-                    bc="$color4"
-                    boc="$color5"
-                    bw="$1"
-                    ai="center"
-                    w="$10"
-                    h="$10"
-                    ai="center"
-                    gap="$2"
-                    jc="center"
-                    br="$7"
-                  >
+                    <SmallCaps>UX/UI Design</SmallCaps>
+                  </MiniHomeCard>
+                  <MiniHomeCard>
                     <DesignSystem />
-                    <Paragraph
-                      textAlign="center"
-                      tt="uppercase"
-                      size="$1"
-                      color="$color12"
-                      fontWeight="bold"
-                    >
-                      Design Systems
-                    </Paragraph>
-                  </Stack>
+                    <SmallCaps>Design Systems</SmallCaps>
+                  </MiniHomeCard>
 
-                  <Stack
-                    col="$color11"
-                    bc="$color4"
-                    boc="$color5"
-                    bw="$1"
-                    ai="center"
-                    w="$10"
-                    h="$10"
-                    ai="center"
-                    gap="$2"
-                    jc="center"
-                    br="$7"
-                  >
+                  <MiniHomeCard>
                     <WebDevelopment />
-                    <Paragraph
-                      textAlign="center"
-                      tt="uppercase"
-                      size="$1"
-                      color="$color12"
-                      fontWeight="bold"
-                    >
-                      Front-end Development
-                    </Paragraph>
-                  </Stack>
+                    <SmallCaps>Front-end Development</SmallCaps>
+                  </MiniHomeCard>
                 </XStack>
 
                 <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
@@ -414,7 +264,7 @@ export const Home = () => {
           </Link>
         </YStack>
       </YStack>
-      <YStack ai="center" $gtSm={{ fd: 'row', jc: 'center' }}>
+      <YStack ai="center" $gtSm={{ flexDirection: 'row', justifyContent: 'center' }}>
         <XStack
           h={360}
           w="100vw"
@@ -443,184 +293,82 @@ export const Home = () => {
               $gtSm={{ flexDirection: 'column' }}
               $gtMd={{ flexDirection: 'row' }}
             >
-              <Stack
-                col="$color11"
-                bc="$color4"
-                boc="$color5"
-                bw="$1"
-                ai="center"
-                w="$10"
-                h="$10"
-                ai="center"
-                gap="$2"
-                jc="center"
-                br="$7"
-              >
+              <MiniHomeCard>
                 <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
                   <H4 color="$color11">5</H4>
-                  <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">
-                    Years experience
-                  </Paragraph>
+                  <SmallCaps>Years experience</SmallCaps>
                 </YStack>
-              </Stack>
-              <Stack
-                col="$color11"
-                bc="$color4"
-                boc="$color5"
-                bw="$1"
-                ai="center"
-                w="$10"
-                h="$10"
-                ai="center"
-                gap="$2"
-                jc="center"
-                br="$7"
-              >
+              </MiniHomeCard>
+              <MiniHomeCard>
                 <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
                   <H4 color="$color11">20+</H4>
-                  <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">
-                    Clients worldwide
-                  </Paragraph>
+                  <SmallCaps>Clients worldwide</SmallCaps>
                 </YStack>
-              </Stack>
-              <Stack
-                col="$color11"
-                bc="$color4"
-                boc="$color5"
-                bw="$1"
-                ai="center"
-                w="$10"
-                h="$10"
-                ai="center"
-                gap="$2"
-                jc="center"
-                br="$7"
-              >
+              </MiniHomeCard>
+              <MiniHomeCard>
                 <YStack ai="center" jc="center" gap="$1" $gtXs={{ maw: '$10' }}>
                   <H4 color="$color11">100+</H4>
-                  <Paragraph ta="center" color="$color12" tt="uppercase" size="$1">
-                    Total projects
-                  </Paragraph>
+                  <SmallCaps>Total projects</SmallCaps>
                 </YStack>
-              </Stack>
-            </XStack>{' '}
+              </MiniHomeCard>
+            </XStack>
           </Stack>
         </XStack>
         <YStack>
-          <YStack $gtXs={{ fd: 'row' }} $gtSm={{ fd: 'column' }} $gtMd={{ fd: 'row' }}>
+          <YStack
+            $gtXs={{ flexDirection: 'row' }}
+            $gtSm={{ flexDirection: 'column' }}
+            $gtMd={{ flexDirection: 'row' }}
+          >
             <Link to="/resume" underlayColor="$color9">
-              <XStack
-                h={360}
-                w="100vw"
-                $gtXs={{ w: 300, h: 300 }}
-                $gtSm={{ w: 500, h: 300 }}
-                $gtMd={{ w: 250, h: 250 }}
-                $gtLg={{ w: 300, h: 300 }}
-                p="$3"
-              >
-                <Stack
-                  bc="$color3"
-                  p="$6"
-                  animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                    // rotate: '1deg',
-                    // backgroundColor: '$purple3',
-                    // borderColor: '$purple4',
-                  }}
-                  pressStyle={{
-                    scale: 0.875,
-                    // rotate: '-1deg'
-                  }}
-                  boc="$color4"
-                  bw="$1"
-                  br="$10"
-                  w="100%"
-                  style={{
-                    boxShadow:
-                      '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                  }}
-                >
-                  <Stack ai="center" jc="center" h="100%" f={1}>
-                    <Image
-                      source={{
-                        uri: '/assets/icons/fade1.svg',
-                        width: 150,
-                        height: 150,
-                      }}
-                      $gtSm={{ scale: 1 }}
-                      $gtMd={{ scale: 0.75 }}
-                      $gtLg={{ scale: 1 }}
-                    />
-                  </Stack>
-
-                  <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
-                    <Title>Resume</Title>
-                    <Stack>
-                      <ChevronRight />
-                    </Stack>
-                  </XStack>
+              <SmallHomeCard>
+                <Stack ai="center" jc="center" h="100%" f={1}>
+                  <Image
+                    source={{
+                      uri: '/assets/icons/fade1.svg',
+                      width: 150,
+                      height: 150,
+                    }}
+                    $gtSm={{ scale: 1 }}
+                    $gtMd={{ scale: 0.75 }}
+                    $gtLg={{ scale: 1 }}
+                  />
                 </Stack>
-              </XStack>
+
+                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
+                  <Title>Resume</Title>
+                  <Stack>
+                    <ChevronRight />
+                  </Stack>
+                </XStack>
+              </SmallHomeCard>
             </Link>
             <a
               href="https://darntoot.in"
               underlayColor="$color9"
               style={{ textDecoration: 'none' }}
             >
-              <XStack
-                h={360}
-                w="100vw"
-                $gtXs={{ w: 300, h: 300 }}
-                $gtSm={{ w: 500, h: 300 }}
-                $gtMd={{ w: 250, h: 250 }}
-                $gtLg={{ w: 300, h: 300 }}
-                p="$3"
-              >
-                <Stack
-                  bc="$color3"
-                  p="$6"
-                  animation="bouncy"
-                  hoverStyle={{
-                    scale: 0.925,
-                    // rotate: '-3deg',
-                    // backgroundColor: '$pink3',
-                    // borderColor: '$pink4',
-                  }}
-                  pressStyle={{
-                    scale: 0.875,
-                    // rotate: '3deg'
-                  }}
-                  boc="$color4"
-                  bw="$1"
-                  br="$10"
-                  w="100%"
-                  style={{
-                    boxShadow:
-                      '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-                  }}
-                >
-                  <Stack ai="center" jc="center" h="100%" f={1}>
-                    <Image
-                      source={{
-                        uri: '/assets/photos/hazel.png',
-                        width: 150,
-                        height: 150,
-                      }}
-                      $gtSm={{ scale: 1 }}
-                      $gtMd={{ scale: 0.75 }}
-                      $gtLg={{ scale: 1 }}
-                    />
-                  </Stack>
-
-                  <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
-                    <Title>Promo</Title>
-                    <Stack>
-                      <ChevronRight />
-                    </Stack>
-                  </XStack>
+              <SmallHomeCard>
+                <Stack ai="center" jc="center" h="100%" f={1}>
+                  <Image
+                    source={{
+                      uri: '/assets/photos/hazel.png',
+                      width: 150,
+                      height: 150,
+                    }}
+                    $gtSm={{ scale: 1 }}
+                    $gtMd={{ scale: 0.75 }}
+                    $gtLg={{ scale: 1 }}
+                  />
                 </Stack>
-              </XStack>
+
+                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
+                  <Title>Promo</Title>
+                  <Stack>
+                    <ChevronRight />
+                  </Stack>
+                </XStack>
+              </SmallHomeCard>
             </a>
           </YStack>
         </YStack>
@@ -651,9 +399,9 @@ export const Home = () => {
           </XStack>
 
           <YStack ai="center" jc="center" gap="$2" h="100%" f={1}>
-            <YStack gap="$2" $gtSm={{ fd: 'row', gap: '$2' }}>
+            <YStack gap="$2" $gtSm={{ flexDirection: 'row', gap: '$2' }}>
               <XStack gap="$2">
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/baker-white.svg',
@@ -661,17 +409,9 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    Baker & Taylor
-                  </Paragraph>
-                </Stack>
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                  <SmallCaps>Baker & Taylor</SmallCaps>
+                </MiniHomeCardNoBg>
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/banfield-white.svg',
@@ -679,17 +419,9 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    Banfield Pet Hospital
-                  </Paragraph>
-                </Stack>
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                  <SmallCaps>Banfield Pet Hospital</SmallCaps>
+                </MiniHomeCardNoBg>
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/bimbo-white.svg',
@@ -697,19 +429,11 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    Bimbo Bakeries
-                  </Paragraph>
-                </Stack>
+                  <SmallCaps>Bimbo Bakeries</SmallCaps>
+                </MiniHomeCardNoBg>
               </XStack>
               <XStack gap="$2">
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/ggwp-white.svg',
@@ -717,17 +441,9 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    Good Game, Well Played
-                  </Paragraph>
-                </Stack>
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                  <SmallCaps>Good Game, Well Played</SmallCaps>
+                </MiniHomeCardNoBg>
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/njevity-white.svg',
@@ -735,17 +451,9 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    Njevity
-                  </Paragraph>
-                </Stack>
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                  <SmallCaps>Njevity</SmallCaps>
+                </MiniHomeCardNoBg>
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/pawzpurr-white.svg',
@@ -753,21 +461,13 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    PawzPurr
-                  </Paragraph>
-                </Stack>
+                  <SmallCaps>PawzPurr</SmallCaps>
+                </MiniHomeCardNoBg>
               </XStack>
             </YStack>
-            <YStack gap="$2" $gtSm={{ fd: 'row', gap: '$2' }}>
+            <YStack gap="$2" $gtSm={{ flexDirection: 'row', gap: '$2' }}>
               <XStack gap="$2">
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/rfid-white.svg',
@@ -775,17 +475,9 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    RFID Interlock
-                  </Paragraph>
-                </Stack>
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                  <SmallCaps>RFID Interlock</SmallCaps>
+                </MiniHomeCardNoBg>
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/scoutify-white.svg',
@@ -793,17 +485,9 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    Scoutify
-                  </Paragraph>
-                </Stack>
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                  <SmallCaps>Scoutify</SmallCaps>
+                </MiniHomeCardNoBg>
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/sprint-white.svg',
@@ -811,19 +495,11 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    Sprint
-                  </Paragraph>
-                </Stack>
+                  <SmallCaps>Sprint</SmallCaps>
+                </MiniHomeCardNoBg>
               </XStack>
               <XStack gap="$2">
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/topgolf-white.svg',
@@ -831,17 +507,9 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    TopGolf
-                  </Paragraph>
-                </Stack>
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                  <SmallCaps>TopGolf</SmallCaps>
+                </MiniHomeCardNoBg>
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/upquest-white.svg',
@@ -849,17 +517,9 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    Upquest
-                  </Paragraph>
-                </Stack>
-                <Stack ai="center" w="$10" h="$10" ai="center" gap="$2" jc="center" p="$1">
+                  <SmallCaps>Upquest</SmallCaps>
+                </MiniHomeCardNoBg>
+                <MiniHomeCardNoBg>
                   <Image
                     source={{
                       uri: '/assets/logos/waltz-white.svg',
@@ -867,16 +527,8 @@ export const Home = () => {
                       height: 50,
                     }}
                   />
-                  <Paragraph
-                    textAlign="center"
-                    tt="uppercase"
-                    size="$1"
-                    color="$color12"
-                    fontWeight="bold"
-                  >
-                    Waltz Health
-                  </Paragraph>
-                </Stack>
+                  <SmallCaps>Waltz Health</SmallCaps>
+                </MiniHomeCardNoBg>
               </XStack>
             </YStack>
           </YStack>

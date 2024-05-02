@@ -57,7 +57,7 @@ export function About() {
           </XStack>
 
           <YStack ai="center" $gtMd={{ w: 600 }} $gtLg={{ w: 800 }}>
-            <XStack ai="center" gap="$2">
+            <XStack ai="center" gap="$2" h="100%">
               <Sparkle />
               <H3 tt="uppercase">Self-summary</H3>
               <Sparkle />
@@ -88,12 +88,6 @@ export function About() {
                 <Link to="/resume">
                   <Button>View resume</Button>
                 </Link>
-                {/*<H3>Natcha Pradappet</H3>*/}
-                {/*<Paragraph>*/}
-                {/*  I am a Dallas-based UX/UI designer and front-end developer with a focus on web*/}
-                {/*  design, information architecture, and design systems. I have a diverse range of*/}
-                {/*  experience having worked across various fields and industries.*/}
-                {/*</Paragraph>*/}
               </YStack>
             </XStack>
           </YStack>
@@ -488,50 +482,6 @@ export function About() {
             </Stack>
           </XStack>
         </YStack>
-
-        {/*<Link to="/resume" underlayColor="$color9">*/}
-        {/*  <XStack*/}
-        {/*    h={300}*/}
-        {/*    w="100vw"*/}
-        {/*    $gtXs={{ w: 600 }}*/}
-        {/*    $gtSm={{ w: 800 }}*/}
-        {/*    $gtMd={{ w: 1000 }}*/}
-        {/*    $gtLg={{ w: 1200 }}*/}
-        {/*    p="$3"*/}
-        {/*  >*/}
-        {/*    <Stack*/}
-        {/*      bc="$color3"*/}
-        {/*      p="$6"*/}
-        {/*      animation="bouncy"*/}
-        {/*      hoverStyle={{ scale: 0.925 }}*/}
-        {/*      pressStyle={{ scale: 0.875 }}*/}
-        {/*      boc="$color4"*/}
-        {/*      bw="$1"*/}
-        {/*      br="$10"*/}
-        {/*      w="100%"*/}
-        {/*      style={{*/}
-        {/*        boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',*/}
-        {/*      }}*/}
-        {/*    >*/}
-        {/*      <Stack ai="center" jc="center" h="100%" f={1}>*/}
-        {/*        <Image*/}
-        {/*          source={{*/}
-        {/*            uri: '/assets/icons/fade1.svg',*/}
-        {/*            width: 150,*/}
-        {/*            height: 150,*/}
-        {/*          }}*/}
-        {/*        />*/}
-        {/*      </Stack>*/}
-
-        {/*      <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>*/}
-        {/*        <Title>Resume</Title>*/}
-        {/*        <Stack>*/}
-        {/*          <ChevronRight />*/}
-        {/*        </Stack>*/}
-        {/*      </XStack>*/}
-        {/*    </Stack>*/}
-        {/*  </XStack>*/}
-        {/*</Link>*/}
       </YStack>
     </>
   )
