@@ -22,7 +22,6 @@
     "@tamagui/themes": "^1.96.0",
     "@tamagui/toast": "^1.96.0",
     "@vercel/analytics": "^1.2.2",
-    "@vercel/speed-insights": "^1.0.10",
     "burnt": "^0.12.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.3",
@@ -30,7 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native-web": "~0.19.9",
-    "react-router-dom": "^6.21.3",
+    "react-router-dom": "^6.23.0",
     "react-router-native": "^6.21.3",
     "sort-by": "^1.2.0",
     "tamagui": "^1.96.0"
