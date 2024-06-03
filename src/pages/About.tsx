@@ -8,7 +8,7 @@ export function About() {
     <>
       <YStack ai="center">
         <YStack ai="center" $gtMd={{ fd: 'row', w: 1000, ai: 'flex-end' }} $gtLg={{ w: 1200 }}>
-          <XStack h="100vw" w="100vw" p="$3" $gtXxs={{ w: 400, h: 400 }}>
+          <XStack h="$100vw" w="$100vw" p="$3" $gtXxs={{ w: 400, h: 400 }}>
             <Stack
               bc="$color3"
               p="$6"
@@ -24,9 +24,9 @@ export function About() {
               <Image
                 source={{
                   uri: '/assets/photos/ai_profile.jpg',
-                  width: '100%',
-                  height: '100%',
                 }}
+                w="100%"
+                h="100%"
                 f={1}
                 br="$7"
               />
@@ -41,7 +41,7 @@ export function About() {
             </XStack>
 
             <XStack
-              w="100vw"
+              w="$100vw"
               p="$3"
               $gtXs={{ w: 600 }}
               $gtSm={{ w: 800 }}
@@ -72,7 +72,7 @@ export function About() {
 
         <YStack $gtSm={{ fd: 'row' }}>
           <XStack
-            w="100vw"
+            w="$100vw"
             p="$3"
             $gtXs={{ w: 600 }}
             $gtSm={{ w: 400 }}
@@ -228,7 +228,7 @@ export function About() {
             </Stack>
           </XStack>
           <XStack
-            w="100vw"
+            w="$100vw"
             p="$3"
             $gtXs={{ w: 600 }}
             $gtSm={{ w: 400 }}
@@ -384,7 +384,7 @@ export function About() {
         </YStack>
         <YStack $gtSm={{ fd: 'row' }}>
           <XStack
-            w="100vw"
+            w="$100vw"
             p="$3"
             $gtXs={{ w: 600 }}
             $gtSm={{ w: 400 }}
@@ -421,7 +421,7 @@ export function About() {
             </Stack>
           </XStack>
           <XStack
-            w="100vw"
+            w="$100vw"
             p="$3"
             $gtXs={{ w: 600 }}
             $gtSm={{ w: 400 }}

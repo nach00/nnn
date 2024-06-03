@@ -1,4 +1,4 @@
-import { H2, Stack, Paragraph, XStack, YStack, Image, Button } from 'tamagui'
+import { H2, Stack, YStack, Image, Button } from 'tamagui'
 import { Experience } from '../content/Experience'
 import { Education } from '../content/Education'
 import { Overview } from '../content/Overview'
@@ -31,21 +31,14 @@ export function Resume() {
             />
             <YStack gap="$3" ai="center" mt="$6">
               <H2 ta="center">Natcha Pradappet</H2>
-              {/*<Paragraph>@npradappet</Paragraph>*/}
               <Link to="/contact">
                 <Button>Contact me</Button>
               </Link>
               <a
-                href="https://drive.google.com/file/d/1CtfntNdtceR6QrpqUcvav9MngrgLtbOf/view?usp=sharing"
+                href="https://drive.google.com/file/d/1JLSCDSbeGrudqbDz2oU5rCjv116qo45o/view?usp=drive_link"
                 style={{ textDecoration: 'none' }}
               >
-                <Button>Download original resume</Button>
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1LNgIiLM_Y-LxJyvZT0ScLTi5s8RNTGEf/view?usp=sharing"
-                style={{ textDecoration: 'none' }}
-              >
-                <Button>Download ATS resume</Button>
+                <Button>Download resume</Button>
               </a>
             </YStack>
           </YStack>

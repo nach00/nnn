@@ -15,7 +15,7 @@ export const Home = () => {
         <Link to="/about" underlayColor="$color9">
           <XStack
             h={600}
-            w="100vw"
+            w="$100vw"
             $gtXs={{ w: 600, h: 600 }}
             $gtSm={{ w: 500, h: 600 }}
             $gtMd={{ w: 500, h: 500 }}
@@ -28,11 +28,9 @@ export const Home = () => {
               animation="bouncy"
               hoverStyle={{
                 scale: 0.925,
-                // rotate: '2deg',
               }}
               pressStyle={{
                 scale: 0.875,
-                // rotate: '-2deg'
               }}
               boc="$color4"
               bw="$1"
@@ -46,13 +44,20 @@ export const Home = () => {
               <Image
                 source={{
                   uri: '/assets/photos/ai_profile.jpg',
-                  width: '100%',
-                  height: '100%',
                 }}
+                w="100%"
+                h="100%"
                 f={1}
                 br="$7"
               />
-              <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+              <XStack
+                jc="space-between"
+                ai="flex-end"
+                w="100%"
+                f={1}
+                gap="$6"
+                style={{ color: '$color11' }}
+              >
                 <YStack f={1} gap="$1">
                   <Eyebrow>Designer & Developer</Eyebrow>
                   <Title>Natcha Pradappet</Title>
@@ -85,7 +90,13 @@ export const Home = () => {
                   />
                 </Stack>
 
-                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
+                <XStack
+                  jc="space-between"
+                  ai="flex-end"
+                  w="100%"
+                  f={1}
+                  style={{ color: '$color11' }}
+                >
                   <Title>Projects</Title>
                   <Stack>
                     <ChevronRight />
@@ -110,7 +121,13 @@ export const Home = () => {
                   />
                 </Stack>
 
-                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
+                <XStack
+                  style={{ color: '$color11' }}
+                  jc="space-between"
+                  ai="flex-end"
+                  w="100%"
+                  f={1}
+                >
                   <Title>Featured</Title>
                   <Stack>
                     <ChevronRight />
@@ -119,10 +136,9 @@ export const Home = () => {
               </SmallHomeCard>
             </Link>
           </YStack>
-          {/*<Link to="/services" underlayColor="$color9">*/}
           <XStack
             h={360}
-            w="100vw"
+            w="$100vw"
             $gtXs={{ w: 600, h: 300 }}
             $gtSm={{ display: 'none' }}
             $gtMd={{ w: 500, h: 250, display: 'flex' }}
@@ -133,16 +149,6 @@ export const Home = () => {
               bc="$color3"
               p="$6"
               animation="bouncy"
-              // hoverStyle={{
-              //   scale: 0.925,
-              //   rotate: '3deg',
-              //   backgroundColor: '$yellow3',
-              //   borderColor: '$yellow4',
-              // }}
-              // pressStyle={{
-              //   scale: 0.875,
-              //   rotate: '-3deg'
-              // }}
               boc="$color4"
               bw="$1"
               br="$10"
@@ -190,7 +196,14 @@ export const Home = () => {
                 </MiniHomeCard>
               </XStack>
 
-              <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+              <XStack
+                style={{ color: '$color11' }}
+                jc="space-between"
+                ai="flex-end"
+                w="100%"
+                f={1}
+                gap="$6"
+              >
                 <Title>Services</Title>
                 {/*<ChevronRight />*/}
               </XStack>
@@ -209,7 +222,7 @@ export const Home = () => {
           <Link to="/services" underlayColor="$color9">
             <XStack
               h={360}
-              w="100vw"
+              w="$100vw"
               display="none"
               $gtXs={{ display: 'none' }}
               $gtSm={{ w: 800, h: 300, display: 'flex' }}
@@ -223,13 +236,9 @@ export const Home = () => {
                 animation="bouncy"
                 hoverStyle={{
                   scale: 0.925,
-                  // rotate: '3deg',
-                  // backgroundColor: '$yellow3',
-                  // borderColor: '$yellow4',
                 }}
                 pressStyle={{
                   scale: 0.875,
-                  // rotate: '-3deg'
                 }}
                 boc="$color4"
                 bw="$1"
@@ -255,7 +264,14 @@ export const Home = () => {
                   </MiniHomeCard>
                 </XStack>
 
-                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1} gap="$6">
+                <XStack
+                  style={{ color: '$color11' }}
+                  jc="space-between"
+                  ai="flex-end"
+                  w="100%"
+                  f={1}
+                  gap="$6"
+                >
                   <Title>Services</Title>
                   <ChevronRight />
                 </XStack>
@@ -267,7 +283,7 @@ export const Home = () => {
       <YStack ai="center" $gtSm={{ flexDirection: 'row', justifyContent: 'center' }}>
         <XStack
           h={360}
-          w="100vw"
+          w="$100vw"
           $gtXs={{ w: 600, h: 300 }}
           $gtSm={{ w: 300, h: 600 }}
           $gtMd={{ w: 500, h: 250 }}
@@ -335,7 +351,13 @@ export const Home = () => {
                   />
                 </Stack>
 
-                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
+                <XStack
+                  style={{ color: '$color11' }}
+                  jc="space-between"
+                  ai="flex-end"
+                  w="100%"
+                  f={1}
+                >
                   <Title>Resume</Title>
                   <Stack>
                     <ChevronRight />
@@ -343,11 +365,7 @@ export const Home = () => {
                 </XStack>
               </SmallHomeCard>
             </Link>
-            <a
-              href="https://darntoot.in"
-              underlayColor="$color9"
-              style={{ textDecoration: 'none' }}
-            >
+            <a href="https://darntoot.in" style={{ textDecoration: 'none' }}>
               <SmallHomeCard>
                 <Stack ai="center" jc="center" h="100%" f={1}>
                   <Image
@@ -362,7 +380,13 @@ export const Home = () => {
                   />
                 </Stack>
 
-                <XStack color="$color11" jc="space-between" ai="flex-end" w="100%" f={1}>
+                <XStack
+                  style={{ color: '$color11' }}
+                  jc="space-between"
+                  ai="flex-end"
+                  w="100%"
+                  f={1}
+                >
                   <Title>Promo</Title>
                   <Stack>
                     <ChevronRight />
@@ -376,7 +400,7 @@ export const Home = () => {
       <XStack
         m="auto"
         h={600}
-        w="100vw"
+        w="$100vw"
         $gtXs={{ w: 600, h: 600 }}
         $gtSm={{ w: 800, h: 400 }}
         $gtMd={{ w: 1000, h: 400 }}

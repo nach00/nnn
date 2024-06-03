@@ -40,6 +40,9 @@ export const size = {
   $18: 244,
   $19: 264,
   $20: 284,
+  $100vw: '100vw',
+  $100pc: '100%',
+  $min: 'min-content',
 }
 
 export type SizeKeysIn = keyof typeof size

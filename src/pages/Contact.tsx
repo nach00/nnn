@@ -37,7 +37,7 @@ export function Contact() {
               // br="$5"
               // boc="$color4"
               // bw="$1"
-              color="$color11"
+              style={{ color: '$color11' }}
               // style={{
               //   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
               // }}
@@ -56,7 +56,8 @@ export function Contact() {
               // br="$5"
               // boc="$color4"
               // bw="$1"
-              color="$color11"
+
+              style={{ color: '$color11' }}
               // style={{
               //   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
               // }}
@@ -75,7 +76,7 @@ export function Contact() {
               // br="$5"
               // boc="$color4"
               // bw="$1"
-              color="$color11"
+              style={{ color: '$color11' }}
               // style={{
               //   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
               // }}
@@ -94,7 +95,7 @@ export function Contact() {
               // br="$5"
               // boc="$color4"
               // bw="$1"
-              color="$color11"
+              style={{ color: '$color11' }}
               // style={{
               //   boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
               // }}
@@ -140,7 +141,7 @@ const EmailForm = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
 
     const serviceId = 'service_f8tjezh'

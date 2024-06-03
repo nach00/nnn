@@ -1,43 +1,25 @@
-import {
-  YStack,
-  XStack,
-  Button,
-  Anchor,
-  H6,
-  H5,
-  H4,
-  H3,
-  H2,
-  Input,
-  Paragraph,
-  Image,
-  H1,
-  Stack,
-} from 'tamagui'
+import { XStack, Button, H4, Paragraph, Image, H1, Stack } from 'tamagui'
 
 import React from 'react'
 import { useState } from 'react'
-// import { Link, NavLink } from 'react-router-dom'
 import { Link } from 'react-router-native'
 
 import { Menu } from '../assets/icons'
-import type { SheetProps } from '@tamagui/sheet'
-import { Sheet, useSheet } from '@tamagui/sheet'
+import { Sheet } from '@tamagui/sheet'
 
 const spModes = ['percent', 'constant', 'fit', 'mixed'] as const
 
 export const TopBar = () => {
   const [position, setPosition] = useState(0)
   const [open, setOpen] = useState(false)
-  const [modal, setModal] = useState(true)
-  const [innerOpen, setInnerOpen] = useState(false)
-  const [snapPointsMode, setSnapPointsMode] = useState<(typeof spModes)[number]>('percent')
-  const [mixedFitDemo, setMixedFitDemo] = useState(false)
+  const [modal] = useState(true)
+  const [] = useState(false)
+  const [snapPointsMode] = useState<(typeof spModes)[number]>('percent')
+  const [mixedFitDemo] = useState(false)
 
   const isPercent = snapPointsMode === 'percent'
   const isConstant = snapPointsMode === 'constant'
   const isFit = snapPointsMode === 'fit'
-  const isMixed = snapPointsMode === 'mixed'
   const snapPoints = isPercent
     ? [85, 50, 25]
     : isConstant

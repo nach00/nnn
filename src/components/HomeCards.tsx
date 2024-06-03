@@ -9,7 +9,6 @@ export function SmallHomeCard({ children }: HomeCardTypes) {
   return (
     <XStack
       height={360}
-      // width={'100vw'}
       $gtXs={{ width: 300, height: 300 }}
       $gtSm={{ width: 300, height: 300 }}
       $gtMd={{ width: 250, height: 250 }}
@@ -43,7 +42,7 @@ export function SmallHomeCard({ children }: HomeCardTypes) {
 export function MiniHomeCard({ children }: HomeCardTypes) {
   return (
     <Stack
-      col="$color11"
+      style={{ color: '$color11' }}
       bc="$color4"
       boc="$color5"
       bw="$1"

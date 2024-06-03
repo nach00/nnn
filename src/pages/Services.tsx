@@ -1,4 +1,4 @@
-import { H2, Stack, XStack, YStack, Image, H6, H1, Paragraph } from 'tamagui'
+import { H2, Stack, XStack, YStack, Image, H6, Paragraph } from 'tamagui'
 import { Link } from 'react-router-native'
 import { Eyebrow } from '../components/Eyebrow'
 import { Title } from '../components/Title'
@@ -59,7 +59,6 @@ export function Services() {
             </YStack>
             <YStack>
               <YStack
-                p="$3"
                 bc="$color3"
                 boc="$color4"
                 bw="$1"
@@ -102,7 +101,7 @@ export function Services() {
         <Link to="/resume" underlayColor="$color9">
           <XStack
             h={300}
-            w="100vw"
+            w="$100vw"
             $gtXs={{ w: 600 }}
             $gtSm={{ w: 800 }}
             $gtMd={{ w: 1000 }}
@@ -133,7 +132,7 @@ export function Services() {
                 />
               </Stack>
 
-              <XStack color="$color9" jc="space-between" ai="flex-end" w="100%" f={1}>
+              <XStack style={{ color: '$color9' }} jc="space-between" ai="flex-end" w="100%" f={1}>
                 <Title>Resume</Title>
                 <Stack>
                   <ChevronRight />

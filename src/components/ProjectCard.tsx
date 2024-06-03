@@ -9,7 +9,7 @@ export function ProjectCard({ children }: ProjectCardTypes) {
   return (
     <XStack
       height={600}
-      width="100vw"
+      width="$100vw"
       $gtXs={{ width: 600, height: 600 }}
       $gtSm={{ width: 500, height: 600 }}
       $gtMd={{ width: 500, height: 500 }}

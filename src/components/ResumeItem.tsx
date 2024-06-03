@@ -1,5 +1,5 @@
 import { Paragraph, YStack } from 'tamagui'
-// import { Link } from 'react-router-dom'
+import React from 'react'
 
 export type ResumeItemTypes = {
   dates?: string
@@ -11,14 +11,12 @@ export type ResumeItemTypes = {
   children?: React.ReactNode
 }
 
-// export default function ResumeItem() {
 export const ResumeItem = ({
   dates,
   location,
   organization,
   title,
   description,
-  link,
   children,
 }: ResumeItemTypes) => {
   return (
@@ -42,5 +40,3 @@ export const ResumeItem = ({
     </YStack>
   )
 }
-
-export default ResumeItem

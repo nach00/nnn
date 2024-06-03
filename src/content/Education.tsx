@@ -40,7 +40,7 @@ export function Education() {
             href="https://threejs-journey.com/certificate/view/32409"
             style={{ textDecoration: 'none' }}
           >
-            <Button size="$3" width="min-content">
+            <Button size="$3" width="$min">
               View certificate
             </Button>
           </a>

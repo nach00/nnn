@@ -1,5 +1,5 @@
 import { ResumeItem } from '../components/ResumeItem'
-import { H6, ListItem, ListItemText, Paragraph, YStack } from 'tamagui'
+import { H6, ListItemText, Paragraph, YStack } from 'tamagui'
 export function Experience() {
   return (
     <>
@@ -14,12 +14,9 @@ export function Experience() {
           description="Co-founded a design and development studio providing freelance services for a variety
               of clients, including:
 "
-          // description="Co-founded the design and development studio that provides freelance services to a variety of clients, directing design to optimize product solutions spanning web and native apps and deliver enhanced user experiences (UX)."
         >
           <YStack>
             <Paragraph lh="$6">
-              {/*Co-founded a design and development studio providing freelance services for a variety*/}
-              {/*of clients, including:*/}
               <ListItemText>
                 • Tamagui: Design System Designer – organized Figma UI kit with 30+ components, 3
                 utility variables, and 4 color variants.
