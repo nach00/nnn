@@ -1,23 +1,6 @@
-import {
-  H2,
-  H6,
-  Stack,
-  H1,
-  Paragraph,
-  XStack,
-  YStack,
-  Image,
-  Button,
-  ListItem,
-  View,
-  H4,
-  H3,
-  H5,
-} from 'tamagui'
-import { YStack } from 'tamagui'
+import { Stack, Paragraph, YStack, Image, ListItem, H4, H5 } from 'tamagui'
 import { Eyebrow } from '../../components/Eyebrow'
 import { Title } from '../../components/Title'
-import { Link } from 'react-router-native'
 import React from 'react'
 
 export function Scoutify() {
