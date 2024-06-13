@@ -38,7 +38,7 @@ export function Resume() {
                 href="https://drive.google.com/file/d/1JLSCDSbeGrudqbDz2oU5rCjv116qo45o/view?usp=drive_link"
                 style={{ textDecoration: 'none' }}
               >
-                <Button>Download Resume</Button>
+                <Button>Download resume</Button>
               </a>
             </YStack>
           </YStack>
