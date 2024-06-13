@@ -35,7 +35,7 @@ export function Resume() {
                 <Button>Contact me</Button>
               </Link>
               <a
-                href="https://drive.google.com/file/d/1JLSCDSbeGrudqbDz2oU5rCjv116qo45o/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1YFMZcOeY4bkVWxwEeTa565VWBJ-lp2Nz/view?usp=sharing"
                 style={{ textDecoration: 'none' }}
               >
                 <Button>Download resume</Button>
